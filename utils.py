@@ -56,7 +56,7 @@ def data_loader(path):
     :return:
     """
     # parameters of normalization: var, mean are calculated by file calc_mst.py
-    normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
+    # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
     # transform of the images
     transform = T.Compose([
         T.RandomResizedCrop(size=28, scale=(0.8, 1.0)),
@@ -65,26 +65,33 @@ def data_loader(path):
         # T.RandomHorizontalFlip(),  # random flip the image;
         # but our data are fixed shape, flip has no effect for the data, so this is not need
         T.ToTensor(),  # change the image into tensor
-        normalize,
+        # normalize,
     ])
     # transform the image into tensors
     dataset = ImageFolder(path, transform=transform)
-    image = Image.open('.\\data\\0\\0_0.jpg')
-    plt.subplot(2, 2, 1)
-    plt.imshow(image)
-    plt.title("original image")
-    plt.subplot(2, 2, 2)
-    plt.imshow(T.RandomResizedCrop(size=28, scale=(0.8, 1.0))(image))
-    plt.title("random crop")
-    plt.subplot(2, 2, 3)
-    plt.imshow(T.RandomHorizontalFlip(p=1)(image))
-    plt.title("random flip")
-    plt.show()
+    # image = Image.open('.\\data\\0\\0_0.jpg')
+    # plt.subplot(2, 2, 1)
+    # plt.imshow(image)
+    # plt.title("original image")
+    # plt.subplot(2, 2, 2)
+    # plt.imshow(T.RandomResizedCrop(size=28, scale=(0.8, 1.0))(image))
+    # plt.title("random crop")
+    # plt.subplot(2, 2, 3)
+    # plt.imshow(T.RandomHorizontalFlip(p=1)(image))
+    # plt.title("random flip")
+    # plt.show()
     return dataset
 
 
-def img2vec(image):
-    pass
+def normalize(img):
+    row, col = img.shape
+    for i in range(row):
+        for j in range(col):
+            if img[i, j] != 1:
+                img[i, j] = 1
+            else:
+                img[i, j] = 0
+    return img
 
 
 class Logger:

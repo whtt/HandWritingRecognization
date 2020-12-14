@@ -9,7 +9,7 @@
 ## MyWidget
 略
 
-`Attention`  `file`main-->`class`MyWidget-->`metohd`btn_recog_clicked`line187`
+`Attention`  `file`main-->`class`MyWidget-->`method`btn_recog_clicked`line187`
 
     predict = method_index # method_index使用自己相应index的method
     

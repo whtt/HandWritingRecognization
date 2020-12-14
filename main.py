@@ -17,7 +17,7 @@ from utils import create_dir_path, create_file_path
 import sys
 import os
 from PyQt5 import QtCore
-from Bayesian import Bayes
+from Bayesian import NaiveBayes
 
 
 class MyWidget(QWidget):

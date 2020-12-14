@@ -12,39 +12,110 @@
 import numpy as np
 import os
 import time
-from utils import Logger, data_loader
+import torch
+from utils import Logger, data_loader, normalize
 
 
-class Bayes:
+class NaiveBayes:
     def __init__(self, logger, pretrained=False, **kwargs):
+        """
+        NaiveBayes
+        i. p(c|x) = p(c)/p(x) * \\prod_{i=1}^{d} p(x_i|c)
+            for c: classes; x: features; x_i: feature_i
+        ii. p(c) = \abs(D_c) / \abs(D)
+            for D_c: nums of classes c; D: num of all
+        iii. p(x_i|c) = \abs(D_c, x_i) / \abs(D_c)
+        iv. p(x): normalized param, same to all, set to 1
+        v. Laplacian correction: ii.&iii. can be corrected as:
+        \frac{*+1}{*+N_i or N}
+            for N: cnt(label \\in D); N_i: cnt(x_i \\in D_c)
+        :param logger:
+        :param pretrained:
+        :param kwargs:
+        """
         # log for printing information
         self.log = logger
         # length for feature dims, length=-1 means untrained
         self.length = -1
-        # label probability
+        # label probability p(c)
         self.label_prob = dict()
-        #
+        # feature probability p(x|c)
         self.feature_prob = dict()
+        # pretrained model can be loaded here
         if pretrained:
+            # show that load process begins
             self.log.info('data pretrained, ')
             self.length = 1
 
     def fit(self, dataset):
-        self.log.info('train started')
-        self.length = len(dataset[0][0].squeeze)
+        # show that train porcess begins
+        self.log.info('====== training start ======')
+        # the length of feature dims
+        testing = dataset[0][0][0]
+        self.length = len(dataset[0][0][0].flatten())
+        # labels nums, the length of dataset
         labels_num = len(dataset.targets)
+        # label kinds
         classes_num = set(dataset.classes)
+        # create and set the label prob p(c) = cnt(D_c)/cnt(D)
         for item in classes_num:
-            self.label_prob[item] = dataset.targets.count(item)/labels_num
-        for num, img, label in enumerate(dataset):
-            if label not in self.feature_prob:
-                self.feature_prob[label] = []
+            self.label_prob[item] = dataset.targets.count(int(item))/labels_num
+        for num, (img, label) in enumerate(dataset):
+            # if p(x|c) is not exist, create it
+            if str(label) not in self.feature_prob:
+                self.feature_prob[str(label)] = []
+            # transform the image(28x28) into 1-dim array
+            feature_vector = normalize(img[0]).flatten()
+            self.feature_prob[str(label)].append(feature_vector)
+        self.log.info('====== training over ======')
 
-    def predict(self):
-        return 1
+    def test(self, dataset):
+        if self.length == -1:
+            raise ValueError("Please train the model")
+        acc = 0
+        cnt = 0
+        for num, (img, label) in enumerate(dataset):
+            predicted = self.predict(img)
+            self.log.info('true:{}|pred:{}|result:{}'.format(label, predicted, bool(label == predicted)))
+            if label == predicted:
+                acc += 1
+            cnt += 1
+        acc = acc * 100 / cnt
+        self.log.info('accuracy of the dataset is: {}%'.format(acc))
+
+    def predict(self, image):
+        if self.length == -1:
+            raise ValueError("Please train the model")
+        # set a prob list: p(c_i|x)
+        result = dict()
+        for label_ in range(10):
+            label = str(label_)
+            # \\prod p(x_j|c)
+            p = 0
+            # p(c_i)=0.1; c_i: label
+            labels = self.label_prob[label]
+            # p(x|c_i); x: feature
+            features = self.feature_prob[label]
+            feature_len = len(features)
+            features = torch.tensor(np.array([np.array(feature) for feature in features])).T
+            for index in range(len(image[0].flatten())):
+                # p(x_j|c_i); x_j: feature[index]
+                vector = list(features[index])
+                # p = p(x_1|c_i) * ... * p(x_d|c_i)
+                # p(x_j|c_i) = |D_c, x_i| / |D_c|
+                # using Laplacian correction
+                # p *= p_ 太小向下溢出; instead: log（p）
+                p += np.log((vector.count(normalize(image[0]).flatten()[index])+1)/(feature_len + 2))
+                if p == 0:
+                    print(1)
+            # p(c_i|x) = p(c) * \\prod_{i=1}^{d} p(x_i|c)
+            result[label] = p * labels
+        predicted = np.argmax(result)
+        return int(predicted)
 
 
 if __name__ == '__main__':
     log = Logger('logs/Bayesian.log', level='debug')
-    my_net = Bayes(log.logger)
+    my_net = NaiveBayes(log.logger)
     my_net.fit(data_loader('.\\data'))
+    my_net.test(data_loader('.\\test'))
