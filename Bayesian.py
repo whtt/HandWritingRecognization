@@ -1,7 +1,7 @@
 # /usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Intro  :
+@Intro  : NaiveBayes for handwriting recognition
 @Project: PR_HW
 @File   : Bayesian.py
 @Author : whtt

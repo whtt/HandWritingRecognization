@@ -1,7 +1,7 @@
 # /usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Intro  :
+@Intro  : the main gui for the project
 @Project: PR_HW
 @File   : main.py
 @Author : whtt

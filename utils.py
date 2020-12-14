@@ -1,7 +1,7 @@
 # /usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Intro  :
+@Intro  : some tools
 @Project: PR_HW
 @File   : utils.py
 @Author : whtt

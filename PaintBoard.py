@@ -1,7 +1,7 @@
 # /usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Intro  :
+@Intro  : file of canvas, used for handwriting
 @Project: PR_HW
 @File   : PaintBoard.py
 @Author : whtt
