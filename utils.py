@@ -50,6 +50,11 @@ def create_file_path(path):
 
 
 def data_loader(path):
+    """
+    load images
+    :param path:
+    :return:
+    """
     # parameters of normalization: var, mean are calculated by file calc_mst.py
     normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
     # transform of the images
@@ -64,18 +69,22 @@ def data_loader(path):
     ])
     # transform the image into tensors
     dataset = ImageFolder(path, transform=transform)
-    # image = Image.open('.\\data\\0\\0_0.jpg')
-    # plt.subplot(2, 2, 1)
-    # plt.imshow(image)
-    # plt.title("original image")
-    # plt.subplot(2, 2, 2)
-    # plt.imshow(T.RandomResizedCrop(size=28, scale=(0.8, 1.0))(image))
-    # plt.title("random crop")
-    # plt.subplot(2, 2, 3)
-    # plt.imshow(T.RandomHorizontalFlip(p=1)(image))
-    # plt.title("random flip")
-    # plt.show()
+    image = Image.open('.\\data\\0\\0_0.jpg')
+    plt.subplot(2, 2, 1)
+    plt.imshow(image)
+    plt.title("original image")
+    plt.subplot(2, 2, 2)
+    plt.imshow(T.RandomResizedCrop(size=28, scale=(0.8, 1.0))(image))
+    plt.title("random crop")
+    plt.subplot(2, 2, 3)
+    plt.imshow(T.RandomHorizontalFlip(p=1)(image))
+    plt.title("random flip")
+    plt.show()
     return dataset
+
+
+def img2vec(image):
+    pass
 
 
 class Logger:
@@ -95,21 +104,22 @@ class Logger:
             when='D',
             back_count=3,
             fmt='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'):
-        self.logger = logging.getLogger(filename) # 获取level信息
-        format_str = logging.Formatter(fmt) # 设置日志格式
-        self.logger.setLevel(self.level_relations.get(level)) # 设置level级别
-        sh = logging.StreamHandler() # 往屏幕上输出日志
-        sh.setFormatter(format_str) # 设置屏幕上输出显示的格式
+        self.logger = logging.getLogger(filename)  # 获取level信息
+        format_str = logging.Formatter(fmt)  # 设置日志格式
+        self.logger.setLevel(self.level_relations.get(level))  # 设置level级别
+        sh = logging.StreamHandler()  # 往屏幕上输出日志
+        sh.setFormatter(format_str)  # 设置屏幕上输出显示的格式
         th = handlers.TimedRotatingFileHandler(
             filename=filename,
             when=when,
             backupCount=back_count,
             encoding='utf-8'
-        ) # 往文件里写入#when指定间隔时间自动生成文件的处理器
-        th.setFormatter(format_str) # 设置文件里写入的格式
-        self.logger.addHandler(sh) # 吧对象加到logger里
+        )  # 往文件里写入#when指定间隔时间自动生成文件的处理器
+        th.setFormatter(format_str)  # 设置文件里写入的格式
+        self.logger.addHandler(sh)  # 吧对象加到logger里
         self.logger.addHandler(th)
 
 
 if __name__ == '__main__':
-    data_loader('.\\data')
+    das = data_loader('.\\data')
+    print(len(das))

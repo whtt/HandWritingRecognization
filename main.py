@@ -17,6 +17,7 @@ from utils import create_dir_path, create_file_path
 import sys
 import os
 from PyQt5 import QtCore
+from Bayesian import Bayes
 
 
 class MyWidget(QWidget):
@@ -188,7 +189,7 @@ class MyWidget(QWidget):
         save_path = os.path.abspath(savePath)
         self.label_log.append("image saved in path:\n{}".format(save_path))
         method_index = self.__box_method.currentIndex()
-        predict = method_index
+        predict = 5
         self.label_log.append("recognition result is: {}".format(predict))
         message = QMessageBox()
         message.setText("recognition result is: {}".format(predict))
