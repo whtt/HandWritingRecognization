@@ -106,7 +106,7 @@ class NaiveBayes:
             # compare all training data with testing one by pixel, then sum by pixel
             counts = torch.eq(features, vector).sum(dim=0)
             # \\prod p(x_j|c)
-            p = torch.log((counts+1)*(1/(10+2))).sum()
+            p = torch.log((counts+1)*(1/(features.shape[0]+2))).sum()
             # p(c_i|x) = p(c) * \\prod_{i=1}^{d} p(x_i|c)
             result[label] = p.item()
         self.log.debug('result of the picture is: {}'.format(result))
