@@ -74,6 +74,7 @@ class NaiveBayes:
             raise ValueError("Please train the model")
         acc = 0
         cnt = 0
+        self.log.info('====== testing start ======')
         for num, (img, label) in enumerate(dataset):
             predicted = self.predict(img)
             self.log.info('true:{}|pred:{}|result:{}'.format(label, predicted, bool(label == predicted)))
@@ -82,6 +83,7 @@ class NaiveBayes:
             cnt += 1
         acc = acc * 100 / cnt
         self.log.info('accuracy of the dataset is: {}%'.format(acc))
+        self.log.info('====== testing over ======')
 
     def predict(self, image):
         if self.length == -1:
@@ -90,27 +92,25 @@ class NaiveBayes:
         result = dict()
         for label_ in range(10):
             label = str(label_)
-            # \\prod p(x_j|c)
-            p = 0
             # p(c_i)=0.1; c_i: label
-            labels = self.label_prob[label]
+            # labels = self.label_prob[label]
             # p(x|c_i); x: feature
             features = self.feature_prob[label]
-            feature_len = len(features)
-            features = torch.tensor(np.array([np.array(feature) for feature in features])).T
-            for index in range(len(image[0].flatten())):
-                # p(x_j|c_i); x_j: feature[index]
-                vector = list(features[index])
-                # p = p(x_1|c_i) * ... * p(x_d|c_i)
-                # p(x_j|c_i) = |D_c, x_i| / |D_c|
-                # using Laplacian correction
-                # p *= p_ 太小向下溢出; instead: log（p）
-                p += np.log((vector.count(normalize(image[0]).flatten()[index])+1)/(feature_len + 2))
-                if p == 0:
-                    print(1)
+            # p(x_j|c_i); x_j: feature[index]
+            # p = p(x_1|c_i) * ... * p(x_d|c_i)
+            # p(x_j|c_i) = |D_c, x_i| / |D_c|
+            # p *= p_ 太小向下溢出; instead: log（p）
+            # using Laplacian correction
+            features = torch.tensor(np.array([np.array(feature) for feature in features]))
+            vector = normalize(image[0]).flatten()
+            # compare all training data with testing one by pixel, then sum by pixel
+            counts = torch.eq(features, vector).sum(dim=0)
+            # \\prod p(x_j|c)
+            p = torch.log((counts+1)*(1/(10+2))).sum()
             # p(c_i|x) = p(c) * \\prod_{i=1}^{d} p(x_i|c)
-            result[label] = p * labels
-        predicted = np.argmax(result)
+            result[label] = p.item()
+        self.log.debug('result of the picture is: {}'.format(result))
+        predicted = np.argmax(list(result.values()))
         return int(predicted)
 
 

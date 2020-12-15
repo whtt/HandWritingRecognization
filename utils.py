@@ -59,7 +59,8 @@ def data_loader(path):
     # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
     # transform of the images
     transform = T.Compose([
-        T.RandomResizedCrop(size=28, scale=(0.8, 1.0)),
+        T.RandomResizedCrop(size=28, scale=(0.9, 1.0)),
+        # T.Grayscale(1),
         # T.RandomResizedCrop(28),  # random crop the image then resize to fixed size;
         # but if we crop the data, the image may lose their origin feature, so we need set the scale
         # T.RandomHorizontalFlip(),  # random flip the image;
@@ -74,7 +75,7 @@ def data_loader(path):
     # plt.imshow(image)
     # plt.title("original image")
     # plt.subplot(2, 2, 2)
-    # plt.imshow(T.RandomResizedCrop(size=28, scale=(0.8, 1.0))(image))
+    # plt.imshow(T.RandomResizedCrop(size=14, scale=(0.8, 1.0))(image))
     # plt.title("random crop")
     # plt.subplot(2, 2, 3)
     # plt.imshow(T.RandomHorizontalFlip(p=1)(image))
@@ -84,13 +85,18 @@ def data_loader(path):
 
 
 def normalize(img):
+    # plt.subplot(2, 1, 1)
+    # plt.imshow(img)
     row, col = img.shape
     for i in range(row):
         for j in range(col):
-            if img[i, j] != 1:
+            if img[i, j] > 0.8:
                 img[i, j] = 1
             else:
                 img[i, j] = 0
+    # plt.subplot(2, 1, 2)
+    # plt.imshow(img)
+    # plt.show()
     return img
 
 
