@@ -13,7 +13,8 @@ from PyQt5.Qt import QMainWindow, QWidget, QColor, QPixmap, QIcon, QSize, QFrame
 from PyQt5.QtWidgets import QHBoxLayout, QVBoxLayout, QPushButton, QSplitter, \
     QComboBox, QLabel, QSpinBox, QFileDialog, QApplication
 from PaintBoard import PaintBoard
-from utils import create_dir_path, create_file_path, Logger, Kernel
+from utils import create_dir_path, create_file_path, Logger
+from kernel import Kernel
 import sys
 import os
 from PyQt5 import QtCore

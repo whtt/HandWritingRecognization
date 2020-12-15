@@ -16,7 +16,6 @@ from logging import handlers
 from torchvision import transforms as T
 import matplotlib.pyplot as plt
 from PIL import Image
-from Bayesian import NaiveBayes
 
 
 def create_dir_path(path):
@@ -76,7 +75,7 @@ def data_loader(path):
     # plt.imshow(image)
     # plt.title("original image")
     # plt.subplot(2, 2, 2)
-    # plt.imshow(T.RandomResizedCrop(size=14, scale=(0.8, 1.0))(image))
+    # plt.imshow(T.RandomResizedCrop(size=28, scale=(0.8, 1.0))(image))
     # plt.title("random crop")
     # plt.subplot(2, 2, 3)
     # plt.imshow(T.RandomHorizontalFlip(p=1)(image))
@@ -132,17 +131,6 @@ class Logger:
         th.setFormatter(format_str)  # 设置文件里写入的格式
         self.logger.addHandler(sh)  # 吧对象加到logger里
         self.logger.addHandler(th)
-
-
-class Kernel:
-    def __init__(self, log):
-        self.kernels = dict()
-        self.naive_bayesian = NaiveBayes(log)
-        self.naive_bayesian.fit(data_loader('.\\data'))
-        self.kernels['NaiveBayesian'] = self.naive_bayesian
-
-    def set_kernel(self, method='NaiveBayesian'):
-        return self.kernels[method]
 
 
 if __name__ == '__main__':
