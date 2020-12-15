@@ -13,14 +13,16 @@ from PyQt5.Qt import QMainWindow, QWidget, QColor, QPixmap, QIcon, QSize, QFrame
 from PyQt5.QtWidgets import QHBoxLayout, QVBoxLayout, QPushButton, QSplitter, \
     QComboBox, QLabel, QSpinBox, QFileDialog, QApplication
 from PaintBoard import PaintBoard
-from utils import create_dir_path, create_file_path
+from utils import create_dir_path, create_file_path, Logger, Kernel
 import sys
 import os
 from PyQt5 import QtCore
-from Bayesian import NaiveBayes
 
 
 class MyWidget(QWidget):
+    log = Logger('logs/main.log', level='info')
+    my_kernel = Kernel(log.logger)
+
     def __init__(self, Parant=None):
         super().__init__(Parant)
         self.__eraser_mode_set = False
@@ -140,7 +142,7 @@ class MyWidget(QWidget):
         method_layout.addWidget(self.__lab_method)
 
         self.__box_method = QComboBox(self)
-        self.__box_method.addItems(['Bayesian', 'Fisher', 'SVM', 'VGG16bn'])
+        self.__box_method.addItems(['NaiveBayesian', 'Fisher', 'SVM', 'VGG16bn'])
         self.__box_method.setCurrentIndex(0)
         method_layout.addWidget(self.__box_method)
 
@@ -188,8 +190,9 @@ class MyWidget(QWidget):
         image.save(savePath)
         save_path = os.path.abspath(savePath)
         self.label_log.append("image saved in path:\n{}".format(save_path))
-        method_index = self.__box_method.currentIndex()
-        predict = 5
+        method_text = self.__box_method.currentText()
+        method = Kernel.set_kernel(method_text)
+        predict = method.predict(savePath)
         self.label_log.append("recognition result is: {}".format(predict))
         message = QMessageBox()
         message.setText("recognition result is: {}".format(predict))
