@@ -10,6 +10,8 @@
 
 from Bayesian import NaiveBayes
 from utils import data_loader
+from torchvision import transforms as T
+from PIL import Image
 
 
 class Kernel:
@@ -17,7 +19,11 @@ class Kernel:
         self.kernels = dict()
         self.naive_bayesian = NaiveBayes(log)
         self.naive_bayesian.fit(data_loader('.\\data'))
-        self.kernels['NaiveBayesian'] = self.naive_bayesian
 
-    def set_kernel(self, method='NaiveBayesian'):
-        return self.kernels[method]
+    def set_kernel(self, im_path, method='NaiveBayesian'):
+        image = Image.open(im_path)
+        image = T.RandomResizedCrop(28, scale=(0.8, 1.0))(image)
+        image = T.ToTensor()(image)
+        if method == 'NaiveBayesian':
+            result = self.naive_bayesian.predict(image)
+            return result

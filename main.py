@@ -22,7 +22,7 @@ from PyQt5 import QtCore
 
 class MyWidget(QWidget):
     log = Logger('logs/main.log', level='info')
-    my_kernel = Kernel(log.logger)
+    METHOD_KERNEL = Kernel(log.logger)
 
     def __init__(self, Parant=None):
         super().__init__(Parant)
@@ -142,8 +142,10 @@ class MyWidget(QWidget):
         self.__lab_method.setFixedHeight(30)
         method_layout.addWidget(self.__lab_method)
 
+        self.kernel_list = ['NaiveBayesian', 'Fisher', 'SVM', 'VGG16bn']
+
         self.__box_method = QComboBox(self)
-        self.__box_method.addItems(['NaiveBayesian', 'Fisher', 'SVM', 'VGG16bn'])
+        self.__box_method.addItems(self.kernel_list)
         self.__box_method.setCurrentIndex(0)
         method_layout.addWidget(self.__box_method)
 
@@ -192,8 +194,8 @@ class MyWidget(QWidget):
         save_path = os.path.abspath(savePath)
         self.label_log.append("image saved in path:\n{}".format(save_path))
         method_text = self.__box_method.currentText()
-        method = Kernel.set_kernel(method_text)
-        predict = method.predict(savePath)
+        self.label_log.append('method_text: {}'.format(method_text))
+        predict = self.METHOD_KERNEL.set_kernel(savePath, method_text)
         self.label_log.append("recognition result is: {}".format(predict))
         message = QMessageBox()
         message.setText("recognition result is: {}".format(predict))
