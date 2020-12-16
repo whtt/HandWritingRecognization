@@ -8,4 +8,4 @@
 @Time   : 2020/12/16 10:06
 """
 import torch
-import tortchvision
+import torchvision
