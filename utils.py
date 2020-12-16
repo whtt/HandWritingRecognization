@@ -49,25 +49,34 @@ def create_file_path(path):
     return file_path
 
 
-def data_loader(path):
+def data_loader(path, deep=False):
     """
     load images
     :param path:
     :return:
     """
-    # parameters of normalization: var, mean are calculated by file calc_mst.py
-    # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
-    # transform of the images
-    transform = T.Compose([
-        T.RandomResizedCrop(size=28, scale=(0.9, 1.0)),
-        # T.Grayscale(1),
-        # T.RandomResizedCrop(28),  # random crop the image then resize to fixed size;
-        # but if we crop the data, the image may lose their origin feature, so we need set the scale
-        # T.RandomHorizontalFlip(),  # random flip the image;
-        # but our data are fixed shape, flip has no effect for the data, so this is not need
-        T.ToTensor(),  # change the image into tensor
-        # normalize,
-    ])
+    # for the situation of deep learning
+    if deep:
+        normalize_ = T.Normalize(mean=[], std=[])
+        transform = T.Compose([
+            T.RandomResizedCrop(size=28,scale=(0.9, 1.0)),
+            T.ToTensor(),
+            normalize_,
+        ])
+    else:
+        # parameters of normalization: var, mean are calculated by file calc_mst.py
+        # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
+        # transform of the images
+        transform = T.Compose([
+            T.RandomResizedCrop(size=28, scale=(0.9, 1.0)),
+            # T.Grayscale(1),
+            # T.RandomResizedCrop(28),  # random crop the image then resize to fixed size;
+            # but if we crop the data, the image may lose their origin feature, so we need set the scale
+            # T.RandomHorizontalFlip(),  # random flip the image;
+            # but our data are fixed shape, flip has no effect for the data, so this is not need
+            T.ToTensor(),  # change the image into tensor
+            # normalize,
+        ])
     # transform the image into tensors
     dataset = ImageFolder(path, transform=transform)
     # image = Image.open('.\\data\\0\\0_0.jpg')
