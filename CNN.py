@@ -162,6 +162,7 @@ if __name__ == '__main__':
         writer.add_scalar('test/acc', acc_test, total_step)
     writer.close()
 
+    # used in my own data
     my_dataset = data_loader('.\\data')
     cnt = 0
     acc_ = 0
