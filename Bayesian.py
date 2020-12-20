@@ -57,7 +57,7 @@ class NaiveBayes:
         labels_num = len(dataset.targets)
         # label kinds
         classes_num = set(dataset.classes)
-        # create and set the label prob p(c) = cnt(D_c)/cnt(D)
+        # create and set the label prob p(c) = cnt(D_c)/cnt(D), acutally unused
         for item in classes_num:
             self.label_prob[item] = dataset.targets.count(int(item))/labels_num
         for num, (img, label) in enumerate(dataset):
@@ -81,11 +81,11 @@ class NaiveBayes:
             if label == predicted:
                 acc += 1
             cnt += 1
-        acc = acc * 100 / cnt
-        self.log.info('accuracy of the dataset is: {}%'.format(acc))
+        acc = acc * 100.0 / cnt
+        self.log.info('the top1 accuracy of the dataset is: {}%'.format(acc))
         self.log.info('====== testing over ======')
 
-    def predict(self, image):
+    def predict(self, image, top5=False):
         if self.length == -1:
             raise ValueError("Please train the model")
         # set a prob list: p(c_i|x)
@@ -109,9 +109,29 @@ class NaiveBayes:
             p = torch.log((counts+1)*(1/(features.shape[0]+2))).sum()
             # p(c_i|x) = p(c) * \\prod_{i=1}^{d} p(x_i|c)
             result[label] = p.item()
-        self.log.debug('result of the picture is: {}'.format(result))
-        predicted = np.argmax(list(result.values()))
-        return int(predicted)
+        self.log.debug('result of the image is: {}'.format(result))
+        if top5:
+            predicted = np.sort(list(result.values()))
+            return predicted[5:]
+        else:
+            predicted = np.argmax(list(result.values()))
+            return int(predicted)
+
+    def top5rate(self, dataset):
+        if self.length == -1:
+            raise ValueError("Please train the model")
+        acc = 0
+        cnt = 0
+        self.log.info('====== testing start ======')
+        for num, (img, label) in enumerate(dataset):
+            predicted = self.predict(img, top5=True)
+            self.log.info('true:{}|pred:{}|result:{}'.format(label, predicted, bool(label in predicted)))
+            if label in predicted:
+                acc += 1
+            cnt += 1
+        acc = acc * 100.0 / cnt
+        self.log.info('the top5 accuracy of the dataset is: {}%'.format(acc))
+        self.log.info('====== testing over ======')
 
 
 if __name__ == '__main__':
@@ -119,3 +139,5 @@ if __name__ == '__main__':
     my_net = NaiveBayes(log.logger)
     my_net.fit(data_loader('.\\data'))
     my_net.test(data_loader('.\\test'))
+    my_net.top5rate(data_loader('.\\test'))
+    torch.save(my_net, '.\\Model\\naivebayes.pkl')
