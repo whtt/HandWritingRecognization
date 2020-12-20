@@ -314,7 +314,6 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
 
     widget = MyWidget()
-
     window = MainWindow(widget)
     window.resize(720, 550)
     window.show()
