@@ -186,6 +186,7 @@ if __name__ == '__main__':
     my_net = Fisher(log.logger)
     my_net.fit(data_loader('.\\data'))
     my_net.test(data_loader('.\\test'))
+
     torch.save(my_net, '.\\Model\\my_fisher.pkl')
 
     train_data = data_loader('.\\data')
