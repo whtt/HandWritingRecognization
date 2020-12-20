@@ -146,7 +146,7 @@ class Fisher:
                     voter[i] += 1
                 cla_num += 1
         if top5:
-            predicted = torch.sort(voter)
+            predicted = torch.argsort(voter)
             return predicted[5:]
         else:
             predicted = torch.argmax(voter)
@@ -182,7 +182,7 @@ class Fisher:
 
 
 if __name__ == '__main__':
-    log = Logger('logs/Fisher.log', level='debug')
+    log = Logger('logs/fisher/Fisher.log', level='debug')
     my_net = Fisher(log.logger)
     my_net.fit(data_loader('.\\data'))
     my_net.test(data_loader('.\\test'))

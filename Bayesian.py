@@ -111,7 +111,7 @@ class NaiveBayes:
             result[label] = p.item()
         self.log.debug('result of the image is: {}'.format(result))
         if top5:
-            predicted = np.sort(list(result.values()))
+            predicted = np.argsort(list(result.values()))
             return predicted[5:]
         else:
             predicted = np.argmax(list(result.values()))
@@ -135,7 +135,7 @@ class NaiveBayes:
 
 
 if __name__ == '__main__':
-    log = Logger('logs/Bayesian.log', level='debug')
+    log = Logger('logs/bayesian/Bayesian.log', level='debug')
     my_net = NaiveBayes(log.logger)
     my_net.fit(data_loader('.\\data'))
     my_net.test(data_loader('.\\test'))

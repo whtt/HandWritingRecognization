@@ -21,7 +21,7 @@ from PyQt5 import QtCore
 
 
 class MyWidget(QWidget):
-    log = Logger('logs/main.log', level='info')
+    log = Logger('logs/main/main.log', level='info')
     METHOD_KERNEL = Kernel(log.logger)
 
     def __init__(self, Parant=None):

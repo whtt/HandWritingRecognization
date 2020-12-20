@@ -64,7 +64,7 @@ if __name__ == '__main__':
     weight_decay = 1e-4
     epochs = 200
     batch_size = 128
-    log = Logger('.\\logs\\CNN.log', level='debug')
+    log = Logger('.\\logs\\cnn\\CNN.log', level='debug')
     writer = SummaryWriter(comment='CNN')
     model_path = '.\\Model\\cnn.pkl'
     best_model_path = '.\\Model\\cnn_best.pkl'
