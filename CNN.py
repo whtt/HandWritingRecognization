@@ -13,7 +13,7 @@ from collections import OrderedDict
 import torchvision
 from torch.utils import data
 from torch.autograd import Variable
-import tensorboardX
+from tensorboardX import SummaryWriter
 import os
 from torchvision.datasets import MNIST
 import matplotlib.pyplot as plt
@@ -37,8 +37,8 @@ class CNN(nn.Module):
     def forward(self, x):
         x = self.feature(x)
         x = x.view(x.size(0), -1)
-        x = self.classifier(x)
-        return x
+        logits = self.classifier(x)
+        return logits, x
 
 
 def ConvNet(in_channels: int, out_channels: int, net_name: str, kernel_size=3, stride=1, padding=0):
@@ -65,6 +65,9 @@ if __name__ == '__main__':
     epochs = 200
     batch_size = 128
     log = Logger('.\\logs\\CNN.log', level='debug')
+    writer = SummaryWriter(comment='CNN')
+    model_path = '.\\Model\\cnn.pkl'
+    best_model_path = '.\\Model\\cnn_best.pkl'
 
     # Mnist digits dataset
     if not (os.path.exists('./mnist/')) or not os.listdir('./mnist/'):
@@ -78,35 +81,47 @@ if __name__ == '__main__':
     test_data = MNIST(root='.\\mnist\\train', train=False, transform=torchvision.transforms.ToTensor(), download=DOWNLOAD_MNIST)
 
     # plot one example
-    print(train_data.data.size())  # (60000, 28, 28)
-    print(train_data.targets.size())  # (60000)
-    plt.imshow(train_data.data[0].numpy(), cmap='gray')
-    plt.title('%i' % train_data.targets[0])
-    plt.show()
+    # print(train_data.data.size())  # (60000, 28, 28)
+    # print(train_data.targets.size())  # (60000)
+    # plt.imshow(train_data.data[0].numpy(), cmap='gray')
+    # plt.title('%i' % train_data.targets[0])
+    # plt.show()
 
     train_loader = data.DataLoader(dataset=train_data, batch_size=batch_size, shuffle=True)
     test_x = torch.unsqueeze(test_data.data, dim=1).type(torch.FloatTensor)[:2000]/255
     test_y = test_data.targets[:2000]
+    print(test_y[100:113])
+
+    dumpy_input = torch.rand(13, 1, 28, 28)
 
     mynet = CNN()
     # print(mynet)
     log.logger.info(mynet)
+    writer.add_graph(mynet, ((dumpy_input, )))
 
     optimizer = torch.optim.Adam(mynet.parameters(), lr=lr, weight_decay=weight_decay)
     criterion = nn.CrossEntropyLoss()
 
+    total_step = 0
+    acc_best = 0
     for epoch in range(epochs):
         for step, (train_x, train_y) in enumerate(train_loader):
             mynet.train()
-            logits = mynet(train_x)
+            logits, _ = mynet(train_x)
             loss = criterion(logits, train_y)
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+            writer.add_scalar('train/loss', loss, total_step)
+            # writer.add_image(
+            #     'bottleneck_step{}_label{}'.format(total_step, train_y[0]), bottle_neck[0].reshape((1, 24, 24)),
+            #     total_step
+            # )
+            total_step += 1
 
             if step % 50 == 0:
                 mynet.eval()
-                test_output = mynet(test_x)
+                test_output, bottle_neck = mynet(test_x)
                 test_loss = criterion(test_output, test_y)
                 pred_y = torch.max(test_output, 1)[1].data.numpy()
                 acc = float((pred_y == test_y.data.numpy()).astype(int).sum()) / float(test_y.size(0))
@@ -115,26 +130,37 @@ if __name__ == '__main__':
                         epoch, epochs, step, loss, test_loss, acc*100
                     )
                 )
+                writer.add_scalar('test/loss', test_loss, total_step)
+                for i in range(16):
+                    writer.add_image('origin_image{}'.format(i), test_x[100+i].reshape(1, 28, 28), total_step)
+                    writer.add_image('BottleNeck_im{}'.format(i), bottle_neck[100+i].reshape(1, 24, 24), total_step)
+                torch.save({'model': mynet, 'epoch': epoch}, model_path)
+                if acc > acc_best:
+                    acc_best = acc
+                    torch.save(mynet, best_model_path)
 
-    mynet.eval()
-    train_x_all = torch.unsqueeze(train_data.data, dim=1).type(torch.FloatTensor)/255
-    train_y_all = train_data.targets
-    test_x_all = torch.unsqueeze(test_data.data, dim=1).type(torch.FloatTensor)/255
-    test_y_all = test_data.targets
+        mynet.eval()
+        train_x_all = torch.unsqueeze(train_data.data, dim=1).type(torch.FloatTensor)/255
+        train_y_all = train_data.targets
+        test_x_all = torch.unsqueeze(test_data.data, dim=1).type(torch.FloatTensor)/255
+        test_y_all = test_data.targets
 
-    train_logits = mynet(train_x_all)
-    test_logits = mynet(test_x_all)
-    train_loss_last = criterion(train_logits, train_y_all)
-    test_loss_last = criterion(test_logits, test_y_all)
-    pred_train_all = torch.max(train_logits, 1)[1].data.numpy()
-    pred_test_all = torch.max(test_logits, 1)[1].data.numpy()
-    acc_train = float((pred_train_all == train_y_all.data.numpy()).astype(int).sum()) / float(train_y_all.size(0))
-    acc_test = float((pred_test_all == test_y_all.data.numpy()).astype(int).sum()) / float(test_y_all.size(0))
-    log.logger.info(
-        'train loss: {:.4f} | test loss: {:.4f} | train acc: {:.2f}% | test acc: {:.2f}%'.format(
-            train_loss_last, test_loss_last, acc_train*100, acc_test*100
+        train_logits, _ = mynet(train_x_all)
+        test_logits, _ = mynet(test_x_all)
+        train_loss_last = criterion(train_logits, train_y_all)
+        test_loss_last = criterion(test_logits, test_y_all)
+        pred_train_all = torch.max(train_logits, 1)[1].data.numpy()
+        pred_test_all = torch.max(test_logits, 1)[1].data.numpy()
+        acc_train = float((pred_train_all == train_y_all.data.numpy()).astype(int).sum()) / float(train_y_all.size(0))
+        acc_test = float((pred_test_all == test_y_all.data.numpy()).astype(int).sum()) / float(test_y_all.size(0))
+        log.logger.info(
+            'train loss: {:.4f} | test loss: {:.4f} | train acc: {:.2f}% | test acc: {:.2f}%'.format(
+                train_loss_last, test_loss_last, acc_train*100, acc_test*100
+            )
         )
-    )
+        writer.add_scalar('train/acc', acc_train, total_step)
+        writer.add_scalar('test/acc', acc_test, total_step)
+    writer.close()
 
     my_dataset = data_loader('.\\data')
     cnt = 0
