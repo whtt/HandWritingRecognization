@@ -180,12 +180,20 @@ class Fisher:
         self.log.info('the top5 accuracy of the dataset is: {}%'.format(acc))
         self.log.info('====== testing over ======')
 
+    def load_model(self, path):
+        model = torch.load(path)
+        self.classfiers = model['classifiers']
+
+    def save_model(self, path):
+        torch.save({'classifiers': self.classfiers}, path)
+
 
 if __name__ == '__main__':
     log = Logger('logs/fisher/Fisher.log', level='debug')
     my_net = Fisher(log.logger)
     my_net.fit(data_loader('.\\data'))
     my_net.test(data_loader('.\\test'))
+    my_net.top5rate(data_loader('.\\test'))
 
     torch.save(my_net, '.\\Model\\my_fisher.pkl')
 
