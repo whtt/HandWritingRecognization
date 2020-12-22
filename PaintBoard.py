@@ -45,7 +45,7 @@ class PaintBoard(QWidget):
         self.__painter = QPainter()
 
         # default pen size for 10px
-        self.__thickness = 20
+        self.__thickness = 30
         # default pen color for black
         self.__penColor = QColor("black")
         # get the color list from library
@@ -75,7 +75,7 @@ class PaintBoard(QWidget):
         """
         self.__penColor = QColor(color)
 
-    def pen_size(self, thick=20):
+    def pen_size(self, thick=40):
         """
         set the size of the pen
         :param thick:
@@ -132,7 +132,7 @@ class PaintBoard(QWidget):
         if self.EraserMode == False:
             self.__painter.setPen(QPen(self.__penColor, self.__thickness))
         else:
-            self.__painter.setPen((QPen(Qt.white, 20)))
+            self.__painter.setPen((QPen(Qt.white, 40)))
 
         self.__painter.drawLine(self.__lastPos, self.__currentPos)
         self.__painter.end()
