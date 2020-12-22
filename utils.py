@@ -50,32 +50,44 @@ def create_file_path(path):
     return file_path
 
 
-def data_loader(path, size=(10, 10), threshold=0.68, equal: bool = False):
+def data_loader(file_path, size=(10, 10), threshold=0.68, equal: bool = False, deep: bool = False):
     """
     load images
-    :param path:
+    :param file_path:
     :param size:
     :param threshold:
     :param equal:
+    :param deep:
     :return:
     """
-    if equal and type(size) != int:
-        raise TypeError('the equal seg image size suppose to be int, got type {} instead'.format(type(size)))
-    if (not equal) and type(size) == int:
-        raise TypeError('the segment image shape is supposed unequal, but got equal size {}({}) instead'.format(
-            type(size), size
-        ))
-    # parameters of normalization: var, mean are calculated by file calc_mst.py
-    # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
-    # transform of the images
-    transform = T.Compose([
-        ImSegment(equal=equal),
-        T.Resize(size),
-        T.ToTensor(),
-        Normal(threshold=threshold),
-    ])
+    if deep:
+        if not equal:
+            raise ValueError('segment should be equal')
+        if type(size) != int:
+            raise TypeError('size should be int, got {} instead'.format(type(size)))
+        transform = T.Compose([
+            ImSegment(equal=equal, deep=deep),
+            T.Resize(size),
+            T.ToTensor(),
+        ])
+    else:
+        if equal and type(size) != int:
+            raise TypeError('the equal seg image size suppose to be int, got type {} instead'.format(type(size)))
+        if (not equal) and type(size) == int:
+            raise TypeError('the segment image shape is supposed unequal, but got equal size {}({}) instead'.format(
+                type(size), size
+            ))
+        # parameters of normalization: var, mean are calculated by file calc_mst.py
+        # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
+        # transform of the images
+        transform = T.Compose([
+            ImSegment(equal=equal),
+            T.Resize(size),
+            T.ToTensor(),
+            Normal(threshold=threshold),
+        ])
     # transform the image into tensors
-    dataset = ImageFolder(path, transform=transform)
+    dataset = ImageFolder(file_path, transform=transform)
     # image = Image.open('.\\data\\0\\0_0.jpg')
     # plt.subplot(2, 2, 1)
     # plt.imshow(image)
@@ -90,28 +102,14 @@ def data_loader(path, size=(10, 10), threshold=0.68, equal: bool = False):
     return dataset, transform
 
 
-def normalize(img):
-    # plt.subplot(2, 1, 1)
-    # plt.imshow(img)
-    row, col = img.shape
-    for i in range(row):
-        for j in range(col):
-            if img[i, j] > 0.9:
-                img[i, j] = 1
-            else:
-                img[i, j] = 0
-    # plt.subplot(2, 1, 2)
-    # plt.imshow(img)
-    # plt.show()
-    return img
-
-
 class ImSegment:
-    def __init__(self, equal: bool = True):
+    def __init__(self, equal: bool = True, deep: bool = False):
+        if (not equal) and deep:
+            raise ValueError('the param deep is designed to deep learning methods, require equal = True')
         self.equal = equal
+        self.deep = deep
 
     def __call__(self, img):
-        row, col = img.size
         # flip the img by color(0<-->255) ==> then we can use methods to crop the image
         img_flip = ImageOps.invert(img)
         # sum up the pixels by row/col, to capture the attention area
@@ -130,13 +128,17 @@ class ImSegment:
         # if equal, make a square image
         # if not, make a rectangle
         if self.equal:
-            # create a new image -- white
-            im_new = Image.new(img.mode, (max(row, col), max(row, col)), color='white')
-            # fit the attention area into the new image, on center
-            if row > col:
-                im_new.paste(im_attention, (0, int((row - col)/2)))
+            if self.deep:
+                im_new = Image.new(img.mode, (420, 420), color='white')
+                im_new.paste(im_attention, (int(210-row/2), int(210-col/2)))
             else:
-                im_new.paste(im_attention, (int((col - row)/2), 0))
+                # create a new image -- white
+                im_new = Image.new(img.mode, (max(row, col), max(row, col)), color='white')
+                # fit the attention area into the new image, on center
+                if row > col:
+                    im_new.paste(im_attention, (0, int((row - col)/2)))
+                else:
+                    im_new.paste(im_attention, (int((col - row)/2), 0))
         else:
             im_new = im_attention
         return im_new
@@ -186,29 +188,40 @@ class Logger:
 
 
 if __name__ == '__main__':
-    for i in range(2, 10):
-        for j in range(5, 15):
+    for i in range(10):
+        for j in range(20):
             path = '.\\data\\{}\\{}_{}.jpg'.format(i, i, j)
             image = Image.open(path)
-            plt.subplot(2, 2, 1)
-            plt.imshow(image)
-            plt.title("original image")
+            # plt.subplot(2, 2, 1)
+            # plt.subplot(1, 2, 1)
+            # plt.imshow(image)
+            # plt.title("original image")
 
-            im_seg = ImSegment(equal=False)(image)
-            plt.subplot(2, 2, 2)
-            plt.imshow(im_seg)
-            plt.title("Segment Image")
+            transform = T.Compose([
+                ImSegment(equal=True, deep=True),
+                T.Resize(28),
+                T.ToTensor(),
+            ])
 
-            im_resize = T.Resize((10, 10))(im_seg)
-            plt.subplot(2, 2, 3)
-            plt.imshow(im_resize)
-            plt.title("resize the image")
+            # plt.subplot(1, 2, 2)
+            plt.imshow((1-transform(image)[0]), plt.gray())
+            plt.title("transformed image")
 
-            im_tensor = T.ToTensor()(im_resize)
-            im_norm = Normal(threshold=0.68)(im_tensor)
-
-            plt.subplot(2, 2, 4)
-            plt.imshow(im_norm, plt.gray())
-            plt.title("final normed ")
+            # im_seg = ImSegment(equal=False)(image)
+            # plt.subplot(2, 2, 2)
+            # plt.imshow(im_seg)
+            # plt.title("Segment Image")
+            #
+            # im_resize = T.Resize((10, 10))(im_seg)
+            # plt.subplot(2, 2, 3)
+            # plt.imshow(im_resize)
+            # plt.title("resize the image")
+            #
+            # im_tensor = T.ToTensor()(im_resize)
+            # im_norm = Normal(threshold=0.68)(im_tensor)
+            #
+            # plt.subplot(2, 2, 4)
+            # plt.imshow(im_norm, plt.gray())
+            # plt.title("final normed ")
 
             plt.show()
