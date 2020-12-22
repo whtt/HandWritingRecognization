@@ -9,13 +9,14 @@
 """
 import os
 from torchvision.datasets import ImageFolder
-import numpy as np
+import torch
 # 使用logging打印日常调试信息，并保存到文件
 import logging
 from logging import handlers
 from torchvision import transforms as T
 import matplotlib.pyplot as plt
-from PIL import Image
+from PIL import Image, ImageOps
+import numpy as np
 
 
 def create_dir_path(path):
@@ -49,34 +50,30 @@ def create_file_path(path):
     return file_path
 
 
-def data_loader(path, deep=False):
+def data_loader(path, size=(10, 10), threshold=0.68, equal: bool = False):
     """
     load images
     :param path:
+    :param size:
+    :param threshold:
+    :param equal:
     :return:
     """
-    # for the situation of deep learning
-    if deep:
-        normalize_ = T.Normalize(mean=[], std=[])
-        transform = T.Compose([
-            T.RandomResizedCrop(size=28,scale=(0.9, 1.0)),
-            T.ToTensor(),
-            normalize_,
-        ])
-    else:
-        # parameters of normalization: var, mean are calculated by file calc_mst.py
-        # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
-        # transform of the images
-        transform = T.Compose([
-            T.RandomResizedCrop(size=28, scale=(0.9, 1.0)),
-            # T.Grayscale(1),
-            # T.RandomResizedCrop(28),  # random crop the image then resize to fixed size;
-            # but if we crop the data, the image may lose their origin feature, so we need set the scale
-            # T.RandomHorizontalFlip(),  # random flip the image;
-            # but our data are fixed shape, flip has no effect for the data, so this is not need
-            T.ToTensor(),  # change the image into tensor
-            # normalize,
-        ])
+    if equal and type(size) != int:
+        raise TypeError('the equal seg image size suppose to be int, got type {} instead'.format(type(size)))
+    if (not equal) and type(size) == int:
+        raise TypeError('the segment image shape is supposed unequal, but got equal size {}({}) instead'.format(
+            type(size), size
+        ))
+    # parameters of normalization: var, mean are calculated by file calc_mst.py
+    # normalize = T.Normalize(mean=[0.918, 0.918, 0.918], std=[0.2, 0.2, 0.2])
+    # transform of the images
+    transform = T.Compose([
+        ImSegment(equal=equal),
+        T.Resize(size),
+        T.ToTensor(),
+        Normal(threshold=threshold),
+    ])
     # transform the image into tensors
     dataset = ImageFolder(path, transform=transform)
     # image = Image.open('.\\data\\0\\0_0.jpg')
@@ -84,13 +81,13 @@ def data_loader(path, deep=False):
     # plt.imshow(image)
     # plt.title("original image")
     # plt.subplot(2, 2, 2)
-    # plt.imshow(T.RandomResizedCrop(size=28, scale=(0.8, 1.0))(image))
+    # plt.imshow(ImSegment(equal=equal)(image))
     # plt.title("random crop")
     # plt.subplot(2, 2, 3)
     # plt.imshow(T.RandomHorizontalFlip(p=1)(image))
     # plt.title("random flip")
     # plt.show()
-    return dataset
+    return dataset, transform
 
 
 def normalize(img):
@@ -99,7 +96,7 @@ def normalize(img):
     row, col = img.shape
     for i in range(row):
         for j in range(col):
-            if img[i, j] > 0.8:
+            if img[i, j] > 0.9:
                 img[i, j] = 1
             else:
                 img[i, j] = 0
@@ -107,6 +104,52 @@ def normalize(img):
     # plt.imshow(img)
     # plt.show()
     return img
+
+
+class ImSegment:
+    def __init__(self, equal: bool = True):
+        self.equal = equal
+
+    def __call__(self, img):
+        row, col = img.size
+        # flip the img by color(0<-->255) ==> then we can use methods to crop the image
+        img_flip = ImageOps.invert(img)
+        # sum up the pixels by row/col, to capture the attention area
+        row_sum = np.sum(img_flip, axis=1)[:, 0]
+        col_sum = np.sum(img_flip, axis=0)[:, 0]
+        # get the index of the attention area position
+        row_min = (row_sum != 0).argmax()
+        row_max = (row_sum != 0)[::-1].argmax()
+        col_min = (col_sum != 0).argmax()
+        col_max = (col_sum != 0)[::-1].argmax()
+        # crop the attention area
+        im_attention = ImageOps.crop(img, (col_min, row_min, col_max, row_max))
+        # get the shape of the new image
+        row, col = im_attention.size
+        # create the new image
+        # if equal, make a square image
+        # if not, make a rectangle
+        if self.equal:
+            # create a new image -- white
+            im_new = Image.new(img.mode, (max(row, col), max(row, col)), color='white')
+            # fit the attention area into the new image, on center
+            if row > col:
+                im_new.paste(im_attention, (0, int((row - col)/2)))
+            else:
+                im_new.paste(im_attention, (int((col - row)/2), 0))
+        else:
+            im_new = im_attention
+        return im_new
+
+
+class Normal:
+    def __init__(self, threshold=0.68):
+        self.threshold = threshold
+
+    def __call__(self, im_tensor_):
+        im_tensor_[im_tensor_ > self.threshold] = 1
+        im_tensor_[im_tensor_ < self.threshold] = 0
+        return im_tensor_[0]
 
 
 class Logger:
@@ -143,5 +186,29 @@ class Logger:
 
 
 if __name__ == '__main__':
-    das = data_loader('.\\data')
-    print(len(das))
+    for i in range(2, 10):
+        for j in range(5, 15):
+            path = '.\\data\\{}\\{}_{}.jpg'.format(i, i, j)
+            image = Image.open(path)
+            plt.subplot(2, 2, 1)
+            plt.imshow(image)
+            plt.title("original image")
+
+            im_seg = ImSegment(equal=False)(image)
+            plt.subplot(2, 2, 2)
+            plt.imshow(im_seg)
+            plt.title("Segment Image")
+
+            im_resize = T.Resize((10, 10))(im_seg)
+            plt.subplot(2, 2, 3)
+            plt.imshow(im_resize)
+            plt.title("resize the image")
+
+            im_tensor = T.ToTensor()(im_resize)
+            im_norm = Normal(threshold=0.68)(im_tensor)
+
+            plt.subplot(2, 2, 4)
+            plt.imshow(im_norm, plt.gray())
+            plt.title("final normed ")
+
+            plt.show()
