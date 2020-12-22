@@ -9,9 +9,9 @@
 """
 
 from PyQt5.Qt import QMainWindow, QWidget, QColor, QPixmap, QIcon, QSize, QFrame, \
-    QCheckBox, QLineEdit, QAction, QMessageBox, QTextEdit
+    QCheckBox, QLineEdit, QAction, QMessageBox, QTextEdit, QImage
 from PyQt5.QtWidgets import QHBoxLayout, QVBoxLayout, QPushButton, QSplitter, \
-    QComboBox, QLabel, QSpinBox, QFileDialog, QApplication
+    QComboBox, QLabel, QFileDialog, QApplication, QSpinBox
 from PaintBoard import PaintBoard
 from utils import create_dir_path, create_file_path, Logger
 from kernel import Kernel
@@ -59,6 +59,7 @@ class MyWidget(QWidget):
 
         self.label_log = QTextEdit(self)
         self.label_log.setReadOnly(True)
+        # self.label_log.moveCursor(QTextCursor.Down)
         self.label_log.setStyleSheet("background:transparent; font-size:15px; font-family:Roman times")
         # self.label_log.resize(220, 200)
         self.label_log.setGeometry(460, 140, 245, 220)
@@ -142,7 +143,7 @@ class MyWidget(QWidget):
         self.__lab_method.setFixedHeight(30)
         method_layout.addWidget(self.__lab_method)
 
-        self.kernel_list = ['NaiveBayesian', 'Fisher', 'SVM', 'VGG16bn']
+        self.kernel_list = ['NaiveBayesian', 'VoteFisher', 'MultiFisher', 'SklearnFisher', 'CNN']
 
         self.__box_method = QComboBox(self)
         self.__box_method.addItems(self.kernel_list)
@@ -151,52 +152,78 @@ class MyWidget(QWidget):
 
         right_layout.addLayout(method_layout)
 
+        show_layout = QHBoxLayout()
+        canv_layout = QVBoxLayout()
+
         self.__cbtn_eraser = QCheckBox("Eraser")
         self.__cbtn_eraser.setParent(self)
         self.__cbtn_eraser.clicked.connect(self.btn_eraser_clicked)
-        right_layout.addWidget(self.__cbtn_eraser)
+        canv_layout.addWidget(self.__cbtn_eraser)
 
         pen_size_layout = QHBoxLayout()
 
         self.__lab_pen_size = QLabel(self)
         self.__lab_pen_size.setText("Pen Size")
-        self.__lab_pen_size.setFixedHeight(30)
+        self.__lab_pen_size.setFixedHeight(20)
+        # self.__lab_pen_size.setFixedSize(50, 20)
         pen_size_layout.addWidget(self.__lab_pen_size)
 
         self.__box_pen_size = QSpinBox(self)
         self.__box_pen_size.setMaximum(40)
-        self.__box_pen_size.setMinimum(2)
-        self.__box_pen_size.setValue(20)
+        self.__box_pen_size.setMinimum(20)
+        self.__box_pen_size.setValue(30)
         self.__box_pen_size.setSingleStep(2)
+        self.__box_pen_size.setFixedSize(50, 20)
         self.__box_pen_size.valueChanged.connect(self.box_pen_size_change)
         pen_size_layout.addWidget(self.__box_pen_size)
-        right_layout.addLayout(pen_size_layout)
+        canv_layout.addLayout(pen_size_layout)
 
         pen_color_layout = QHBoxLayout()
 
         self.__label_pen_color = QLabel(self)
         self.__label_pen_color.setText("Pen Color")
-        self.__label_pen_color.setFixedHeight(30)
+        self.__label_pen_color.setFixedHeight(20)
         pen_color_layout.addWidget(self.__label_pen_color)
 
         self.__combo_pen_color = QComboBox(self)
+        self.__combo_pen_color.setFixedSize(50, 20)
         self.__fillColorList(self.__combo_pen_color)
         self.__combo_pen_color.currentIndexChanged.connect(self.pen_color_changed)
         pen_color_layout.addWidget(self.__combo_pen_color)
-        right_layout.addLayout(pen_color_layout)
+        canv_layout.addLayout(pen_color_layout)
+        show_layout.addLayout(canv_layout)
+
+        self.feature_map = QLabel()
+        self.feature_map.setFixedSize(100, 100)
+        self.feature_map.setText("")
+        self.feature_map.setObjectName('feature map')
+        show_layout.addWidget(self.feature_map)
+        right_layout.addLayout(show_layout)
 
         main_layout.addLayout(right_layout)
 
     def btn_recog_clicked(self):
+        self.update()
         savePath = "./recog.jpg"
         image = self.__canvas.get_current_image()
         image.save(savePath)
         save_path = os.path.abspath(savePath)
         self.label_log.append("image saved in path:\n{}".format(save_path))
         method_text = self.__box_method.currentText()
-        self.label_log.append('method_text: {}'.format(method_text))
+        self.label_log.append('method: {}'.format(method_text))
         predict = self.METHOD_KERNEL.set_kernel(savePath, method_text)
+        # pic = QTextImageFormat()
+        # pic.setName('./feature_map.jpg')
+        # pic.setHeight(100)
+        # pic.setWidth(100)
+        showImage = QImage('./feature_map.jpg').scaled(100, 100)
+        self.feature_map.setPixmap(QPixmap.fromImage(showImage))
+        # self.label_log.append('feature map:\n')
+        # self.label_log.textCursor().insertImage('./feature_map.jpg')
         self.label_log.append("recognition result is: {}".format(predict))
+        # self.label_log.moveCursor(QTextCursor.End)
+        # self.label_log.textCursor().clearSelection()
+        # del pic
         message = QMessageBox()
         message.setText("recognition result is: {}".format(predict))
         # message.addButton()
