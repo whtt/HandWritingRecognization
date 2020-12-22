@@ -155,7 +155,7 @@ class NaiveBayes:
         self.length = params['length']
         self.feature_prob = params['feature_prob']
         self.transform = params['transform']
-        self.log.info('model loaded')
+        self.log.info('NaiveBayesian model loaded')
 
 
 if __name__ == '__main__':
