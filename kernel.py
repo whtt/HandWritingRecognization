@@ -14,6 +14,7 @@ from CNN import CNN
 import torch
 from torchvision import transforms as T
 from PIL import Image
+import matplotlib.pyplot as plt
 
 
 class Kernel:
@@ -37,16 +38,31 @@ class Kernel:
         image = Image.open(im_path)
         if method == 'NaiveBayesian':
             result = self.naive_bayesian.predict(image)
+            feature_map = self.naive_bayesian.transform(image)
+            feature_map = feature_map.reshape((1, feature_map.shape[0], feature_map.shape[1]))
+            feature_map = torch.cat((feature_map, feature_map, feature_map))
         elif method == 'VoteFisher':
             result = self.vote_fisher.predict(image)
+            feature_map = self.vote_fisher.transform(image)
+            feature_map = feature_map.reshape((1, feature_map.shape[0], feature_map.shape[1]))
+            feature_map = torch.cat((feature_map, feature_map, feature_map))
         elif method == 'MultiFisher':
             result = self.multi_fisher.predict(image)
+            feature_map = self.multi_fisher.transform(image)
+            feature_map = feature_map.reshape((1, feature_map.shape[0], feature_map.shape[1]))
+            feature_map = torch.cat((feature_map, feature_map, feature_map))
         elif method == 'SklearnFisher':
             result = self.sklearn_fisher.predict(self.skfisher_trans(image).flatten().reshape(1, 100))[0]
+            feature_map = self.skfisher_trans(image)
+            feature_map = feature_map.reshape((1, feature_map.shape[0], feature_map.shape[1]))
+            feature_map = torch.cat((feature_map, feature_map, feature_map))
         elif method == 'CNN':
             logits, _ = self.cnn(1-self.cnn_trans(image)[0].reshape((1, 1, 28, 28)))
             result = torch.argmax(logits)
+            feature_map = 1 - self.cnn_trans(image)
         else:
             raise ValueError('Invalid method')
+        Image.Image.save(T.ToPILImage()(feature_map), './feature_map.jpg')
+        # plt.imsave(fname='./feature_map.jpg', arr=T.ToPILImage()(feature_map))
         return result
 
