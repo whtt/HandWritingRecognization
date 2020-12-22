@@ -12,7 +12,7 @@
 import torch
 import numpy as np
 import os
-from utils import normalize, data_loader, Logger
+from utils import data_loader, Logger
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 
