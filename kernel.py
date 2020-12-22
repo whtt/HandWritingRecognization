@@ -9,21 +9,39 @@
 """
 
 from Bayesian import NaiveBayes
-from utils import data_loader
+from Fisher import VoteFisher, MultiFisher
+from CNN import CNN
+import torch
 from torchvision import transforms as T
 from PIL import Image
 
 
 class Kernel:
     def __init__(self, log):
+        log.info('loading methods ...')
         self.kernels = dict()
-        self.naive_bayesian = NaiveBayes(log)
-        self.naive_bayesian.fit(data_loader('.\\data'))
+        self.naive_bayesian = NaiveBayes(log, pretrained=True, path='.\\Model\\naivebayes.pkl')
+        self.vote_fisher = VoteFisher(log, pretrained=True, path='.\\Model\\ensemble_fisher.pkl')
+        self.multi_fisher = MultiFisher(log, pretrained=True, path='.\\Model\\multi_class_fisher.pkl')
+        loader = torch.load('.\\Model\\sklearn_fisher.pkl')
+        self.sklearn_fisher = loader['fisher']
+        self.skfisher_trans = loader['transform']
+        self.cnn = CNN()
 
     def set_kernel(self, im_path, method='NaiveBayesian'):
         image = Image.open(im_path)
-        image = T.RandomResizedCrop(28, scale=(0.8, 1.0))(image)
-        image = T.ToTensor()(image)
         if method == 'NaiveBayesian':
             result = self.naive_bayesian.predict(image)
-            return result
+        elif method == 'VoteFisher':
+            result = self.vote_fisher.predict(image)
+        elif method == 'MultiFisher':
+            result = self.multi_fisher.predict(image)
+        elif method == 'SklearnFisher':
+            print(self.skfisher_trans(image))
+            result = self.sklearn_fisher.predict(self.skfisher_trans(image).flatten().reshape(1, 100))[0]
+        elif method == 'CNN':
+            result = 0
+        else:
+            raise ValueError('Invalid method')
+        return result
+
