@@ -35,6 +35,7 @@ class NaiveBayes:
         """
         # log for printing information
         self.log = logger
+        self.transform = None
         # length for feature dims, length=-1 means untrained
         self.length = -1
         # label probability p(c)
@@ -45,38 +46,39 @@ class NaiveBayes:
         if pretrained:
             # show that load process begins
             self.log.info('data pretrained, ')
-            self.length = 1
+            self.load_model(kwargs['path'])
 
-    def fit(self, dataset):
+    def fit(self, data_load):
+        dataset, self.transform = data_load
         # show that train porcess begins
         self.log.info('====== training start ======')
         # the length of feature dims
-        testing = dataset[0][0][0]
-        self.length = len(dataset[0][0][0].flatten())
+        self.length = len(dataset[0][0].flatten())
         # labels nums, the length of dataset
         labels_num = len(dataset.targets)
         # label kinds
         classes_num = set(dataset.classes)
-        # create and set the label prob p(c) = cnt(D_c)/cnt(D), acutally unused
+        # create and set the label prob p(c) = cnt(D_c)/cnt(D), actually unused
         for item in classes_num:
             self.label_prob[item] = dataset.targets.count(int(item))/labels_num
         for num, (img, label) in enumerate(dataset):
             # if p(x|c) is not exist, create it
             if str(label) not in self.feature_prob:
                 self.feature_prob[str(label)] = []
-            # transform the image(28x28) into 1-dim array
-            feature_vector = normalize(img[0]).flatten()
+            # transform the image(10x10) into 1-dim array
+            feature_vector = img.flatten()
             self.feature_prob[str(label)].append(feature_vector)
         self.log.info('====== training over ======')
 
-    def test(self, dataset):
+    def test(self, data_load):
+        dataset, _ = data_load
         if self.length == -1:
             raise ValueError("Please train the model")
         acc = 0
         cnt = 0
         self.log.info('====== testing start ======')
         for num, (img, label) in enumerate(dataset):
-            predicted = self.predict(img)
+            predicted = self.predict(img, is_tensor=True)
             self.log.info('true:{}|pred:{}|result:{}'.format(label, predicted, bool(label == predicted)))
             if label == predicted:
                 acc += 1
@@ -85,7 +87,7 @@ class NaiveBayes:
         self.log.info('the top1 accuracy of the dataset is: {}%'.format(acc))
         self.log.info('====== testing over ======')
 
-    def predict(self, image, top5=False):
+    def predict(self, image, is_tensor=False, top5=False):
         if self.length == -1:
             raise ValueError("Please train the model")
         # set a prob list: p(c_i|x)
@@ -102,7 +104,10 @@ class NaiveBayes:
             # p *= p_ 太小向下溢出; instead: log（p）
             # using Laplacian correction
             features = torch.tensor(np.array([np.array(feature) for feature in features]))
-            vector = normalize(image[0]).flatten()
+            if is_tensor:
+                vector = image.flatten()
+            else:
+                vector = self.transform(image).flatten()
             # compare all training data with testing one by pixel, then sum by pixel
             counts = torch.eq(features, vector).sum(dim=0)
             # \\prod p(x_j|c)
@@ -117,14 +122,15 @@ class NaiveBayes:
             predicted = np.argmax(list(result.values()))
             return int(predicted)
 
-    def top5rate(self, dataset):
+    def top5rate(self, data_load):
+        dataset, _ = data_load
         if self.length == -1:
             raise ValueError("Please train the model")
         acc = 0
         cnt = 0
         self.log.info('====== testing start ======')
         for num, (img, label) in enumerate(dataset):
-            predicted = self.predict(img, top5=True)
+            predicted = self.predict(img, is_tensor=True, top5=True)
             self.log.info('true:{}|pred:{}|result:{}'.format(label, predicted, bool(label in predicted)))
             if label in predicted:
                 acc += 1
@@ -133,6 +139,24 @@ class NaiveBayes:
         self.log.info('the top5 accuracy of the dataset is: {}%'.format(acc))
         self.log.info('====== testing over ======')
 
+    def save_model(self, path):
+        torch.save(
+            {
+                'length': self.length,
+                'feature_prob': self.feature_prob,
+                'transform': self.transform
+            },
+            path
+        )
+        self.log.info('model saved in path:{}'.format(os.path.abspath(path)))
+
+    def load_model(self, path):
+        params = torch.load(path)
+        self.length = params['length']
+        self.feature_prob = params['feature_prob']
+        self.transform = params['transform']
+        self.log.info('model loaded')
+
 
 if __name__ == '__main__':
     log = Logger('logs/bayesian/Bayesian.log', level='debug')
@@ -140,4 +164,4 @@ if __name__ == '__main__':
     my_net.fit(data_loader('.\\data'))
     my_net.test(data_loader('.\\test'))
     my_net.top5rate(data_loader('.\\test'))
-    torch.save(my_net, '.\\Model\\naivebayes.pkl')
+    my_net.save_model('.\\Model\\naivebayes.pkl')
