@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.14)  29 DEC 2020 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.14)  29 DEC 2020 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,7 +1050,7 @@ Package epstopdf Info: Source file: <./img/PaintBoard.eps>
 rted-to.pdf ./img/PaintBoard.eps>
 (epstopdf)             \includegraphics on input line 173.
 Package epstopdf Info: Output file is already uptodate.
-<./img/PaintBoard-eps-converted-to.pdf, id=178, 419.5675pt x 449.68pt>
+<./img/PaintBoard-eps-converted-to.pdf, id=179, 419.5675pt x 449.68pt>
 File: ./img/PaintBoard-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/PaintBoard-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/PaintBoard-eps-converted-to.pdf  used on input l
@@ -1066,7 +1066,7 @@ Package epstopdf Info: Source file: <./img/GUI.eps>
 .pdf ./img/GUI.eps>
 (epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
-<./img/GUI-eps-converted-to.pdf, id=179, 738.76pt x 591.20876pt>
+<./img/GUI-eps-converted-to.pdf, id=180, 738.76pt x 591.20876pt>
 File: ./img/GUI-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/GUI-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/GUI-eps-converted-to.pdf  used on input line 182
@@ -1085,14 +1085,14 @@ Package epstopdf Info: Source file: <./img/DataDirTree.eps>
 erted-to.pdf ./img/DataDirTree.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
-<./img/DataDirTree-eps-converted-to.pdf, id=198, 194.7275pt x 309.155pt>
+<./img/DataDirTree-eps-converted-to.pdf, id=199, 194.7275pt x 309.155pt>
 File: ./img/DataDirTree-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/DataDirTree-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/DataDirTree-eps-converted-to.pdf  used on input 
 line 192.
 (pdftex.def)             Requested size: 155.7822pt x 247.32433pt.
 
-Overfull \hbox (5.90335pt too wide) in paragraph at lines 198--199
+Overfull \hbox (5.90335pt too wide) in paragraph at lines 197--198
 []\C70/rm/m/n/12/5b ˘ \C70/rm/m/n/12/4e é\OT1/cmr/m/n/12 CNN|\C70/rm/m/n/12/ff 
 ^^L| \C70/rm/m/n/12/51 v \C70/rm/m/n/12/8b ≠ \C70/rm/m/n/12/7e √ \C70/rm/m/n/12
 /97 ^^@ \C70/rm/m/n/12/89 Å \C70/rm/m/n/12/59 ' \C70/rm/m/n/12/65 p \C70/rm/m/n
@@ -1103,14 +1103,18 @@ m/n/12/ff ^^L| \C70/rm/m/n/12/65 E \C70/rm/m/n/12/62 ^^Q \C70/rm/m/n/12/4e Ï \C
  MNIST\C70/rm/m/n/12/65 p
  []
 
+
+Underfull \hbox (badness 10000) in alignment at lines 203--213
+[][]
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [6
 
 
  <./img/DataDirTree-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in alignment at lines 204--214
-[][]
- []
-
 Package epstopdf Info: Source file: <./img/FeatureMapping.eps>
 (epstopdf)                    date: 2020-12-29 18:00:37
 (epstopdf)                    size: 27333 bytes
@@ -1120,18 +1124,22 @@ Package epstopdf Info: Source file: <./img/FeatureMapping.eps>
 (epstopdf)                    size: 20572 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/FeatureMapping-eps-c
 onverted-to.pdf ./img/FeatureMapping.eps>
-(epstopdf)             \includegraphics on input line 238.
+(epstopdf)             \includegraphics on input line 237.
 Package epstopdf Info: Output file is already uptodate.
-<./img/FeatureMapping-eps-converted-to.pdf, id=212, 586.19pt x 531.9875pt>
+<./img/FeatureMapping-eps-converted-to.pdf, id=214, 586.19pt x 531.9875pt>
 File: ./img/FeatureMapping-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/FeatureMapping-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/FeatureMapping-eps-converted-to.pdf  used on inp
-ut line 238.
+ut line 237.
 (pdftex.def)             Requested size: 293.09428pt x 265.9931pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [7] [8 <./img/FeatureMapping-eps-converted-to.pdf>]
 Chapter 4.
 
-Overfull \hbox (3.14076pt too wide) in paragraph at lines 246--247
+Overfull \hbox (3.14076pt too wide) in paragraph at lines 245--246
 \OT1/cmr/m/n/12 learn-ing|\C70/rm/m/n/12/ff 	| \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/
 12/52 õ|\C70/rm/m/n/12/ff ^^L| \C70/rm/m/n/12/80 ˝ \C70/rm/m/n/12/59 ^^_ \C70/r
 m/m/n/12/63 	 \C70/rm/m/n/12/51 v \C70/rm/m/n/12/96 6 \C70/rm/m/n/12/5c B \C70/
@@ -1154,16 +1162,16 @@ Package epstopdf Info: Source file: <./img/Norm.eps>
 (epstopdf)                    size: 33250 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/Norm-eps-converted-t
 o.pdf ./img/Norm.eps>
-(epstopdf)             \includegraphics on input line 266.
+(epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Norm-eps-converted-to.pdf, id=241, 936.49875pt x 364.36125pt>
+<./img/Norm-eps-converted-to.pdf, id=242, 936.49875pt x 364.36125pt>
 File: ./img/Norm-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/Norm-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/Norm-eps-converted-to.pdf  used on input line 26
-6.
+5.
 (pdftex.def)             Requested size: 421.42055pt x 163.96104pt.
 
-Overfull \hbox (3.16687pt too wide) in paragraph at lines 266--267
+Overfull \hbox (3.16687pt too wide) in paragraph at lines 265--266
  [][] 
  []
 
@@ -1175,13 +1183,13 @@ Package epstopdf Info: Source file: <./img/Depth.eps>
 (epstopdf)                    size: 54462 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/Depth-eps-converted-
 to.pdf ./img/Depth.eps>
-(epstopdf)             \includegraphics on input line 290.
+(epstopdf)             \includegraphics on input line 289.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Depth-eps-converted-to.pdf, id=242, 712.6625pt x 297.11pt>
+<./img/Depth-eps-converted-to.pdf, id=243, 712.6625pt x 297.11pt>
 File: ./img/Depth-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/Depth-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/Depth-eps-converted-to.pdf  used on input line 2
-90.
+89.
 (pdftex.def)             Requested size: 320.69516pt x 133.69826pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1194,13 +1202,13 @@ Package epstopdf Info: Source file: <./img/Kernel.eps>
 (epstopdf)                    size: 54210 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/Kernel-eps-converted
 -to.pdf ./img/Kernel.eps>
-(epstopdf)             \includegraphics on input line 298.
+(epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Kernel-eps-converted-to.pdf, id=244, 803.0pt x 466.74374pt>
+<./img/Kernel-eps-converted-to.pdf, id=245, 803.0pt x 466.74374pt>
 File: ./img/Kernel-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/Kernel-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/Kernel-eps-converted-to.pdf  used on input line 
-298.
+297.
 (pdftex.def)             Requested size: 401.49902pt x 233.37129pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1213,13 +1221,13 @@ Package epstopdf Info: Source file: <./img/Active.eps>
 (epstopdf)                    size: 22900 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/Active-eps-converted
 -to.pdf ./img/Active.eps>
-(epstopdf)             \includegraphics on input line 307.
+(epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Active-eps-converted-to.pdf, id=245, 762.85pt x 374.39874pt>
+<./img/Active-eps-converted-to.pdf, id=246, 762.85pt x 374.39874pt>
 File: ./img/Active-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/Active-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/Active-eps-converted-to.pdf  used on input line 
-307.
+306.
 (pdftex.def)             Requested size: 305.1346pt x 149.75684pt.
 [10 <./img/Norm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./img/ReLU.eps>
@@ -1230,13 +1238,13 @@ Package epstopdf Info: Source file: <./img/ReLU.eps>
 (epstopdf)                    size: 18417 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/ReLU-eps-converted-t
 o.pdf ./img/ReLU.eps>
-(epstopdf)             \includegraphics on input line 315.
+(epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
-<./img/ReLU-eps-converted-to.pdf, id=251, 655.44875pt x 314.17375pt>
+<./img/ReLU-eps-converted-to.pdf, id=252, 655.44875pt x 314.17375pt>
 File: ./img/ReLU-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/ReLU-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/ReLU-eps-converted-to.pdf  used on input line 31
-5.
+4.
 (pdftex.def)             Requested size: 327.72357pt x 157.08649pt.
  [11 <./img/Depth-eps-converted-to.pdf> <./img/Kernel-eps-converted-to.pdf> <./
 img/Active-eps-converted-to.pdf>]
@@ -1248,13 +1256,13 @@ Package epstopdf Info: Source file: <./img/Pooling.eps>
 (epstopdf)                    size: 18232 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/Pooling-eps-converte
 d-to.pdf ./img/Pooling.eps>
-(epstopdf)             \includegraphics on input line 331.
+(epstopdf)             \includegraphics on input line 330.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Pooling-eps-converted-to.pdf, id=265, 684.5575pt x 343.2825pt>
+<./img/Pooling-eps-converted-to.pdf, id=266, 684.5575pt x 343.2825pt>
 File: ./img/Pooling-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/Pooling-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/Pooling-eps-converted-to.pdf  used on input line
- 331.
+ 330.
 (pdftex.def)             Requested size: 342.27791pt x 171.64082pt.
 
 [12 <./img/ReLU-eps-converted-to.pdf> <./img/Pooling-eps-converted-to.pdf>]
@@ -1266,13 +1274,13 @@ Package epstopdf Info: Source file: <./img/CNNPrint.eps>
 (epstopdf)                    size: 67788 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/CNNPrint-eps-convert
 ed-to.pdf ./img/CNNPrint.eps>
-(epstopdf)             \includegraphics on input line 351.
+(epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
-<./img/CNNPrint-eps-converted-to.pdf, id=277, 831.105pt x 508.90125pt>
+<./img/CNNPrint-eps-converted-to.pdf, id=278, 831.105pt x 508.90125pt>
 File: ./img/CNNPrint-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/CNNPrint-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/CNNPrint-eps-converted-to.pdf  used on input lin
-e 351.
+e 350.
 (pdftex.def)             Requested size: 415.55148pt x 254.45pt.
 Package epstopdf Info: Source file: <./img/CNNImage.eps>
 (epstopdf)                    date: 2020-12-29 19:34:01
@@ -1282,13 +1290,13 @@ Package epstopdf Info: Source file: <./img/CNNImage.eps>
 (epstopdf)                    size: 39223 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/CNNImage-eps-convert
 ed-to.pdf ./img/CNNImage.eps>
-(epstopdf)             \includegraphics on input line 364.
+(epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
-<./img/CNNImage-eps-converted-to.pdf, id=278, 749.80125pt x 821.0675pt>
+<./img/CNNImage-eps-converted-to.pdf, id=279, 749.80125pt x 821.0675pt>
 File: ./img/CNNImage-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/CNNImage-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/CNNImage-eps-converted-to.pdf  used on input lin
-e 364.
+e 363.
 (pdftex.def)             Requested size: 129.9129pt x 142.26378pt.
 Package epstopdf Info: Source file: <./img/InLayer.eps>
 (epstopdf)                    date: 2020-12-29 19:34:45
@@ -1298,13 +1306,13 @@ Package epstopdf Info: Source file: <./img/InLayer.eps>
 (epstopdf)                    size: 38617 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/InLayer-eps-converte
 d-to.pdf ./img/InLayer.eps>
-(epstopdf)             \includegraphics on input line 368.
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
-<./img/InLayer-eps-converted-to.pdf, id=279, 791.95876pt x 538.01pt>
+<./img/InLayer-eps-converted-to.pdf, id=280, 791.95876pt x 538.01pt>
 File: ./img/InLayer-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/InLayer-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/InLayer-eps-converted-to.pdf  used on input line
- 368.
+ 367.
 (pdftex.def)             Requested size: 209.40886pt x 142.26378pt.
 Package epstopdf Info: Source file: <./img/FeatureLayer.eps>
 (epstopdf)                    date: 2020-12-29 19:11:32
@@ -1314,13 +1322,13 @@ Package epstopdf Info: Source file: <./img/FeatureLayer.eps>
 (epstopdf)                    size: 43334 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/FeatureLayer-eps-con
 verted-to.pdf ./img/FeatureLayer.eps>
-(epstopdf)             \includegraphics on input line 372.
+(epstopdf)             \includegraphics on input line 371.
 Package epstopdf Info: Output file is already uptodate.
-<./img/FeatureLayer-eps-converted-to.pdf, id=280, 753.81625pt x 759.83875pt>
+<./img/FeatureLayer-eps-converted-to.pdf, id=281, 753.81625pt x 759.83875pt>
 File: ./img/FeatureLayer-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/FeatureLayer-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/FeatureLayer-eps-converted-to.pdf  used on input
- line 372.
+ line 371.
 (pdftex.def)             Requested size: 141.13315pt x 142.26378pt.
 Package epstopdf Info: Source file: <./img/Dense.eps>
 (epstopdf)                    date: 2020-12-29 19:13:20
@@ -1330,13 +1338,13 @@ Package epstopdf Info: Source file: <./img/Dense.eps>
 (epstopdf)                    size: 58164 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/Dense-eps-converted-
 to.pdf ./img/Dense.eps>
-(epstopdf)             \includegraphics on input line 376.
+(epstopdf)             \includegraphics on input line 375.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Dense-eps-converted-to.pdf, id=281, 786.94pt x 728.7225pt>
+<./img/Dense-eps-converted-to.pdf, id=282, 786.94pt x 728.7225pt>
 File: ./img/Dense-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/Dense-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/Dense-eps-converted-to.pdf  used on input line 3
-76.
+75.
 (pdftex.def)             Requested size: 153.62679pt x 142.26378pt.
 Package epstopdf Info: Source file: <./img/Loss.eps>
 (epstopdf)                    date: 2020-12-29 19:48:21
@@ -1346,13 +1354,13 @@ Package epstopdf Info: Source file: <./img/Loss.eps>
 (epstopdf)                    size: 119538 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/Loss-eps-converted-t
 o.pdf ./img/Loss.eps>
-(epstopdf)             \includegraphics on input line 380.
+(epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Loss-eps-converted-to.pdf, id=282, 732.7375pt x 688.5725pt>
+<./img/Loss-eps-converted-to.pdf, id=283, 732.7375pt x 688.5725pt>
 File: ./img/Loss-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/Loss-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/Loss-eps-converted-to.pdf  used on input line 38
-0.
+Package pdftex.def Info: ./img/Loss-eps-converted-to.pdf  used on input line 37
+9.
 (pdftex.def)             Requested size: 151.38612pt x 142.26378pt.
 Package epstopdf Info: Source file: <./img/BottleNeck.eps>
 (epstopdf)                    date: 2020-12-29 19:49:50
@@ -1362,82 +1370,103 @@ Package epstopdf Info: Source file: <./img/BottleNeck.eps>
 (epstopdf)                    size: 16308 bytes
 (epstopdf)             Command: <repstopdf --outfile=./img/BottleNeck-eps-conve
 rted-to.pdf ./img/BottleNeck.eps>
-(epstopdf)             \includegraphics on input line 384.
+(epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
-<./img/BottleNeck-eps-converted-to.pdf, id=283, 384.43625pt x 424.58624pt>
+<./img/BottleNeck-eps-converted-to.pdf, id=284, 384.43625pt x 424.58624pt>
 File: ./img/BottleNeck-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/BottleNeck-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/BottleNeck-eps-converted-to.pdf  used on input l
-ine 384.
+ine 383.
 (pdftex.def)             Requested size: 128.81186pt x 142.26378pt.
 
 [13 <./img/CNNPrint-eps-converted-to.pdf>] [14 <./img/CNNImage-eps-converted-to
 .pdf> <./img/InLayer-eps-converted-to.pdf> <./img/FeatureLayer-eps-converted-to
 .pdf> <./img/Dense-eps-converted-to.pdf> <./img/Loss-eps-converted-to.pdf> <./i
-mg/BottleNeck-eps-converted-to.pdf>] (./CNN.aux) ) 
+mg/BottleNeck-eps-converted-to.pdf>]
+Chapter 5.
+Package epstopdf Info: Source file: <./img/Predict.eps>
+(epstopdf)                    date: 2020-12-29 20:05:01
+(epstopdf)                    size: 54749 bytes
+(epstopdf)             Output file: <./img/Predict-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-29 20:05:21
+(epstopdf)                    size: 91606 bytes
+(epstopdf)             Command: <repstopdf --outfile=./img/Predict-eps-converte
+d-to.pdf ./img/Predict.eps>
+(epstopdf)             \includegraphics on input line 394.
+Package epstopdf Info: Output file is already uptodate.
+<./img/Predict-eps-converted-to.pdf, id=306, 738.76pt x 591.20876pt>
+File: ./img/Predict-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/Predict-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/Predict-eps-converted-to.pdf  used on input line
+ 394.
+(pdftex.def)             Requested size: 369.37909pt x 295.60365pt.
+[15
+
+
+ <./img/Predict-eps-converted-to.pdf>] (./CNN.aux) ) 
 Here is how much of TeX's memory you used:
- 22380 strings out of 479383
- 440866 string characters out of 5873325
- 720616 words of memory out of 5000000
- 38707 multiletter control sequences out of 15000+600000
- 466647 words of font info for 260 fonts, out of 8000000 for 9000
+ 22398 strings out of 479383
+ 441246 string characters out of 5873325
+ 720644 words of memory out of 5000000
+ 38722 multiletter control sequences out of 15000+600000
+ 467187 words of font info for 262 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,832b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/Windows/Fonts/simhei.ttf>
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/sim
-sun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
-onts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/W
-indows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.t
+<c:/Windows/Fonts/simhei.tt
+f><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
+imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows
+/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:
+/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun
+.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Font
+s/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Wind
+ows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf>
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
+hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/F
+onts/simsun.ttc>{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+s1.enc}<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fo
+nts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wi
+ndows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.tt
+c><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
+imsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows
+/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
+/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun
+.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
+s/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Wind
+ows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
+hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
+onts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
+indows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.t
 tc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
 simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Window
-s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c
-:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsu
-n.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fon
-ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>{c:/texlive/2020/texmf-dist/fonts/en
-c/dvips/cm-super/cm-super-ts1.enc}<c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
-s/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Wind
-ows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>
-<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/sim
-hei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/F
-onts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/W
-indows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.t
-tf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
-simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Window
 s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c
 :/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsu
-n.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fon
+n.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
 ts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Win
 dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
 ><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/si
-mhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/
-Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
-Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
+msun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/
+Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/
+Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
 ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts
-/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windo
-ws/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><
+/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windo
+ws/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><
 c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sims
 un.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fo
-nts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Wi
-ndows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.tt
-c><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
-imsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows
-/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:
-/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun
-.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
-s/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wind
-ows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>
-<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on CNN.pdf (16 pages, 1369538 bytes).
+nts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wi
+ndows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.tt
+c><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2020/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on CNN.pdf (17 pages, 1461084 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 424 compressed objects within 5 object streams
+ 686 PDF objects out of 1000 (max. 8388607)
+ 427 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -194,7 +194,6 @@
 			\label{fig:3.1}
 		\end{figure}
 
-	\section{MNIST数据集}
 		对于CNN，其训练需要大数据的支持，故我们使用MNIST数据集。MNIST数据集由美国国家标准与技术研究所（National Institute of Standards and Technology (NIST)）发起整理，一共统计了来自250个不同的人手写数字图片，其中50\%是高中生，50\%来自人口普查局的工作人员。是机器学习领域中非常经典的一个数据集，由60000个训练样本和10000个测试样本组成，每个样本都是一张28*28像素的灰度手写数字图片。
 
 		MNIST数据集分为4个部分，如下表所示：
@@ -387,4 +386,13 @@
 
 		将我们自己的数据集经过特征提取后进行测试，得到准确率为88\%。如上图f)所示，对特征提取层做可视化提取可以发现，CNN网络对图像经过一系列运算后提取到了一些特征，用于计算。
 \clearpage
+
+\chapter{实验结论}
+	通过上述实验，我们可以发现，CNN网络分为特征提取部分和分类器部分，其特征提取部分的主要作用是提取手写数字的主要特征，之后线性分类层则是对提取后的结果进行分类。渐染我们所设计的CNN网络有很好的的分类效果。如图5.1所示， 在 $GUI$ 中选取 $CNN$ 算法，得到准确的输出。
+	\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.5]{./img/Predict.eps}
+	\caption{CNN预测}
+	\label{fig:5.1}
+	\end{figure}
 \end{document}
