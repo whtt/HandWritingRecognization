@@ -1,0 +1,617 @@
+2020-12-22 17:05:52,092 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:05:52,102 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:05:52,245 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: model loaded
+2020-12-22 17:05:52,245 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:05:52,251 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: model loaded
+2020-12-22 17:05:52,251 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:05:52,251 - D:\Codes\pycharm\PR_HW\Fisher.py[line:336] - INFO: model loaded
+2020-12-22 17:10:13,999 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:10:14,000 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:10:14,006 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: model loaded
+2020-12-22 17:10:14,006 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:10:14,012 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: model loaded
+2020-12-22 17:10:14,012 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:10:14,012 - D:\Codes\pycharm\PR_HW\Fisher.py[line:336] - INFO: model loaded
+2020-12-22 17:10:40,813 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:10:40,813 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:10:40,819 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: model loaded
+2020-12-22 17:10:40,819 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:10:40,824 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: model loaded
+2020-12-22 17:10:40,824 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:10:40,825 - D:\Codes\pycharm\PR_HW\Fisher.py[line:336] - INFO: model loaded
+2020-12-22 17:11:46,454 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:11:46,454 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:11:46,461 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: model loaded
+2020-12-22 17:11:46,461 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:11:46,467 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: model loaded
+2020-12-22 17:11:46,467 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:11:46,468 - D:\Codes\pycharm\PR_HW\Fisher.py[line:336] - INFO: model loaded
+2020-12-22 17:15:13,974 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:15:13,974 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:15:13,980 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 17:15:13,980 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:15:13,986 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 17:15:13,986 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:15:13,986 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 17:16:51,120 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:16:51,120 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:16:51,126 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 17:16:51,127 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:16:51,132 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 17:16:51,133 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:16:51,133 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 17:17:10,023 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:17:10,023 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:17:10,029 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 17:17:10,029 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:17:10,035 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 17:17:10,035 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:17:10,036 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 17:17:53,001 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:17:53,001 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:17:53,007 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 17:17:53,007 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:17:53,012 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 17:17:53,012 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:17:53,012 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 17:18:12,484 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 17:18:12,485 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 17:18:12,490 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 17:18:12,491 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 17:18:12,496 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 17:18:12,496 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 17:18:12,496 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 19:24:03,915 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 19:24:03,935 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 19:24:04,077 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 19:24:04,077 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 19:24:04,082 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 19:24:04,083 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 19:24:04,083 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 19:25:04,008 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 19:25:04,008 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 19:25:04,014 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 19:25:04,014 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 19:25:04,020 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 19:25:04,020 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 19:25:04,020 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 19:44:14,443 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 19:44:14,443 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 19:44:14,449 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 19:44:14,449 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 19:44:14,454 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 19:44:14,454 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 19:44:14,454 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 19:44:14,455 - D:\Codes\pycharm\PR_HW\kernel.py[line:29] - INFO: scikit-learn fisher model loaded
+2020-12-22 19:44:14,483 - D:\Codes\pycharm\PR_HW\kernel.py[line:34] - INFO: cnn model loaded
+2020-12-22 19:59:38,437 - D:\Codes\pycharm\PR_HW\kernel.py[line:21] - INFO: loading methods ...
+2020-12-22 19:59:38,438 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 19:59:38,444 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 19:59:38,444 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 19:59:38,450 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 19:59:38,450 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 19:59:38,451 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 19:59:38,451 - D:\Codes\pycharm\PR_HW\kernel.py[line:29] - INFO: scikit-learn fisher model loaded
+2020-12-22 19:59:38,485 - D:\Codes\pycharm\PR_HW\kernel.py[line:34] - INFO: cnn model loaded
+2020-12-22 20:03:11,603 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:03:11,603 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:03:11,610 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:03:11,610 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:03:11,615 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:03:11,616 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:03:11,616 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:03:11,617 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:03:11,644 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:03:25,909 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:03:25,910 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:03:25,915 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:03:25,916 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:03:25,921 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:03:25,921 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:03:25,921 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:03:25,922 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:03:25,947 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:06:33,005 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:06:33,005 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:06:33,011 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:06:33,011 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:06:33,016 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:06:33,016 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:06:33,017 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:06:33,017 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:06:33,043 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:12:54,612 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:12:54,612 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:12:54,618 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:12:54,618 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:12:54,623 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:12:54,623 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:12:54,624 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:12:54,624 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:12:54,653 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:14:12,072 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:14:12,072 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:14:12,079 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:14:12,080 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:14:12,085 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:14:12,085 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:14:12,086 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:14:12,086 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:14:12,120 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:14:27,564 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:14:27,565 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:14:27,571 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:14:27,571 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:14:27,576 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:14:27,576 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:14:27,576 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:14:27,577 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:14:27,604 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:14:41,563 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:14:41,563 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:14:41,569 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:14:41,570 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:14:41,574 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:14:41,575 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:14:41,575 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:14:41,576 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:14:41,603 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:15:02,236 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:15:02,236 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:15:02,242 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:15:02,242 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:15:02,247 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:15:02,247 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:15:02,248 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:15:02,248 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:15:02,276 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:17:43,075 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:17:43,075 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:17:43,081 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:17:43,081 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:17:43,086 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:17:43,087 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:17:43,087 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:17:43,088 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:17:43,120 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:18:16,484 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:18:16,485 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:18:16,490 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:18:16,491 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:18:16,495 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:18:16,496 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:18:16,496 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:18:16,497 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:18:16,523 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:18:38,658 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:18:38,658 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:18:38,664 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:18:38,664 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:18:38,670 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:18:38,670 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:18:38,671 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:18:38,671 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:18:38,711 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:21:15,888 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:21:15,888 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:21:15,894 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:21:15,894 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:21:15,899 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:21:15,900 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:21:15,900 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:21:15,900 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:21:15,926 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:21:55,946 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:21:55,946 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:21:55,952 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:21:55,952 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:21:55,958 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:21:55,958 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:21:55,959 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:21:55,959 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:21:55,987 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:23:10,786 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:23:10,786 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:23:10,792 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:23:10,792 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:23:10,797 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:23:10,797 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:23:10,797 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:23:10,798 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:23:10,826 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:23:40,487 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:23:40,487 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:23:40,494 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:23:40,494 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:23:40,500 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:23:40,500 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:23:40,501 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:23:40,502 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:23:40,531 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:24:24,563 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:24:24,563 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:24:24,569 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:24:24,569 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:24:24,575 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:24:24,576 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:24:24,576 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:24:24,577 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:24:24,608 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:25:43,368 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:25:43,368 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:25:43,375 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:25:43,375 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:25:43,380 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:25:43,381 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:25:43,381 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:25:43,382 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:25:43,417 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:26:24,414 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:26:24,414 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:26:24,420 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:26:24,420 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:26:24,425 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:26:24,425 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:26:24,425 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:26:24,426 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:26:24,453 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:28:20,395 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:28:20,395 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:28:20,401 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:28:20,401 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:28:20,407 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:28:20,407 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:28:20,407 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:28:20,408 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:28:20,443 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:29:11,137 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:29:11,137 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:29:11,143 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:29:11,143 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:29:11,148 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:29:11,148 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:29:11,149 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:29:11,149 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:29:11,176 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:29:46,192 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:29:46,193 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:29:46,199 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:29:46,199 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:29:46,204 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:29:46,204 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:29:46,204 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:29:46,205 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:29:46,232 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:30:33,764 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:30:33,765 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:30:33,771 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:30:33,771 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:30:33,776 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:30:33,776 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:30:33,776 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:30:33,777 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:30:33,803 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:32:07,586 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:32:07,586 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:32:07,592 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:32:07,592 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:32:07,597 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:32:07,598 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:32:07,598 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:32:07,599 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:32:07,626 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:32:16,206 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:32:16,206 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:32:16,212 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:32:16,212 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:32:16,217 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:32:16,218 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:32:16,218 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:32:16,219 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:32:16,246 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:33:11,118 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:33:11,118 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:33:11,124 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:33:11,124 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:33:11,129 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:33:11,129 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:33:11,130 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:33:11,130 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:33:11,159 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:33:37,176 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:33:37,177 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:33:37,182 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:33:37,184 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:33:37,188 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:33:37,188 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:33:37,188 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:33:37,189 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:33:37,217 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:51:34,385 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:51:34,425 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:51:34,736 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:51:34,737 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:51:34,777 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:51:34,779 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:51:34,795 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:51:34,819 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:51:35,028 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:52:55,995 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:52:55,995 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:52:56,001 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:52:56,001 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:52:56,008 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:52:56,008 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:52:56,009 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:52:56,010 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:52:56,045 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:53:24,562 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:53:24,562 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:53:24,568 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:53:24,569 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:53:24,574 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:53:24,575 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:53:24,576 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:53:24,576 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:53:24,641 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:54:06,295 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:54:06,296 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:54:06,306 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:54:06,306 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:54:06,316 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:54:06,316 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:54:06,317 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:54:06,317 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:54:06,364 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:55:09,360 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:55:09,361 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:55:09,366 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:55:09,367 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:55:09,375 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:55:09,376 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:55:09,377 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:55:09,378 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:55:09,460 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:56:02,601 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:56:02,601 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:56:02,607 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:56:02,607 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:56:02,613 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:56:02,613 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:56:02,614 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:56:02,614 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:56:02,655 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:56:52,038 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:56:52,038 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:56:52,044 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:56:52,045 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:56:52,050 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:56:52,050 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:56:52,050 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:56:52,051 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:56:52,083 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:57:20,968 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:57:20,968 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:57:20,974 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:57:20,974 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:57:20,979 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:57:20,979 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:57:20,980 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:57:20,981 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:57:21,007 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 20:58:00,015 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 20:58:00,016 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 20:58:00,021 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 20:58:00,022 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 20:58:00,027 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 20:58:00,027 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 20:58:00,027 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 20:58:00,028 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 20:58:00,053 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:00:36,668 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:00:36,668 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:00:36,675 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:00:36,676 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:00:36,681 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:00:36,681 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:00:36,681 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:00:36,682 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:00:36,716 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:02:00,273 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:02:00,273 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:02:00,279 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:02:00,280 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:02:00,285 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:02:00,286 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:02:00,286 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:02:00,287 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:02:00,315 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:04:01,859 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:04:01,859 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:04:01,866 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:04:01,866 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:04:01,871 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:04:01,871 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:04:01,872 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:04:01,872 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:04:01,898 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:05:30,659 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:05:30,659 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:05:30,665 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:05:30,665 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:05:30,670 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:05:30,671 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:05:30,671 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:05:30,673 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:05:30,708 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:06:00,248 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:06:00,248 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:06:00,254 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:06:00,254 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:06:00,259 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:06:00,259 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:06:00,260 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:06:00,260 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:06:00,285 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:06:14,146 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:06:14,147 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:06:14,153 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:06:14,153 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:06:14,161 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:06:14,161 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:06:14,162 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:06:14,162 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:06:14,196 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:06:53,293 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:06:53,293 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:06:53,299 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:06:53,299 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:06:53,304 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:06:53,304 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:06:53,305 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:06:53,305 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:06:53,331 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:08:31,681 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:08:31,681 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:08:31,687 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:08:31,687 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:08:31,692 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:08:31,692 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:08:31,693 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:08:31,693 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:08:31,720 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:10:17,854 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:10:17,854 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:10:17,860 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:10:17,860 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:10:17,865 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:10:17,865 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:10:17,865 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:10:17,866 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:10:17,893 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:10:29,639 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:10:29,640 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:10:29,646 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:10:29,646 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:10:29,651 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:10:29,651 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:10:29,652 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:10:29,652 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:10:29,686 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:10:56,703 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:10:56,703 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:10:56,709 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:10:56,709 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:10:56,715 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:10:56,715 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:10:56,716 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:10:56,716 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:10:56,758 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:11:07,380 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:11:07,381 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:11:07,387 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:11:07,387 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:11:07,392 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:11:07,392 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:11:07,392 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:11:07,393 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:11:07,419 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:11:25,329 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:11:25,330 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:11:25,335 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:11:25,335 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:11:25,340 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:11:25,341 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:11:25,341 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:11:25,342 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:11:25,369 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:11:43,073 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:11:43,073 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:11:43,079 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:11:43,079 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:11:43,084 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:11:43,084 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:11:43,084 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:11:43,085 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:11:43,110 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:12:16,712 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:12:16,712 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:12:16,718 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:12:16,719 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:12:16,723 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:12:16,724 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:12:16,724 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:12:16,725 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:12:16,752 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:14:01,478 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:14:01,478 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:14:01,484 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:14:01,485 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:14:01,489 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:14:01,490 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:14:01,490 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:14:01,491 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:14:01,516 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:15:51,866 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:15:51,866 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:15:51,872 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:15:51,872 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:15:51,877 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:15:51,877 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:15:51,878 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:15:51,878 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:15:51,910 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:16:38,197 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:16:38,197 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:16:38,203 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:16:38,203 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:16:38,208 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:16:38,208 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:16:38,208 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:16:38,209 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:16:38,243 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:17:28,839 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:17:28,839 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:17:28,845 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:17:28,845 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:17:28,850 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:17:28,850 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:17:28,851 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:17:28,851 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:17:28,884 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:18:20,118 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:18:20,118 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:18:20,123 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:18:20,124 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:18:20,130 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:18:20,130 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:18:20,130 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:18:20,131 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:18:20,163 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 21:20:11,920 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 21:20:11,920 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 21:20:11,926 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 21:20:11,926 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 21:20:11,930 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 21:20:11,931 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 21:20:11,931 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 21:20:11,932 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 21:20:11,958 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-22 22:00:35,747 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-22 22:00:35,764 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-22 22:00:35,952 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-22 22:00:35,952 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-22 22:00:35,998 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-22 22:00:36,027 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-22 22:00:36,051 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-22 22:00:36,075 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-22 22:00:36,303 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded
+2020-12-23 12:06:16,385 - D:\Codes\pycharm\PR_HW\kernel.py[line:22] - INFO: loading methods ...
+2020-12-23 12:06:16,407 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:48] - INFO: data pretrained, 
+2020-12-23 12:06:16,690 - D:\Codes\pycharm\PR_HW\Bayesian.py[line:158] - INFO: NaiveBayesian model loaded
+2020-12-23 12:06:16,691 - D:\Codes\pycharm\PR_HW\Fisher.py[line:122] - INFO: data pretrained, 
+2020-12-23 12:06:16,705 - D:\Codes\pycharm\PR_HW\Fisher.py[line:206] - INFO: VoteFisher model loaded
+2020-12-23 12:06:16,739 - D:\Codes\pycharm\PR_HW\Fisher.py[line:237] - INFO: data pretrained, 
+2020-12-23 12:06:16,749 - D:\Codes\pycharm\PR_HW\Fisher.py[line:337] - INFO: MultiFisher model loaded
+2020-12-23 12:06:16,776 - D:\Codes\pycharm\PR_HW\kernel.py[line:30] - INFO: scikit-learn fisher model loaded
+2020-12-23 12:06:16,967 - D:\Codes\pycharm\PR_HW\kernel.py[line:35] - INFO: cnn model loaded

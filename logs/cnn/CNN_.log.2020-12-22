@@ -1,0 +1,1140 @@
+2020-12-22 17:24:27,602 - D:/Codes/pycharm/PR_HW/CNN.py[line:98] - INFO: CNN(
+  (feature): Sequential(
+    (ConvNet1): Sequential(
+      (ConvNet1_conv): Conv2d(1, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+      (ConvNet1_norm): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (ConvNet1_relu): ReLU()
+    )
+    (ConvNet2): Sequential(
+      (ConvNet2_conv): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+      (ConvNet2_norm): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (ConvNet2_relu): ReLU()
+    )
+    (ConvNet3): Sequential(
+      (ConvNet3_conv): Conv2d(32, 64, kernel_size=(2, 2), stride=(2, 2))
+      (ConvNet3_norm): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (ConvNet3_relu): ReLU()
+    )
+  )
+  (classifier): Sequential(
+    (FC1): Linear(in_features=576, out_features=100, bias=True)
+    (FC2): Linear(in_features=100, out_features=10, bias=True)
+    (SoftMax): Softmax(dim=None)
+  )
+)
+2020-12-22 17:24:29,466 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:  0 | train_loss:2.3039 | test_loss:2.3024 | test_acc:8.75%
+2020-12-22 17:24:30,814 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step: 50 | train_loss:1.5942 | test_loss:1.6345 | test_acc:87.65%
+2020-12-22 17:24:32,105 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:100 | train_loss:1.5429 | test_loss:1.5484 | test_acc:93.00%
+2020-12-22 17:24:33,404 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:150 | train_loss:1.5305 | test_loss:1.5277 | test_acc:94.40%
+2020-12-22 17:24:34,700 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:200 | train_loss:1.4884 | test_loss:1.5193 | test_acc:95.20%
+2020-12-22 17:24:36,001 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:250 | train_loss:1.4814 | test_loss:1.5124 | test_acc:95.85%
+2020-12-22 17:24:37,299 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:300 | train_loss:1.4878 | test_loss:1.5092 | test_acc:95.90%
+2020-12-22 17:24:38,594 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:350 | train_loss:1.4921 | test_loss:1.5087 | test_acc:95.40%
+2020-12-22 17:24:39,889 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:400 | train_loss:1.5060 | test_loss:1.5026 | test_acc:96.45%
+2020-12-22 17:24:41,184 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  0|100] | step:450 | train_loss:1.5071 | test_loss:1.4987 | test_acc:96.65%
+2020-12-22 17:24:52,457 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4877 | test loss: 1.4865 | train acc: 97.68% | test acc: 97.76%
+2020-12-22 17:24:53,331 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:  0 | train_loss:1.5068 | test_loss:1.4960 | test_acc:97.00%
+2020-12-22 17:24:55,432 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step: 50 | train_loss:1.5128 | test_loss:1.4979 | test_acc:96.75%
+2020-12-22 17:24:56,990 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:100 | train_loss:1.4689 | test_loss:1.5000 | test_acc:96.50%
+2020-12-22 17:24:58,347 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:150 | train_loss:1.4921 | test_loss:1.4953 | test_acc:96.70%
+2020-12-22 17:24:59,702 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:200 | train_loss:1.4722 | test_loss:1.4920 | test_acc:97.20%
+2020-12-22 17:25:01,040 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:250 | train_loss:1.5175 | test_loss:1.4929 | test_acc:97.20%
+2020-12-22 17:25:02,324 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:300 | train_loss:1.4693 | test_loss:1.4899 | test_acc:97.45%
+2020-12-22 17:25:03,583 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:350 | train_loss:1.4728 | test_loss:1.4900 | test_acc:97.40%
+2020-12-22 17:25:04,863 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:400 | train_loss:1.5018 | test_loss:1.4931 | test_acc:97.00%
+2020-12-22 17:25:06,136 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  1|100] | step:450 | train_loss:1.4767 | test_loss:1.4957 | test_acc:96.90%
+2020-12-22 17:25:21,027 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4852 | test loss: 1.4852 | train acc: 97.79% | test acc: 97.70%
+2020-12-22 17:25:22,235 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:  0 | train_loss:1.4866 | test_loss:1.4960 | test_acc:96.80%
+2020-12-22 17:25:24,206 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step: 50 | train_loss:1.4741 | test_loss:1.4957 | test_acc:96.85%
+2020-12-22 17:25:25,578 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:100 | train_loss:1.4688 | test_loss:1.4910 | test_acc:97.35%
+2020-12-22 17:25:26,906 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:150 | train_loss:1.4646 | test_loss:1.4878 | test_acc:97.45%
+2020-12-22 17:25:28,270 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:200 | train_loss:1.4796 | test_loss:1.4883 | test_acc:97.30%
+2020-12-22 17:25:29,631 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:250 | train_loss:1.4673 | test_loss:1.4919 | test_acc:97.15%
+2020-12-22 17:25:31,008 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:300 | train_loss:1.4909 | test_loss:1.4906 | test_acc:97.25%
+2020-12-22 17:25:32,372 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:350 | train_loss:1.4633 | test_loss:1.4828 | test_acc:98.15%
+2020-12-22 17:25:33,744 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:400 | train_loss:1.4732 | test_loss:1.4873 | test_acc:97.50%
+2020-12-22 17:25:35,069 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  2|100] | step:450 | train_loss:1.4831 | test_loss:1.4885 | test_acc:97.40%
+2020-12-22 17:25:46,761 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4773 | test loss: 1.4804 | train acc: 98.49% | test acc: 98.18%
+2020-12-22 17:25:47,830 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:  0 | train_loss:1.4696 | test_loss:1.4878 | test_acc:97.55%
+2020-12-22 17:25:51,281 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step: 50 | train_loss:1.4820 | test_loss:1.4866 | test_acc:97.75%
+2020-12-22 17:25:52,641 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:100 | train_loss:1.4723 | test_loss:1.4861 | test_acc:97.70%
+2020-12-22 17:25:53,992 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:150 | train_loss:1.4692 | test_loss:1.4866 | test_acc:97.70%
+2020-12-22 17:25:55,385 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:200 | train_loss:1.4737 | test_loss:1.4862 | test_acc:97.45%
+2020-12-22 17:25:56,740 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:250 | train_loss:1.4765 | test_loss:1.4847 | test_acc:97.90%
+2020-12-22 17:25:58,111 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:300 | train_loss:1.4683 | test_loss:1.4864 | test_acc:97.75%
+2020-12-22 17:25:59,464 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:350 | train_loss:1.4803 | test_loss:1.4882 | test_acc:97.55%
+2020-12-22 17:26:00,785 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:400 | train_loss:1.4829 | test_loss:1.4884 | test_acc:97.65%
+2020-12-22 17:26:02,064 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  3|100] | step:450 | train_loss:1.4746 | test_loss:1.4851 | test_acc:97.75%
+2020-12-22 17:26:20,084 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4737 | test loss: 1.4781 | train acc: 98.87% | test acc: 98.39%
+2020-12-22 17:26:21,064 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:  0 | train_loss:1.4664 | test_loss:1.4876 | test_acc:97.45%
+2020-12-22 17:26:23,050 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step: 50 | train_loss:1.4794 | test_loss:1.4845 | test_acc:97.85%
+2020-12-22 17:26:24,352 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:100 | train_loss:1.4859 | test_loss:1.4817 | test_acc:98.15%
+2020-12-22 17:26:25,667 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:150 | train_loss:1.4766 | test_loss:1.4825 | test_acc:97.90%
+2020-12-22 17:26:26,981 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:200 | train_loss:1.4783 | test_loss:1.4834 | test_acc:98.00%
+2020-12-22 17:26:28,266 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:250 | train_loss:1.4615 | test_loss:1.4863 | test_acc:97.70%
+2020-12-22 17:26:29,554 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:300 | train_loss:1.4749 | test_loss:1.4862 | test_acc:97.65%
+2020-12-22 17:26:30,887 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:350 | train_loss:1.4743 | test_loss:1.4842 | test_acc:98.00%
+2020-12-22 17:26:32,204 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:400 | train_loss:1.4848 | test_loss:1.4837 | test_acc:97.90%
+2020-12-22 17:26:33,553 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  4|100] | step:450 | train_loss:1.4693 | test_loss:1.4837 | test_acc:97.75%
+2020-12-22 17:26:42,803 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4740 | test loss: 1.4780 | train acc: 98.82% | test acc: 98.44%
+2020-12-22 17:26:44,109 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:  0 | train_loss:1.4686 | test_loss:1.4855 | test_acc:97.85%
+2020-12-22 17:26:45,980 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step: 50 | train_loss:1.4828 | test_loss:1.4849 | test_acc:97.85%
+2020-12-22 17:26:47,283 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:100 | train_loss:1.4744 | test_loss:1.4861 | test_acc:97.60%
+2020-12-22 17:26:48,579 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:150 | train_loss:1.4725 | test_loss:1.4834 | test_acc:97.95%
+2020-12-22 17:26:49,883 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:200 | train_loss:1.5005 | test_loss:1.4862 | test_acc:97.45%
+2020-12-22 17:26:51,137 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:250 | train_loss:1.4667 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 17:26:52,407 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:300 | train_loss:1.4640 | test_loss:1.4815 | test_acc:97.95%
+2020-12-22 17:26:53,682 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:350 | train_loss:1.4761 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 17:26:54,968 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:400 | train_loss:1.4664 | test_loss:1.4831 | test_acc:97.85%
+2020-12-22 17:26:56,294 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  5|100] | step:450 | train_loss:1.4784 | test_loss:1.4840 | test_acc:97.85%
+2020-12-22 17:27:14,266 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4724 | test loss: 1.4767 | train acc: 99.01% | test acc: 98.48%
+2020-12-22 17:27:15,447 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:  0 | train_loss:1.4796 | test_loss:1.4839 | test_acc:97.85%
+2020-12-22 17:27:17,187 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step: 50 | train_loss:1.4727 | test_loss:1.4798 | test_acc:98.25%
+2020-12-22 17:27:18,552 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:100 | train_loss:1.4734 | test_loss:1.4844 | test_acc:97.60%
+2020-12-22 17:27:19,917 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:150 | train_loss:1.4680 | test_loss:1.4813 | test_acc:98.15%
+2020-12-22 17:27:21,236 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:200 | train_loss:1.4630 | test_loss:1.4816 | test_acc:98.00%
+2020-12-22 17:27:22,586 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:250 | train_loss:1.4731 | test_loss:1.4836 | test_acc:97.90%
+2020-12-22 17:27:23,953 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:300 | train_loss:1.4952 | test_loss:1.4850 | test_acc:97.90%
+2020-12-22 17:27:25,330 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:350 | train_loss:1.4661 | test_loss:1.4838 | test_acc:97.85%
+2020-12-22 17:27:26,727 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:400 | train_loss:1.4693 | test_loss:1.4839 | test_acc:97.90%
+2020-12-22 17:27:28,083 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  6|100] | step:450 | train_loss:1.4619 | test_loss:1.4856 | test_acc:97.65%
+2020-12-22 17:27:41,563 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4718 | test loss: 1.4772 | train acc: 99.04% | test acc: 98.45%
+2020-12-22 17:27:42,475 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:  0 | train_loss:1.4727 | test_loss:1.4828 | test_acc:97.95%
+2020-12-22 17:27:44,344 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step: 50 | train_loss:1.4775 | test_loss:1.4860 | test_acc:97.55%
+2020-12-22 17:27:45,644 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:100 | train_loss:1.4705 | test_loss:1.4832 | test_acc:97.95%
+2020-12-22 17:27:46,986 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:150 | train_loss:1.4647 | test_loss:1.4848 | test_acc:97.70%
+2020-12-22 17:27:48,347 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:200 | train_loss:1.4666 | test_loss:1.4839 | test_acc:98.00%
+2020-12-22 17:27:49,650 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:250 | train_loss:1.4693 | test_loss:1.4824 | test_acc:97.90%
+2020-12-22 17:27:50,995 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:300 | train_loss:1.4677 | test_loss:1.4820 | test_acc:98.10%
+2020-12-22 17:27:52,311 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:350 | train_loss:1.4807 | test_loss:1.4812 | test_acc:98.25%
+2020-12-22 17:27:53,686 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:400 | train_loss:1.4788 | test_loss:1.4832 | test_acc:97.80%
+2020-12-22 17:27:55,065 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  7|100] | step:450 | train_loss:1.5150 | test_loss:1.4816 | test_acc:98.05%
+2020-12-22 17:28:06,873 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4709 | test loss: 1.4769 | train acc: 99.09% | test acc: 98.49%
+2020-12-22 17:28:07,979 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:  0 | train_loss:1.4742 | test_loss:1.4812 | test_acc:98.15%
+2020-12-22 17:28:10,069 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step: 50 | train_loss:1.4647 | test_loss:1.4849 | test_acc:97.65%
+2020-12-22 17:28:11,355 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:100 | train_loss:1.4698 | test_loss:1.4810 | test_acc:98.10%
+2020-12-22 17:28:12,630 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:150 | train_loss:1.4647 | test_loss:1.4793 | test_acc:98.25%
+2020-12-22 17:28:13,961 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:200 | train_loss:1.4717 | test_loss:1.4817 | test_acc:98.10%
+2020-12-22 17:28:15,257 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:250 | train_loss:1.4693 | test_loss:1.4818 | test_acc:98.35%
+2020-12-22 17:28:16,568 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:300 | train_loss:1.4702 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 17:28:17,891 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:350 | train_loss:1.4948 | test_loss:1.4846 | test_acc:97.90%
+2020-12-22 17:28:19,193 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:400 | train_loss:1.4687 | test_loss:1.4801 | test_acc:98.25%
+2020-12-22 17:28:20,530 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  8|100] | step:450 | train_loss:1.4692 | test_loss:1.4817 | test_acc:98.05%
+2020-12-22 17:28:32,873 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4703 | test loss: 1.4763 | train acc: 99.20% | test acc: 98.55%
+2020-12-22 17:28:34,208 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:  0 | train_loss:1.4614 | test_loss:1.4836 | test_acc:97.85%
+2020-12-22 17:28:35,970 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step: 50 | train_loss:1.4691 | test_loss:1.4848 | test_acc:97.70%
+2020-12-22 17:28:37,521 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:100 | train_loss:1.4620 | test_loss:1.4833 | test_acc:97.95%
+2020-12-22 17:28:38,947 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:150 | train_loss:1.4676 | test_loss:1.4819 | test_acc:98.05%
+2020-12-22 17:28:40,272 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:200 | train_loss:1.4756 | test_loss:1.4806 | test_acc:98.20%
+2020-12-22 17:28:41,615 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:250 | train_loss:1.4759 | test_loss:1.4802 | test_acc:98.25%
+2020-12-22 17:28:42,957 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:300 | train_loss:1.4694 | test_loss:1.4832 | test_acc:97.85%
+2020-12-22 17:28:44,303 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:350 | train_loss:1.4749 | test_loss:1.4816 | test_acc:98.20%
+2020-12-22 17:28:45,616 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:400 | train_loss:1.4666 | test_loss:1.4779 | test_acc:98.30%
+2020-12-22 17:28:46,957 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[  9|100] | step:450 | train_loss:1.4620 | test_loss:1.4816 | test_acc:98.25%
+2020-12-22 17:29:00,747 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4734 | test loss: 1.4789 | train acc: 98.91% | test acc: 98.29%
+2020-12-22 17:29:01,679 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:  0 | train_loss:1.4761 | test_loss:1.4854 | test_acc:97.80%
+2020-12-22 17:29:03,694 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step: 50 | train_loss:1.4713 | test_loss:1.4851 | test_acc:97.55%
+2020-12-22 17:29:05,093 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:100 | train_loss:1.4731 | test_loss:1.4830 | test_acc:97.95%
+2020-12-22 17:29:06,396 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:150 | train_loss:1.4808 | test_loss:1.4803 | test_acc:98.20%
+2020-12-22 17:29:07,762 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:200 | train_loss:1.4648 | test_loss:1.4876 | test_acc:97.40%
+2020-12-22 17:29:09,086 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:250 | train_loss:1.4620 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 17:29:10,441 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:300 | train_loss:1.4613 | test_loss:1.4807 | test_acc:98.20%
+2020-12-22 17:29:11,814 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:350 | train_loss:1.4913 | test_loss:1.4814 | test_acc:98.05%
+2020-12-22 17:29:13,160 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:400 | train_loss:1.4692 | test_loss:1.4808 | test_acc:98.25%
+2020-12-22 17:29:14,506 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 10|100] | step:450 | train_loss:1.4698 | test_loss:1.4803 | test_acc:98.30%
+2020-12-22 17:29:27,926 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4690 | test loss: 1.4752 | train acc: 99.32% | test acc: 98.65%
+2020-12-22 17:29:28,947 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:  0 | train_loss:1.4731 | test_loss:1.4807 | test_acc:98.15%
+2020-12-22 17:29:30,796 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step: 50 | train_loss:1.4636 | test_loss:1.4788 | test_acc:98.45%
+2020-12-22 17:29:32,186 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:100 | train_loss:1.4720 | test_loss:1.4804 | test_acc:98.20%
+2020-12-22 17:29:33,515 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:150 | train_loss:1.4632 | test_loss:1.4808 | test_acc:98.30%
+2020-12-22 17:29:34,839 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:200 | train_loss:1.4615 | test_loss:1.4810 | test_acc:98.00%
+2020-12-22 17:29:36,146 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:250 | train_loss:1.4691 | test_loss:1.4815 | test_acc:98.15%
+2020-12-22 17:29:37,469 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:300 | train_loss:1.4670 | test_loss:1.4826 | test_acc:97.85%
+2020-12-22 17:29:38,841 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:350 | train_loss:1.4755 | test_loss:1.4813 | test_acc:98.20%
+2020-12-22 17:29:40,184 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:400 | train_loss:1.4774 | test_loss:1.4812 | test_acc:98.05%
+2020-12-22 17:29:41,512 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 11|100] | step:450 | train_loss:1.4761 | test_loss:1.4809 | test_acc:98.10%
+2020-12-22 17:29:55,238 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4682 | test loss: 1.4736 | train acc: 99.36% | test acc: 98.86%
+2020-12-22 17:29:56,072 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:  0 | train_loss:1.4716 | test_loss:1.4815 | test_acc:98.05%
+2020-12-22 17:29:57,803 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step: 50 | train_loss:1.4695 | test_loss:1.4772 | test_acc:98.60%
+2020-12-22 17:29:59,158 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:100 | train_loss:1.4692 | test_loss:1.4786 | test_acc:98.35%
+2020-12-22 17:30:00,484 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:150 | train_loss:1.4844 | test_loss:1.4806 | test_acc:98.15%
+2020-12-22 17:30:01,770 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:200 | train_loss:1.4717 | test_loss:1.4784 | test_acc:98.35%
+2020-12-22 17:30:03,124 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:250 | train_loss:1.4707 | test_loss:1.4805 | test_acc:98.10%
+2020-12-22 17:30:05,877 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:300 | train_loss:1.4787 | test_loss:1.4799 | test_acc:98.30%
+2020-12-22 17:30:07,207 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:350 | train_loss:1.4782 | test_loss:1.4824 | test_acc:98.05%
+2020-12-22 17:30:08,554 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:400 | train_loss:1.4651 | test_loss:1.4790 | test_acc:98.30%
+2020-12-22 17:30:09,893 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 12|100] | step:450 | train_loss:1.4725 | test_loss:1.4823 | test_acc:98.00%
+2020-12-22 17:30:18,075 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4693 | test loss: 1.4753 | train acc: 99.27% | test acc: 98.61%
+2020-12-22 17:30:19,167 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:  0 | train_loss:1.4614 | test_loss:1.4822 | test_acc:98.00%
+2020-12-22 17:30:21,062 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step: 50 | train_loss:1.4695 | test_loss:1.4845 | test_acc:97.75%
+2020-12-22 17:30:22,381 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:100 | train_loss:1.4628 | test_loss:1.4818 | test_acc:98.00%
+2020-12-22 17:30:23,667 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:150 | train_loss:1.4783 | test_loss:1.4828 | test_acc:98.00%
+2020-12-22 17:30:24,948 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:200 | train_loss:1.4820 | test_loss:1.4840 | test_acc:97.85%
+2020-12-22 17:30:26,266 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:250 | train_loss:1.4706 | test_loss:1.4804 | test_acc:98.15%
+2020-12-22 17:30:27,557 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:300 | train_loss:1.4618 | test_loss:1.4830 | test_acc:97.95%
+2020-12-22 17:30:28,888 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:350 | train_loss:1.4675 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 17:30:30,217 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:400 | train_loss:1.4624 | test_loss:1.4828 | test_acc:97.90%
+2020-12-22 17:30:31,537 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 13|100] | step:450 | train_loss:1.4652 | test_loss:1.4844 | test_acc:97.85%
+2020-12-22 17:30:47,963 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4715 | test loss: 1.4775 | train acc: 99.09% | test acc: 98.47%
+2020-12-22 17:30:49,313 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:  0 | train_loss:1.4693 | test_loss:1.4856 | test_acc:97.60%
+2020-12-22 17:30:51,148 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step: 50 | train_loss:1.4724 | test_loss:1.4843 | test_acc:97.75%
+2020-12-22 17:30:52,459 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:100 | train_loss:1.4635 | test_loss:1.4858 | test_acc:97.70%
+2020-12-22 17:30:53,803 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:150 | train_loss:1.4689 | test_loss:1.4855 | test_acc:97.55%
+2020-12-22 17:30:55,148 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:200 | train_loss:1.4685 | test_loss:1.4815 | test_acc:98.05%
+2020-12-22 17:30:56,527 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:250 | train_loss:1.4701 | test_loss:1.4847 | test_acc:97.80%
+2020-12-22 17:30:57,881 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:300 | train_loss:1.4996 | test_loss:1.4833 | test_acc:97.85%
+2020-12-22 17:30:59,258 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:350 | train_loss:1.4795 | test_loss:1.4823 | test_acc:98.00%
+2020-12-22 17:31:00,660 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:400 | train_loss:1.4653 | test_loss:1.4825 | test_acc:98.05%
+2020-12-22 17:31:02,023 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 14|100] | step:450 | train_loss:1.4655 | test_loss:1.4848 | test_acc:97.65%
+2020-12-22 17:31:15,184 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4679 | test loss: 1.4748 | train acc: 99.41% | test acc: 98.72%
+2020-12-22 17:31:16,062 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:  0 | train_loss:1.4827 | test_loss:1.4820 | test_acc:98.00%
+2020-12-22 17:31:17,792 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step: 50 | train_loss:1.4657 | test_loss:1.4813 | test_acc:98.05%
+2020-12-22 17:31:19,185 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:100 | train_loss:1.4753 | test_loss:1.4862 | test_acc:97.60%
+2020-12-22 17:31:20,546 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:150 | train_loss:1.4729 | test_loss:1.4786 | test_acc:98.40%
+2020-12-22 17:31:21,887 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:200 | train_loss:1.4675 | test_loss:1.4867 | test_acc:97.45%
+2020-12-22 17:31:23,276 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:250 | train_loss:1.4750 | test_loss:1.4813 | test_acc:98.05%
+2020-12-22 17:31:24,660 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:300 | train_loss:1.4702 | test_loss:1.4845 | test_acc:97.70%
+2020-12-22 17:31:26,045 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:350 | train_loss:1.4615 | test_loss:1.4789 | test_acc:98.30%
+2020-12-22 17:31:27,352 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:400 | train_loss:1.4618 | test_loss:1.4825 | test_acc:97.75%
+2020-12-22 17:31:28,631 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 15|100] | step:450 | train_loss:1.4645 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 17:31:43,756 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4685 | test loss: 1.4752 | train acc: 99.36% | test acc: 98.65%
+2020-12-22 17:31:44,854 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:  0 | train_loss:1.4732 | test_loss:1.4825 | test_acc:97.80%
+2020-12-22 17:31:46,471 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step: 50 | train_loss:1.4614 | test_loss:1.4823 | test_acc:98.05%
+2020-12-22 17:31:47,813 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:100 | train_loss:1.4724 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 17:31:49,130 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:150 | train_loss:1.4709 | test_loss:1.4790 | test_acc:98.40%
+2020-12-22 17:31:50,474 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:200 | train_loss:1.4657 | test_loss:1.4832 | test_acc:97.95%
+2020-12-22 17:31:51,826 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:250 | train_loss:1.4714 | test_loss:1.4835 | test_acc:97.80%
+2020-12-22 17:31:53,146 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:300 | train_loss:1.4727 | test_loss:1.4826 | test_acc:97.85%
+2020-12-22 17:31:54,507 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:350 | train_loss:1.4779 | test_loss:1.4835 | test_acc:97.90%
+2020-12-22 17:31:55,823 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:400 | train_loss:1.4759 | test_loss:1.4823 | test_acc:98.10%
+2020-12-22 17:31:57,138 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 16|100] | step:450 | train_loss:1.4780 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 17:32:08,992 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4668 | test loss: 1.4741 | train acc: 99.52% | test acc: 98.80%
+2020-12-22 17:32:10,191 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:  0 | train_loss:1.4677 | test_loss:1.4807 | test_acc:98.20%
+2020-12-22 17:32:11,932 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step: 50 | train_loss:1.4678 | test_loss:1.4819 | test_acc:97.95%
+2020-12-22 17:32:13,261 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:100 | train_loss:1.4645 | test_loss:1.4814 | test_acc:98.10%
+2020-12-22 17:32:14,591 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:150 | train_loss:1.4787 | test_loss:1.4833 | test_acc:97.85%
+2020-12-22 17:32:15,911 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:200 | train_loss:1.4646 | test_loss:1.4830 | test_acc:97.80%
+2020-12-22 17:32:17,223 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:250 | train_loss:1.4632 | test_loss:1.4842 | test_acc:97.75%
+2020-12-22 17:32:18,510 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:300 | train_loss:1.4613 | test_loss:1.4800 | test_acc:98.20%
+2020-12-22 17:32:19,792 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:350 | train_loss:1.4759 | test_loss:1.4812 | test_acc:98.00%
+2020-12-22 17:32:21,103 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:400 | train_loss:1.4653 | test_loss:1.4812 | test_acc:98.00%
+2020-12-22 17:32:22,431 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 17|100] | step:450 | train_loss:1.4700 | test_loss:1.4817 | test_acc:98.05%
+2020-12-22 17:32:33,154 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4679 | test loss: 1.4750 | train acc: 99.41% | test acc: 98.70%
+2020-12-22 17:32:34,830 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:  0 | train_loss:1.4773 | test_loss:1.4816 | test_acc:98.05%
+2020-12-22 17:32:36,790 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step: 50 | train_loss:1.4644 | test_loss:1.4813 | test_acc:98.15%
+2020-12-22 17:32:38,246 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:100 | train_loss:1.4746 | test_loss:1.4802 | test_acc:98.40%
+2020-12-22 17:32:39,639 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:150 | train_loss:1.4726 | test_loss:1.4821 | test_acc:98.00%
+2020-12-22 17:32:40,996 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:200 | train_loss:1.4626 | test_loss:1.4861 | test_acc:97.60%
+2020-12-22 17:32:42,372 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:250 | train_loss:1.4720 | test_loss:1.4816 | test_acc:98.10%
+2020-12-22 17:32:43,738 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:300 | train_loss:1.4689 | test_loss:1.4824 | test_acc:98.20%
+2020-12-22 17:32:45,073 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:350 | train_loss:1.4762 | test_loss:1.4803 | test_acc:98.40%
+2020-12-22 17:32:46,400 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:400 | train_loss:1.4700 | test_loss:1.4797 | test_acc:98.25%
+2020-12-22 17:32:47,731 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 18|100] | step:450 | train_loss:1.4641 | test_loss:1.4832 | test_acc:97.80%
+2020-12-22 17:33:04,995 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4681 | test loss: 1.4746 | train acc: 99.41% | test acc: 98.80%
+2020-12-22 17:33:06,085 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:  0 | train_loss:1.4670 | test_loss:1.4793 | test_acc:98.35%
+2020-12-22 17:33:08,503 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step: 50 | train_loss:1.4635 | test_loss:1.4826 | test_acc:97.85%
+2020-12-22 17:33:09,882 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:100 | train_loss:1.4691 | test_loss:1.4808 | test_acc:98.20%
+2020-12-22 17:33:11,231 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:150 | train_loss:1.4615 | test_loss:1.4798 | test_acc:98.20%
+2020-12-22 17:33:12,573 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:200 | train_loss:1.4639 | test_loss:1.4831 | test_acc:98.05%
+2020-12-22 17:33:13,932 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:250 | train_loss:1.4673 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 17:33:15,268 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:300 | train_loss:1.4791 | test_loss:1.4816 | test_acc:98.10%
+2020-12-22 17:33:16,646 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:350 | train_loss:1.4748 | test_loss:1.4817 | test_acc:98.25%
+2020-12-22 17:33:18,033 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:400 | train_loss:1.4618 | test_loss:1.4808 | test_acc:98.15%
+2020-12-22 17:33:19,415 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 19|100] | step:450 | train_loss:1.4677 | test_loss:1.4796 | test_acc:98.20%
+2020-12-22 17:33:30,314 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4684 | test loss: 1.4763 | train acc: 99.37% | test acc: 98.57%
+2020-12-22 17:33:31,489 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:  0 | train_loss:1.4619 | test_loss:1.4807 | test_acc:98.25%
+2020-12-22 17:33:33,293 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step: 50 | train_loss:1.4682 | test_loss:1.4823 | test_acc:98.05%
+2020-12-22 17:33:34,632 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:100 | train_loss:1.4661 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 17:33:35,953 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:150 | train_loss:1.4613 | test_loss:1.4781 | test_acc:98.40%
+2020-12-22 17:33:37,288 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:200 | train_loss:1.4656 | test_loss:1.4797 | test_acc:98.45%
+2020-12-22 17:33:38,628 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:250 | train_loss:1.4636 | test_loss:1.4806 | test_acc:98.25%
+2020-12-22 17:33:39,949 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:300 | train_loss:1.4792 | test_loss:1.4833 | test_acc:97.95%
+2020-12-22 17:33:41,283 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:350 | train_loss:1.4680 | test_loss:1.4822 | test_acc:98.00%
+2020-12-22 17:33:42,599 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:400 | train_loss:1.4639 | test_loss:1.4795 | test_acc:98.40%
+2020-12-22 17:33:43,914 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 20|100] | step:450 | train_loss:1.4672 | test_loss:1.4788 | test_acc:98.30%
+2020-12-22 17:33:58,801 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4664 | test loss: 1.4746 | train acc: 99.56% | test acc: 98.74%
+2020-12-22 17:33:59,802 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:  0 | train_loss:1.4616 | test_loss:1.4814 | test_acc:98.10%
+2020-12-22 17:34:02,067 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step: 50 | train_loss:1.4616 | test_loss:1.4826 | test_acc:98.00%
+2020-12-22 17:34:03,468 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:100 | train_loss:1.4636 | test_loss:1.4807 | test_acc:98.25%
+2020-12-22 17:34:04,773 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:150 | train_loss:1.4687 | test_loss:1.4818 | test_acc:97.95%
+2020-12-22 17:34:06,142 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:200 | train_loss:1.4733 | test_loss:1.4847 | test_acc:97.85%
+2020-12-22 17:34:07,466 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:250 | train_loss:1.4616 | test_loss:1.4800 | test_acc:98.10%
+2020-12-22 17:34:08,825 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:300 | train_loss:1.4620 | test_loss:1.4816 | test_acc:98.00%
+2020-12-22 17:34:10,196 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:350 | train_loss:1.4784 | test_loss:1.4803 | test_acc:98.10%
+2020-12-22 17:34:11,552 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:400 | train_loss:1.4614 | test_loss:1.4808 | test_acc:98.25%
+2020-12-22 17:34:12,884 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 21|100] | step:450 | train_loss:1.4742 | test_loss:1.4816 | test_acc:98.15%
+2020-12-22 17:34:25,768 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4675 | test loss: 1.4748 | train acc: 99.47% | test acc: 98.69%
+2020-12-22 17:34:26,912 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:  0 | train_loss:1.4625 | test_loss:1.4796 | test_acc:98.30%
+2020-12-22 17:34:28,656 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step: 50 | train_loss:1.4615 | test_loss:1.4791 | test_acc:98.15%
+2020-12-22 17:34:29,987 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:100 | train_loss:1.4623 | test_loss:1.4779 | test_acc:98.40%
+2020-12-22 17:34:31,321 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:150 | train_loss:1.4743 | test_loss:1.4773 | test_acc:98.50%
+2020-12-22 17:34:32,633 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:200 | train_loss:1.4621 | test_loss:1.4792 | test_acc:98.40%
+2020-12-22 17:34:33,960 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:250 | train_loss:1.4694 | test_loss:1.4772 | test_acc:98.60%
+2020-12-22 17:34:35,321 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:300 | train_loss:1.4679 | test_loss:1.4762 | test_acc:98.85%
+2020-12-22 17:34:36,661 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:350 | train_loss:1.4721 | test_loss:1.4806 | test_acc:98.15%
+2020-12-22 17:34:38,001 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:400 | train_loss:1.4691 | test_loss:1.4781 | test_acc:98.40%
+2020-12-22 17:34:39,335 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 22|100] | step:450 | train_loss:1.4671 | test_loss:1.4798 | test_acc:98.15%
+2020-12-22 17:34:52,892 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4671 | test loss: 1.4742 | train acc: 99.50% | test acc: 98.79%
+2020-12-22 17:34:53,803 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:  0 | train_loss:1.4757 | test_loss:1.4811 | test_acc:98.20%
+2020-12-22 17:34:55,689 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step: 50 | train_loss:1.4652 | test_loss:1.4783 | test_acc:98.50%
+2020-12-22 17:34:56,988 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:100 | train_loss:1.4620 | test_loss:1.4793 | test_acc:98.35%
+2020-12-22 17:34:58,302 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:150 | train_loss:1.4683 | test_loss:1.4784 | test_acc:98.35%
+2020-12-22 17:34:59,615 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:200 | train_loss:1.4732 | test_loss:1.4802 | test_acc:98.30%
+2020-12-22 17:35:00,972 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:250 | train_loss:1.4694 | test_loss:1.4805 | test_acc:98.10%
+2020-12-22 17:35:02,342 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:300 | train_loss:1.4639 | test_loss:1.4819 | test_acc:98.10%
+2020-12-22 17:35:03,660 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:350 | train_loss:1.4716 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 17:35:05,001 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:400 | train_loss:1.4622 | test_loss:1.4819 | test_acc:98.10%
+2020-12-22 17:35:06,335 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 23|100] | step:450 | train_loss:1.4691 | test_loss:1.4839 | test_acc:97.85%
+2020-12-22 17:35:16,330 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4707 | test loss: 1.4770 | train acc: 99.16% | test acc: 98.47%
+2020-12-22 17:35:17,500 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:  0 | train_loss:1.4656 | test_loss:1.4856 | test_acc:97.55%
+2020-12-22 17:35:19,422 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step: 50 | train_loss:1.4725 | test_loss:1.4797 | test_acc:98.30%
+2020-12-22 17:35:20,730 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:100 | train_loss:1.4612 | test_loss:1.4788 | test_acc:98.50%
+2020-12-22 17:35:22,072 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:150 | train_loss:1.4630 | test_loss:1.4831 | test_acc:97.80%
+2020-12-22 17:35:23,420 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:200 | train_loss:1.4693 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 17:35:24,761 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:250 | train_loss:1.4620 | test_loss:1.4819 | test_acc:98.00%
+2020-12-22 17:35:26,070 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:300 | train_loss:1.4617 | test_loss:1.4789 | test_acc:98.25%
+2020-12-22 17:35:27,343 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:350 | train_loss:1.4738 | test_loss:1.4827 | test_acc:97.95%
+2020-12-22 17:35:28,707 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:400 | train_loss:1.4783 | test_loss:1.4775 | test_acc:98.55%
+2020-12-22 17:35:30,006 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 24|100] | step:450 | train_loss:1.4715 | test_loss:1.4798 | test_acc:98.35%
+2020-12-22 17:35:45,998 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4693 | test loss: 1.4762 | train acc: 99.33% | test acc: 98.68%
+2020-12-22 17:35:47,630 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:  0 | train_loss:1.4713 | test_loss:1.4817 | test_acc:98.15%
+2020-12-22 17:35:49,228 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step: 50 | train_loss:1.4665 | test_loss:1.4797 | test_acc:98.10%
+2020-12-22 17:35:50,619 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:100 | train_loss:1.4668 | test_loss:1.4795 | test_acc:98.35%
+2020-12-22 17:35:51,950 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:150 | train_loss:1.4815 | test_loss:1.4806 | test_acc:98.10%
+2020-12-22 17:35:53,224 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:200 | train_loss:1.4685 | test_loss:1.4804 | test_acc:98.20%
+2020-12-22 17:35:54,597 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:250 | train_loss:1.4695 | test_loss:1.4872 | test_acc:97.50%
+2020-12-22 17:35:55,920 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:300 | train_loss:1.4709 | test_loss:1.4809 | test_acc:98.15%
+2020-12-22 17:35:57,229 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:350 | train_loss:1.4627 | test_loss:1.4822 | test_acc:98.10%
+2020-12-22 17:35:58,526 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:400 | train_loss:1.4634 | test_loss:1.4808 | test_acc:98.05%
+2020-12-22 17:35:59,814 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 25|100] | step:450 | train_loss:1.4683 | test_loss:1.4815 | test_acc:98.05%
+2020-12-22 17:36:13,197 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4656 | test loss: 1.4735 | train acc: 99.64% | test acc: 98.81%
+2020-12-22 17:36:14,275 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:  0 | train_loss:1.4711 | test_loss:1.4792 | test_acc:98.30%
+2020-12-22 17:36:16,306 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step: 50 | train_loss:1.4624 | test_loss:1.4819 | test_acc:97.95%
+2020-12-22 17:36:17,653 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:100 | train_loss:1.4737 | test_loss:1.4792 | test_acc:98.30%
+2020-12-22 17:36:18,953 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:150 | train_loss:1.4621 | test_loss:1.4783 | test_acc:98.40%
+2020-12-22 17:36:20,262 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:200 | train_loss:1.4765 | test_loss:1.4822 | test_acc:98.00%
+2020-12-22 17:36:21,569 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:250 | train_loss:1.4621 | test_loss:1.4784 | test_acc:98.40%
+2020-12-22 17:36:22,923 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:300 | train_loss:1.4633 | test_loss:1.4802 | test_acc:98.20%
+2020-12-22 17:36:24,249 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:350 | train_loss:1.4702 | test_loss:1.4802 | test_acc:98.35%
+2020-12-22 17:36:25,590 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:400 | train_loss:1.4709 | test_loss:1.4824 | test_acc:98.05%
+2020-12-22 17:36:26,943 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 26|100] | step:450 | train_loss:1.4691 | test_loss:1.4780 | test_acc:98.50%
+2020-12-22 17:36:36,966 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4658 | test loss: 1.4733 | train acc: 99.62% | test acc: 98.85%
+2020-12-22 17:36:37,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:  0 | train_loss:1.4653 | test_loss:1.4789 | test_acc:98.35%
+2020-12-22 17:36:40,323 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step: 50 | train_loss:1.4690 | test_loss:1.4836 | test_acc:97.90%
+2020-12-22 17:36:41,766 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:100 | train_loss:1.4672 | test_loss:1.4780 | test_acc:98.45%
+2020-12-22 17:36:43,141 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:150 | train_loss:1.4623 | test_loss:1.4781 | test_acc:98.45%
+2020-12-22 17:36:44,454 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:200 | train_loss:1.4708 | test_loss:1.4790 | test_acc:98.40%
+2020-12-22 17:36:45,799 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:250 | train_loss:1.4662 | test_loss:1.4823 | test_acc:98.10%
+2020-12-22 17:36:47,130 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:300 | train_loss:1.4653 | test_loss:1.4794 | test_acc:98.25%
+2020-12-22 17:36:48,483 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:350 | train_loss:1.4615 | test_loss:1.4788 | test_acc:98.45%
+2020-12-22 17:36:49,826 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:400 | train_loss:1.4705 | test_loss:1.4815 | test_acc:97.90%
+2020-12-22 17:36:51,137 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 27|100] | step:450 | train_loss:1.4672 | test_loss:1.4831 | test_acc:97.70%
+2020-12-22 17:37:06,021 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4657 | test loss: 1.4738 | train acc: 99.62% | test acc: 98.85%
+2020-12-22 17:37:07,722 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:  0 | train_loss:1.4668 | test_loss:1.4796 | test_acc:98.20%
+2020-12-22 17:37:09,310 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step: 50 | train_loss:1.4715 | test_loss:1.4773 | test_acc:98.65%
+2020-12-22 17:37:10,637 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:100 | train_loss:1.4654 | test_loss:1.4793 | test_acc:98.25%
+2020-12-22 17:37:11,952 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:150 | train_loss:1.4616 | test_loss:1.4791 | test_acc:98.25%
+2020-12-22 17:37:13,314 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:200 | train_loss:1.4637 | test_loss:1.4769 | test_acc:98.55%
+2020-12-22 17:37:14,617 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:250 | train_loss:1.4642 | test_loss:1.4794 | test_acc:98.35%
+2020-12-22 17:37:15,911 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:300 | train_loss:1.4645 | test_loss:1.4779 | test_acc:98.40%
+2020-12-22 17:37:17,244 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:350 | train_loss:1.4617 | test_loss:1.4793 | test_acc:98.40%
+2020-12-22 17:37:18,610 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:400 | train_loss:1.4652 | test_loss:1.4780 | test_acc:98.50%
+2020-12-22 17:37:19,959 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 28|100] | step:450 | train_loss:1.4691 | test_loss:1.4820 | test_acc:98.00%
+2020-12-22 17:37:29,529 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4654 | test loss: 1.4732 | train acc: 99.67% | test acc: 98.88%
+2020-12-22 17:37:32,120 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:  0 | train_loss:1.4629 | test_loss:1.4783 | test_acc:98.40%
+2020-12-22 17:37:33,701 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step: 50 | train_loss:1.4621 | test_loss:1.4791 | test_acc:98.10%
+2020-12-22 17:37:35,025 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:100 | train_loss:1.4615 | test_loss:1.4796 | test_acc:98.45%
+2020-12-22 17:37:36,380 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:150 | train_loss:1.4626 | test_loss:1.4812 | test_acc:98.15%
+2020-12-22 17:37:37,674 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:200 | train_loss:1.4620 | test_loss:1.4803 | test_acc:98.30%
+2020-12-22 17:37:38,983 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:250 | train_loss:1.4618 | test_loss:1.4777 | test_acc:98.70%
+2020-12-22 17:37:40,347 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:300 | train_loss:1.4721 | test_loss:1.4801 | test_acc:98.30%
+2020-12-22 17:37:41,596 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:350 | train_loss:1.4711 | test_loss:1.4838 | test_acc:98.00%
+2020-12-22 17:37:42,893 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:400 | train_loss:1.4712 | test_loss:1.4809 | test_acc:98.25%
+2020-12-22 17:37:44,224 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 29|100] | step:450 | train_loss:1.4744 | test_loss:1.4822 | test_acc:97.85%
+2020-12-22 17:38:03,279 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4655 | test loss: 1.4730 | train acc: 99.67% | test acc: 98.90%
+2020-12-22 17:38:04,259 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:  0 | train_loss:1.4620 | test_loss:1.4791 | test_acc:98.40%
+2020-12-22 17:38:06,539 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step: 50 | train_loss:1.4747 | test_loss:1.4804 | test_acc:98.20%
+2020-12-22 17:38:07,896 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:100 | train_loss:1.4625 | test_loss:1.4806 | test_acc:98.05%
+2020-12-22 17:38:09,258 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:150 | train_loss:1.4621 | test_loss:1.4801 | test_acc:98.40%
+2020-12-22 17:38:10,614 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:200 | train_loss:1.4617 | test_loss:1.4823 | test_acc:98.20%
+2020-12-22 17:38:11,968 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:250 | train_loss:1.4626 | test_loss:1.4825 | test_acc:98.00%
+2020-12-22 17:38:13,290 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:300 | train_loss:1.4660 | test_loss:1.4802 | test_acc:98.20%
+2020-12-22 17:38:14,664 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:350 | train_loss:1.4697 | test_loss:1.4793 | test_acc:98.25%
+2020-12-22 17:38:16,038 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:400 | train_loss:1.4619 | test_loss:1.4790 | test_acc:98.20%
+2020-12-22 17:38:17,388 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 30|100] | step:450 | train_loss:1.4716 | test_loss:1.4786 | test_acc:98.35%
+2020-12-22 17:38:38,172 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4686 | test loss: 1.4790 | train acc: 99.39% | test acc: 98.27%
+2020-12-22 17:38:39,712 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:  0 | train_loss:1.4669 | test_loss:1.4871 | test_acc:97.45%
+2020-12-22 17:38:41,658 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step: 50 | train_loss:1.4702 | test_loss:1.4785 | test_acc:98.60%
+2020-12-22 17:38:43,224 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:100 | train_loss:1.4697 | test_loss:1.4763 | test_acc:98.65%
+2020-12-22 17:38:44,841 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:150 | train_loss:1.4617 | test_loss:1.4756 | test_acc:98.80%
+2020-12-22 17:38:46,286 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:200 | train_loss:1.4623 | test_loss:1.4814 | test_acc:98.10%
+2020-12-22 17:38:47,615 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:250 | train_loss:1.4750 | test_loss:1.4782 | test_acc:98.50%
+2020-12-22 17:38:48,965 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:300 | train_loss:1.4728 | test_loss:1.4792 | test_acc:98.15%
+2020-12-22 17:38:50,302 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:350 | train_loss:1.4690 | test_loss:1.4782 | test_acc:98.45%
+2020-12-22 17:38:51,663 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:400 | train_loss:1.4762 | test_loss:1.4812 | test_acc:98.20%
+2020-12-22 17:38:52,995 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 31|100] | step:450 | train_loss:1.4770 | test_loss:1.4817 | test_acc:98.00%
+2020-12-22 17:39:02,010 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4661 | test loss: 1.4748 | train acc: 99.61% | test acc: 98.74%
+2020-12-22 17:39:05,338 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:  0 | train_loss:1.4644 | test_loss:1.4818 | test_acc:98.00%
+2020-12-22 17:39:07,142 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step: 50 | train_loss:1.4644 | test_loss:1.4791 | test_acc:98.30%
+2020-12-22 17:39:08,500 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:100 | train_loss:1.4680 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 17:39:09,874 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:150 | train_loss:1.4630 | test_loss:1.4777 | test_acc:98.55%
+2020-12-22 17:39:11,290 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:200 | train_loss:1.4672 | test_loss:1.4810 | test_acc:98.20%
+2020-12-22 17:39:12,652 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:250 | train_loss:1.4627 | test_loss:1.4788 | test_acc:98.35%
+2020-12-22 17:39:13,994 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:300 | train_loss:1.4645 | test_loss:1.4818 | test_acc:98.00%
+2020-12-22 17:39:15,336 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:350 | train_loss:1.4699 | test_loss:1.4783 | test_acc:98.40%
+2020-12-22 17:39:16,683 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:400 | train_loss:1.4726 | test_loss:1.4804 | test_acc:98.25%
+2020-12-22 17:39:18,014 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 32|100] | step:450 | train_loss:1.4695 | test_loss:1.4807 | test_acc:98.25%
+2020-12-22 17:39:35,074 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4664 | test loss: 1.4739 | train acc: 99.57% | test acc: 98.78%
+2020-12-22 17:39:35,989 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:  0 | train_loss:1.4654 | test_loss:1.4785 | test_acc:98.35%
+2020-12-22 17:39:38,237 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step: 50 | train_loss:1.4620 | test_loss:1.4785 | test_acc:98.35%
+2020-12-22 17:39:39,562 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:100 | train_loss:1.4618 | test_loss:1.4791 | test_acc:98.35%
+2020-12-22 17:39:40,893 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:150 | train_loss:1.4644 | test_loss:1.4803 | test_acc:98.20%
+2020-12-22 17:39:42,210 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:200 | train_loss:1.4726 | test_loss:1.4797 | test_acc:98.25%
+2020-12-22 17:39:43,511 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:250 | train_loss:1.4686 | test_loss:1.4794 | test_acc:98.25%
+2020-12-22 17:39:44,854 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:300 | train_loss:1.4657 | test_loss:1.4810 | test_acc:98.15%
+2020-12-22 17:39:46,192 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:350 | train_loss:1.4622 | test_loss:1.4798 | test_acc:98.15%
+2020-12-22 17:39:47,516 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:400 | train_loss:1.4694 | test_loss:1.4778 | test_acc:98.60%
+2020-12-22 17:39:48,873 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 33|100] | step:450 | train_loss:1.4757 | test_loss:1.4817 | test_acc:98.10%
+2020-12-22 17:39:58,693 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4658 | test loss: 1.4744 | train acc: 99.63% | test acc: 98.83%
+2020-12-22 17:40:00,877 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:  0 | train_loss:1.4684 | test_loss:1.4813 | test_acc:98.20%
+2020-12-22 17:40:02,606 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step: 50 | train_loss:1.4640 | test_loss:1.4792 | test_acc:98.25%
+2020-12-22 17:40:03,930 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:100 | train_loss:1.4644 | test_loss:1.4796 | test_acc:98.45%
+2020-12-22 17:40:05,270 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:150 | train_loss:1.4613 | test_loss:1.4794 | test_acc:98.25%
+2020-12-22 17:40:06,575 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:200 | train_loss:1.4719 | test_loss:1.4825 | test_acc:98.05%
+2020-12-22 17:40:07,900 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:250 | train_loss:1.4625 | test_loss:1.4781 | test_acc:98.65%
+2020-12-22 17:40:09,222 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:300 | train_loss:1.4657 | test_loss:1.4775 | test_acc:98.40%
+2020-12-22 17:40:10,551 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:350 | train_loss:1.4646 | test_loss:1.4861 | test_acc:97.75%
+2020-12-22 17:40:11,858 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:400 | train_loss:1.4742 | test_loss:1.4812 | test_acc:98.10%
+2020-12-22 17:40:13,176 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 34|100] | step:450 | train_loss:1.4748 | test_loss:1.4788 | test_acc:98.35%
+2020-12-22 17:40:27,513 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4650 | test loss: 1.4736 | train acc: 99.71% | test acc: 98.83%
+2020-12-22 17:40:28,553 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:  0 | train_loss:1.4691 | test_loss:1.4810 | test_acc:98.00%
+2020-12-22 17:40:30,230 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step: 50 | train_loss:1.4617 | test_loss:1.4776 | test_acc:98.45%
+2020-12-22 17:40:31,554 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:100 | train_loss:1.4614 | test_loss:1.4785 | test_acc:98.40%
+2020-12-22 17:40:32,852 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:150 | train_loss:1.4817 | test_loss:1.4786 | test_acc:98.30%
+2020-12-22 17:40:34,145 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:200 | train_loss:1.4666 | test_loss:1.4771 | test_acc:98.60%
+2020-12-22 17:40:35,466 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:250 | train_loss:1.4614 | test_loss:1.4794 | test_acc:98.40%
+2020-12-22 17:40:36,748 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:300 | train_loss:1.4693 | test_loss:1.4787 | test_acc:98.50%
+2020-12-22 17:40:38,051 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:350 | train_loss:1.4616 | test_loss:1.4797 | test_acc:98.10%
+2020-12-22 17:40:39,357 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:400 | train_loss:1.4619 | test_loss:1.4801 | test_acc:98.10%
+2020-12-22 17:40:40,623 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 35|100] | step:450 | train_loss:1.4639 | test_loss:1.4811 | test_acc:98.15%
+2020-12-22 17:40:49,388 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4670 | test loss: 1.4749 | train acc: 99.53% | test acc: 98.78%
+2020-12-22 17:40:49,966 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:  0 | train_loss:1.4759 | test_loss:1.4812 | test_acc:98.10%
+2020-12-22 17:40:51,597 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step: 50 | train_loss:1.4631 | test_loss:1.4793 | test_acc:98.25%
+2020-12-22 17:40:52,891 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:100 | train_loss:1.4615 | test_loss:1.4805 | test_acc:98.20%
+2020-12-22 17:40:54,162 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:150 | train_loss:1.4619 | test_loss:1.4786 | test_acc:98.30%
+2020-12-22 17:40:55,470 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:200 | train_loss:1.4663 | test_loss:1.4797 | test_acc:98.35%
+2020-12-22 17:40:56,748 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:250 | train_loss:1.4652 | test_loss:1.4793 | test_acc:98.35%
+2020-12-22 17:40:58,038 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:300 | train_loss:1.4673 | test_loss:1.4767 | test_acc:98.55%
+2020-12-22 17:40:59,327 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:350 | train_loss:1.4616 | test_loss:1.4778 | test_acc:98.40%
+2020-12-22 17:41:00,586 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:400 | train_loss:1.4630 | test_loss:1.4785 | test_acc:98.65%
+2020-12-22 17:41:01,862 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 36|100] | step:450 | train_loss:1.4698 | test_loss:1.4805 | test_acc:98.15%
+2020-12-22 17:41:21,908 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4660 | test loss: 1.4754 | train acc: 99.61% | test acc: 98.67%
+2020-12-22 17:41:22,924 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:  0 | train_loss:1.4617 | test_loss:1.4822 | test_acc:98.20%
+2020-12-22 17:41:24,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step: 50 | train_loss:1.4685 | test_loss:1.4782 | test_acc:98.35%
+2020-12-22 17:41:26,307 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:100 | train_loss:1.4617 | test_loss:1.4787 | test_acc:98.50%
+2020-12-22 17:41:27,662 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:150 | train_loss:1.4617 | test_loss:1.4779 | test_acc:98.50%
+2020-12-22 17:41:28,953 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:200 | train_loss:1.4632 | test_loss:1.4794 | test_acc:98.30%
+2020-12-22 17:41:30,247 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:250 | train_loss:1.4627 | test_loss:1.4773 | test_acc:98.45%
+2020-12-22 17:41:31,557 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:300 | train_loss:1.4627 | test_loss:1.4791 | test_acc:98.20%
+2020-12-22 17:41:32,858 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:350 | train_loss:1.4616 | test_loss:1.4797 | test_acc:98.15%
+2020-12-22 17:41:34,205 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:400 | train_loss:1.4658 | test_loss:1.4830 | test_acc:97.90%
+2020-12-22 17:41:35,550 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 37|100] | step:450 | train_loss:1.4732 | test_loss:1.4797 | test_acc:98.30%
+2020-12-22 17:41:45,776 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4654 | test loss: 1.4735 | train acc: 99.66% | test acc: 98.77%
+2020-12-22 17:41:46,672 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:  0 | train_loss:1.4613 | test_loss:1.4783 | test_acc:98.25%
+2020-12-22 17:41:48,554 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step: 50 | train_loss:1.4791 | test_loss:1.4781 | test_acc:98.50%
+2020-12-22 17:41:49,859 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:100 | train_loss:1.4618 | test_loss:1.4805 | test_acc:98.20%
+2020-12-22 17:41:51,188 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:150 | train_loss:1.4616 | test_loss:1.4803 | test_acc:98.15%
+2020-12-22 17:41:52,542 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:200 | train_loss:1.4677 | test_loss:1.4796 | test_acc:98.05%
+2020-12-22 17:41:53,890 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:250 | train_loss:1.4613 | test_loss:1.4801 | test_acc:98.15%
+2020-12-22 17:41:55,246 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:300 | train_loss:1.4675 | test_loss:1.4818 | test_acc:98.05%
+2020-12-22 17:41:56,561 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:350 | train_loss:1.4642 | test_loss:1.4816 | test_acc:98.05%
+2020-12-22 17:41:57,862 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:400 | train_loss:1.4761 | test_loss:1.4782 | test_acc:98.45%
+2020-12-22 17:41:59,150 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 38|100] | step:450 | train_loss:1.4652 | test_loss:1.4806 | test_acc:98.20%
+2020-12-22 17:42:17,391 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4671 | test loss: 1.4761 | train acc: 99.52% | test acc: 98.64%
+2020-12-22 17:42:18,805 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:  0 | train_loss:1.4667 | test_loss:1.4827 | test_acc:98.00%
+2020-12-22 17:42:20,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step: 50 | train_loss:1.4618 | test_loss:1.4786 | test_acc:98.50%
+2020-12-22 17:42:22,392 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:100 | train_loss:1.4629 | test_loss:1.4805 | test_acc:98.20%
+2020-12-22 17:42:23,759 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:150 | train_loss:1.4657 | test_loss:1.4796 | test_acc:98.35%
+2020-12-22 17:42:25,090 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:200 | train_loss:1.4659 | test_loss:1.4820 | test_acc:98.05%
+2020-12-22 17:42:26,420 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:250 | train_loss:1.4625 | test_loss:1.4822 | test_acc:97.95%
+2020-12-22 17:42:27,778 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:300 | train_loss:1.4804 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 17:42:29,165 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:350 | train_loss:1.4613 | test_loss:1.4788 | test_acc:98.30%
+2020-12-22 17:42:30,489 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:400 | train_loss:1.4674 | test_loss:1.4833 | test_acc:97.80%
+2020-12-22 17:42:31,787 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 39|100] | step:450 | train_loss:1.4823 | test_loss:1.4778 | test_acc:98.55%
+2020-12-22 17:42:43,348 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4667 | test loss: 1.4747 | train acc: 99.57% | test acc: 98.68%
+2020-12-22 17:42:44,234 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:  0 | train_loss:1.4688 | test_loss:1.4797 | test_acc:98.30%
+2020-12-22 17:42:46,210 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step: 50 | train_loss:1.4685 | test_loss:1.4792 | test_acc:98.35%
+2020-12-22 17:42:47,609 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:100 | train_loss:1.4614 | test_loss:1.4799 | test_acc:98.25%
+2020-12-22 17:42:48,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:150 | train_loss:1.4856 | test_loss:1.4816 | test_acc:98.10%
+2020-12-22 17:42:50,299 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:200 | train_loss:1.4745 | test_loss:1.4798 | test_acc:98.15%
+2020-12-22 17:42:51,611 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:250 | train_loss:1.4633 | test_loss:1.4801 | test_acc:98.20%
+2020-12-22 17:42:52,972 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:300 | train_loss:1.4614 | test_loss:1.4824 | test_acc:98.00%
+2020-12-22 17:42:54,369 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:350 | train_loss:1.4619 | test_loss:1.4781 | test_acc:98.35%
+2020-12-22 17:42:55,724 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:400 | train_loss:1.4614 | test_loss:1.4778 | test_acc:98.40%
+2020-12-22 17:42:57,063 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 40|100] | step:450 | train_loss:1.4661 | test_loss:1.4784 | test_acc:98.35%
+2020-12-22 17:43:15,017 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4655 | test loss: 1.4749 | train acc: 99.65% | test acc: 98.67%
+2020-12-22 17:43:15,812 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:  0 | train_loss:1.4678 | test_loss:1.4801 | test_acc:98.15%
+2020-12-22 17:43:17,967 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step: 50 | train_loss:1.4633 | test_loss:1.4781 | test_acc:98.50%
+2020-12-22 17:43:19,343 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:100 | train_loss:1.4624 | test_loss:1.4775 | test_acc:98.55%
+2020-12-22 17:43:20,630 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:150 | train_loss:1.4627 | test_loss:1.4787 | test_acc:98.25%
+2020-12-22 17:43:21,983 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:200 | train_loss:1.4624 | test_loss:1.4775 | test_acc:98.45%
+2020-12-22 17:43:23,379 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:250 | train_loss:1.4615 | test_loss:1.4761 | test_acc:98.60%
+2020-12-22 17:43:24,702 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:300 | train_loss:1.4616 | test_loss:1.4757 | test_acc:98.60%
+2020-12-22 17:43:26,054 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:350 | train_loss:1.4636 | test_loss:1.4761 | test_acc:98.55%
+2020-12-22 17:43:27,429 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:400 | train_loss:1.4623 | test_loss:1.4792 | test_acc:98.25%
+2020-12-22 17:43:28,783 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 41|100] | step:450 | train_loss:1.4639 | test_loss:1.4803 | test_acc:98.40%
+2020-12-22 17:43:40,657 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4653 | test loss: 1.4735 | train acc: 99.69% | test acc: 98.85%
+2020-12-22 17:43:41,443 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:  0 | train_loss:1.4620 | test_loss:1.4791 | test_acc:98.25%
+2020-12-22 17:43:43,339 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step: 50 | train_loss:1.4614 | test_loss:1.4780 | test_acc:98.55%
+2020-12-22 17:43:44,706 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:100 | train_loss:1.4642 | test_loss:1.4784 | test_acc:98.35%
+2020-12-22 17:43:46,027 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:150 | train_loss:1.4612 | test_loss:1.4792 | test_acc:98.40%
+2020-12-22 17:43:47,333 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:200 | train_loss:1.4618 | test_loss:1.4801 | test_acc:98.25%
+2020-12-22 17:43:48,637 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:250 | train_loss:1.4625 | test_loss:1.4775 | test_acc:98.35%
+2020-12-22 17:43:49,965 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:300 | train_loss:1.4705 | test_loss:1.4816 | test_acc:97.95%
+2020-12-22 17:43:51,296 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:350 | train_loss:1.4617 | test_loss:1.4782 | test_acc:98.35%
+2020-12-22 17:43:52,620 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:400 | train_loss:1.4617 | test_loss:1.4805 | test_acc:98.15%
+2020-12-22 17:43:53,938 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 42|100] | step:450 | train_loss:1.4641 | test_loss:1.4785 | test_acc:98.35%
+2020-12-22 17:44:08,903 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4650 | test loss: 1.4736 | train acc: 99.71% | test acc: 98.88%
+2020-12-22 17:44:09,687 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:  0 | train_loss:1.4687 | test_loss:1.4796 | test_acc:98.30%
+2020-12-22 17:44:11,340 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step: 50 | train_loss:1.4620 | test_loss:1.4763 | test_acc:98.45%
+2020-12-22 17:44:12,647 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:100 | train_loss:1.4689 | test_loss:1.4773 | test_acc:98.45%
+2020-12-22 17:44:13,964 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:150 | train_loss:1.4635 | test_loss:1.4769 | test_acc:98.55%
+2020-12-22 17:44:15,314 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:200 | train_loss:1.4635 | test_loss:1.4778 | test_acc:98.45%
+2020-12-22 17:44:16,659 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:250 | train_loss:1.4659 | test_loss:1.4781 | test_acc:98.50%
+2020-12-22 17:44:17,979 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:300 | train_loss:1.4634 | test_loss:1.4773 | test_acc:98.45%
+2020-12-22 17:44:19,321 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:350 | train_loss:1.4762 | test_loss:1.4799 | test_acc:98.30%
+2020-12-22 17:44:20,628 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:400 | train_loss:1.4707 | test_loss:1.4809 | test_acc:98.30%
+2020-12-22 17:44:21,954 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 43|100] | step:450 | train_loss:1.4620 | test_loss:1.4783 | test_acc:98.40%
+2020-12-22 17:44:36,786 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4659 | test loss: 1.4748 | train acc: 99.61% | test acc: 98.72%
+2020-12-22 17:44:38,008 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:  0 | train_loss:1.4624 | test_loss:1.4810 | test_acc:98.15%
+2020-12-22 17:44:39,712 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step: 50 | train_loss:1.4653 | test_loss:1.4803 | test_acc:98.20%
+2020-12-22 17:44:41,055 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:100 | train_loss:1.4707 | test_loss:1.4817 | test_acc:98.15%
+2020-12-22 17:44:42,358 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:150 | train_loss:1.4627 | test_loss:1.4825 | test_acc:98.05%
+2020-12-22 17:44:43,639 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:200 | train_loss:1.4687 | test_loss:1.4804 | test_acc:98.20%
+2020-12-22 17:44:44,955 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:250 | train_loss:1.4712 | test_loss:1.4813 | test_acc:98.15%
+2020-12-22 17:44:46,285 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:300 | train_loss:1.4704 | test_loss:1.4822 | test_acc:98.00%
+2020-12-22 17:44:47,628 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:350 | train_loss:1.4700 | test_loss:1.4838 | test_acc:97.75%
+2020-12-22 17:44:48,972 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:400 | train_loss:1.4806 | test_loss:1.4818 | test_acc:98.05%
+2020-12-22 17:44:50,270 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 44|100] | step:450 | train_loss:1.4618 | test_loss:1.4796 | test_acc:98.30%
+2020-12-22 17:45:06,051 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4655 | test loss: 1.4751 | train acc: 99.67% | test acc: 98.69%
+2020-12-22 17:45:06,835 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:  0 | train_loss:1.4631 | test_loss:1.4814 | test_acc:98.00%
+2020-12-22 17:45:08,888 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step: 50 | train_loss:1.4631 | test_loss:1.4804 | test_acc:98.25%
+2020-12-22 17:45:10,201 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:100 | train_loss:1.4654 | test_loss:1.4781 | test_acc:98.50%
+2020-12-22 17:45:11,521 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:150 | train_loss:1.4753 | test_loss:1.4774 | test_acc:98.55%
+2020-12-22 17:45:12,853 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:200 | train_loss:1.4635 | test_loss:1.4831 | test_acc:97.95%
+2020-12-22 17:45:14,216 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:250 | train_loss:1.4685 | test_loss:1.4782 | test_acc:98.35%
+2020-12-22 17:45:15,573 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:300 | train_loss:1.4722 | test_loss:1.4802 | test_acc:98.25%
+2020-12-22 17:45:16,946 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:350 | train_loss:1.4615 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 17:45:18,288 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:400 | train_loss:1.4612 | test_loss:1.4808 | test_acc:98.10%
+2020-12-22 17:45:19,656 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 45|100] | step:450 | train_loss:1.4624 | test_loss:1.4820 | test_acc:98.00%
+2020-12-22 17:45:32,711 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4643 | test loss: 1.4726 | train acc: 99.77% | test acc: 98.95%
+2020-12-22 17:45:33,696 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:  0 | train_loss:1.4619 | test_loss:1.4783 | test_acc:98.40%
+2020-12-22 17:45:35,327 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step: 50 | train_loss:1.4628 | test_loss:1.4798 | test_acc:98.15%
+2020-12-22 17:45:36,670 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:100 | train_loss:1.4675 | test_loss:1.4787 | test_acc:98.30%
+2020-12-22 17:45:37,988 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:150 | train_loss:1.4626 | test_loss:1.4813 | test_acc:98.00%
+2020-12-22 17:45:39,321 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:200 | train_loss:1.4649 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 17:45:40,634 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:250 | train_loss:1.4632 | test_loss:1.4789 | test_acc:98.25%
+2020-12-22 17:45:41,906 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:300 | train_loss:1.4660 | test_loss:1.4807 | test_acc:98.15%
+2020-12-22 17:45:43,228 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:350 | train_loss:1.4651 | test_loss:1.4786 | test_acc:98.40%
+2020-12-22 17:45:44,497 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:400 | train_loss:1.4703 | test_loss:1.4827 | test_acc:97.90%
+2020-12-22 17:45:45,749 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 46|100] | step:450 | train_loss:1.4632 | test_loss:1.4806 | test_acc:98.25%
+2020-12-22 17:45:59,300 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4653 | test loss: 1.4736 | train acc: 99.67% | test acc: 98.85%
+2020-12-22 17:46:00,275 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:  0 | train_loss:1.4709 | test_loss:1.4798 | test_acc:98.30%
+2020-12-22 17:46:01,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step: 50 | train_loss:1.4639 | test_loss:1.4787 | test_acc:98.30%
+2020-12-22 17:46:03,293 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:100 | train_loss:1.4622 | test_loss:1.4787 | test_acc:98.35%
+2020-12-22 17:46:04,625 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:150 | train_loss:1.4620 | test_loss:1.4792 | test_acc:98.30%
+2020-12-22 17:46:05,939 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:200 | train_loss:1.4706 | test_loss:1.4811 | test_acc:98.30%
+2020-12-22 17:46:07,274 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:250 | train_loss:1.4615 | test_loss:1.4842 | test_acc:97.70%
+2020-12-22 17:46:08,586 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:300 | train_loss:1.4624 | test_loss:1.4799 | test_acc:98.25%
+2020-12-22 17:46:09,891 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:350 | train_loss:1.4665 | test_loss:1.4825 | test_acc:97.90%
+2020-12-22 17:46:11,197 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:400 | train_loss:1.4704 | test_loss:1.4830 | test_acc:97.95%
+2020-12-22 17:46:12,476 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 47|100] | step:450 | train_loss:1.4706 | test_loss:1.4805 | test_acc:98.20%
+2020-12-22 17:46:25,447 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4645 | test loss: 1.4737 | train acc: 99.76% | test acc: 98.85%
+2020-12-22 17:46:27,395 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:  0 | train_loss:1.4694 | test_loss:1.4806 | test_acc:98.25%
+2020-12-22 17:46:29,270 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step: 50 | train_loss:1.4642 | test_loss:1.4787 | test_acc:98.35%
+2020-12-22 17:46:30,671 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:100 | train_loss:1.4634 | test_loss:1.4804 | test_acc:98.10%
+2020-12-22 17:46:32,011 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:150 | train_loss:1.4638 | test_loss:1.4788 | test_acc:98.45%
+2020-12-22 17:46:33,372 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:200 | train_loss:1.4623 | test_loss:1.4789 | test_acc:98.40%
+2020-12-22 17:46:34,729 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:250 | train_loss:1.4632 | test_loss:1.4786 | test_acc:98.35%
+2020-12-22 17:46:36,057 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:300 | train_loss:1.4640 | test_loss:1.4785 | test_acc:98.35%
+2020-12-22 17:46:37,437 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:350 | train_loss:1.4636 | test_loss:1.4795 | test_acc:98.40%
+2020-12-22 17:46:38,759 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:400 | train_loss:1.4625 | test_loss:1.4792 | test_acc:98.35%
+2020-12-22 17:46:40,050 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 48|100] | step:450 | train_loss:1.4779 | test_loss:1.4804 | test_acc:98.30%
+2020-12-22 17:46:57,229 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4657 | test loss: 1.4740 | train acc: 99.63% | test acc: 98.78%
+2020-12-22 17:46:58,244 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:  0 | train_loss:1.4721 | test_loss:1.4798 | test_acc:98.30%
+2020-12-22 17:47:00,305 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step: 50 | train_loss:1.4615 | test_loss:1.4782 | test_acc:98.35%
+2020-12-22 17:47:01,623 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:100 | train_loss:1.4768 | test_loss:1.4793 | test_acc:98.40%
+2020-12-22 17:47:02,939 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:150 | train_loss:1.4710 | test_loss:1.4775 | test_acc:98.55%
+2020-12-22 17:47:04,289 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:200 | train_loss:1.4655 | test_loss:1.4808 | test_acc:98.15%
+2020-12-22 17:47:05,587 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:250 | train_loss:1.4639 | test_loss:1.4783 | test_acc:98.40%
+2020-12-22 17:47:06,897 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:300 | train_loss:1.4614 | test_loss:1.4784 | test_acc:98.40%
+2020-12-22 17:47:08,236 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:350 | train_loss:1.4666 | test_loss:1.4794 | test_acc:98.25%
+2020-12-22 17:47:09,566 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:400 | train_loss:1.4688 | test_loss:1.4800 | test_acc:98.35%
+2020-12-22 17:47:10,868 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 49|100] | step:450 | train_loss:1.4642 | test_loss:1.4829 | test_acc:98.00%
+2020-12-22 17:47:22,996 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4653 | test loss: 1.4738 | train acc: 99.67% | test acc: 98.81%
+2020-12-22 17:47:24,600 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:  0 | train_loss:1.4696 | test_loss:1.4795 | test_acc:98.35%
+2020-12-22 17:47:26,228 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step: 50 | train_loss:1.4670 | test_loss:1.4800 | test_acc:98.20%
+2020-12-22 17:47:27,553 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:100 | train_loss:1.4642 | test_loss:1.4786 | test_acc:98.20%
+2020-12-22 17:47:28,859 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:150 | train_loss:1.4633 | test_loss:1.4806 | test_acc:98.15%
+2020-12-22 17:47:30,178 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:200 | train_loss:1.4623 | test_loss:1.4795 | test_acc:98.25%
+2020-12-22 17:47:31,518 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:250 | train_loss:1.4645 | test_loss:1.4793 | test_acc:98.30%
+2020-12-22 17:47:32,810 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:300 | train_loss:1.4646 | test_loss:1.4776 | test_acc:98.35%
+2020-12-22 17:47:34,129 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:350 | train_loss:1.4652 | test_loss:1.4796 | test_acc:98.20%
+2020-12-22 17:47:35,431 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:400 | train_loss:1.4740 | test_loss:1.4816 | test_acc:97.95%
+2020-12-22 17:47:36,678 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 50|100] | step:450 | train_loss:1.4671 | test_loss:1.4833 | test_acc:97.85%
+2020-12-22 17:47:56,279 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4659 | test loss: 1.4766 | train acc: 99.64% | test acc: 98.55%
+2020-12-22 17:47:57,110 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:  0 | train_loss:1.4622 | test_loss:1.4828 | test_acc:98.10%
+2020-12-22 17:47:58,761 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step: 50 | train_loss:1.4710 | test_loss:1.4794 | test_acc:98.20%
+2020-12-22 17:48:00,082 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:100 | train_loss:1.4697 | test_loss:1.4810 | test_acc:98.10%
+2020-12-22 17:48:01,413 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:150 | train_loss:1.4614 | test_loss:1.4786 | test_acc:98.40%
+2020-12-22 17:48:02,745 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:200 | train_loss:1.4644 | test_loss:1.4797 | test_acc:98.35%
+2020-12-22 17:48:04,051 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:250 | train_loss:1.4711 | test_loss:1.4802 | test_acc:98.15%
+2020-12-22 17:48:05,387 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:300 | train_loss:1.4625 | test_loss:1.4780 | test_acc:98.55%
+2020-12-22 17:48:06,692 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:350 | train_loss:1.4629 | test_loss:1.4788 | test_acc:98.35%
+2020-12-22 17:48:08,035 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:400 | train_loss:1.4694 | test_loss:1.4794 | test_acc:98.30%
+2020-12-22 17:48:09,391 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 51|100] | step:450 | train_loss:1.4631 | test_loss:1.4814 | test_acc:97.90%
+2020-12-22 17:48:22,535 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4649 | test loss: 1.4744 | train acc: 99.73% | test acc: 98.77%
+2020-12-22 17:48:24,237 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:  0 | train_loss:1.4722 | test_loss:1.4814 | test_acc:98.00%
+2020-12-22 17:48:26,052 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step: 50 | train_loss:1.4641 | test_loss:1.4795 | test_acc:98.30%
+2020-12-22 17:48:27,720 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:100 | train_loss:1.4622 | test_loss:1.4794 | test_acc:98.25%
+2020-12-22 17:48:29,246 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:150 | train_loss:1.4633 | test_loss:1.4775 | test_acc:98.50%
+2020-12-22 17:48:30,604 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:200 | train_loss:1.4617 | test_loss:1.4805 | test_acc:98.25%
+2020-12-22 17:48:31,927 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:250 | train_loss:1.4682 | test_loss:1.4769 | test_acc:98.55%
+2020-12-22 17:48:33,261 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:300 | train_loss:1.4618 | test_loss:1.4802 | test_acc:98.25%
+2020-12-22 17:48:34,585 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:350 | train_loss:1.4723 | test_loss:1.4800 | test_acc:98.40%
+2020-12-22 17:48:35,919 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:400 | train_loss:1.4630 | test_loss:1.4798 | test_acc:98.30%
+2020-12-22 17:48:37,251 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 52|100] | step:450 | train_loss:1.4628 | test_loss:1.4796 | test_acc:98.35%
+2020-12-22 17:48:53,047 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4645 | test loss: 1.4725 | train acc: 99.75% | test acc: 98.96%
+2020-12-22 17:48:54,351 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:  0 | train_loss:1.4630 | test_loss:1.4803 | test_acc:98.25%
+2020-12-22 17:48:56,431 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step: 50 | train_loss:1.4620 | test_loss:1.4786 | test_acc:98.40%
+2020-12-22 17:48:57,713 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:100 | train_loss:1.4614 | test_loss:1.4808 | test_acc:98.10%
+2020-12-22 17:48:59,013 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:150 | train_loss:1.4659 | test_loss:1.4787 | test_acc:98.45%
+2020-12-22 17:49:00,318 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:200 | train_loss:1.4625 | test_loss:1.4797 | test_acc:98.25%
+2020-12-22 17:49:01,596 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:250 | train_loss:1.4693 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 17:49:02,905 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:300 | train_loss:1.4721 | test_loss:1.4832 | test_acc:98.00%
+2020-12-22 17:49:04,226 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:350 | train_loss:1.4635 | test_loss:1.4800 | test_acc:98.30%
+2020-12-22 17:49:05,823 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:400 | train_loss:1.4615 | test_loss:1.4792 | test_acc:98.35%
+2020-12-22 17:49:07,158 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 53|100] | step:450 | train_loss:1.4631 | test_loss:1.4797 | test_acc:98.20%
+2020-12-22 17:49:17,059 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4666 | test loss: 1.4759 | train acc: 99.56% | test acc: 98.63%
+2020-12-22 17:49:17,960 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:  0 | train_loss:1.4649 | test_loss:1.4804 | test_acc:98.10%
+2020-12-22 17:49:19,843 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step: 50 | train_loss:1.4780 | test_loss:1.4819 | test_acc:98.00%
+2020-12-22 17:49:21,154 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:100 | train_loss:1.4640 | test_loss:1.4777 | test_acc:98.35%
+2020-12-22 17:49:22,507 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:150 | train_loss:1.4646 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 17:49:23,847 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:200 | train_loss:1.4641 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 17:49:25,196 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:250 | train_loss:1.4639 | test_loss:1.4810 | test_acc:98.05%
+2020-12-22 17:49:26,547 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:300 | train_loss:1.4689 | test_loss:1.4781 | test_acc:98.45%
+2020-12-22 17:49:27,884 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:350 | train_loss:1.4619 | test_loss:1.4785 | test_acc:98.35%
+2020-12-22 17:49:29,209 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:400 | train_loss:1.4614 | test_loss:1.4807 | test_acc:98.10%
+2020-12-22 17:49:30,515 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 54|100] | step:450 | train_loss:1.4623 | test_loss:1.4802 | test_acc:98.25%
+2020-12-22 17:49:51,348 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4647 | test loss: 1.4742 | train acc: 99.74% | test acc: 98.81%
+2020-12-22 17:49:52,643 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:  0 | train_loss:1.4675 | test_loss:1.4782 | test_acc:98.50%
+2020-12-22 17:49:54,537 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step: 50 | train_loss:1.4682 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 17:49:55,828 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:100 | train_loss:1.4616 | test_loss:1.4789 | test_acc:98.30%
+2020-12-22 17:49:57,133 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:150 | train_loss:1.4619 | test_loss:1.4781 | test_acc:98.35%
+2020-12-22 17:49:58,465 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:200 | train_loss:1.4768 | test_loss:1.4807 | test_acc:98.25%
+2020-12-22 17:49:59,783 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:250 | train_loss:1.4653 | test_loss:1.4803 | test_acc:98.25%
+2020-12-22 17:50:01,138 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:300 | train_loss:1.4645 | test_loss:1.4790 | test_acc:98.25%
+2020-12-22 17:50:02,509 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:350 | train_loss:1.4698 | test_loss:1.4797 | test_acc:98.20%
+2020-12-22 17:50:03,847 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:400 | train_loss:1.4723 | test_loss:1.4796 | test_acc:98.25%
+2020-12-22 17:50:05,216 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 55|100] | step:450 | train_loss:1.4640 | test_loss:1.4796 | test_acc:98.35%
+2020-12-22 17:50:15,218 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4649 | test loss: 1.4732 | train acc: 99.72% | test acc: 98.89%
+2020-12-22 17:50:16,149 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:  0 | train_loss:1.4631 | test_loss:1.4792 | test_acc:98.20%
+2020-12-22 17:50:18,100 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step: 50 | train_loss:1.4613 | test_loss:1.4794 | test_acc:98.20%
+2020-12-22 17:50:19,457 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:100 | train_loss:1.4624 | test_loss:1.4804 | test_acc:98.25%
+2020-12-22 17:50:20,736 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:150 | train_loss:1.4692 | test_loss:1.4786 | test_acc:98.40%
+2020-12-22 17:50:22,046 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:200 | train_loss:1.4688 | test_loss:1.4783 | test_acc:98.30%
+2020-12-22 17:50:23,409 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:250 | train_loss:1.4619 | test_loss:1.4800 | test_acc:98.15%
+2020-12-22 17:50:24,720 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:300 | train_loss:1.4669 | test_loss:1.4804 | test_acc:98.10%
+2020-12-22 17:50:26,050 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:350 | train_loss:1.4620 | test_loss:1.4820 | test_acc:97.90%
+2020-12-22 17:50:27,370 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:400 | train_loss:1.4702 | test_loss:1.4844 | test_acc:97.75%
+2020-12-22 17:50:28,663 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 56|100] | step:450 | train_loss:1.4691 | test_loss:1.4778 | test_acc:98.50%
+2020-12-22 17:50:39,726 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4650 | test loss: 1.4735 | train acc: 99.71% | test acc: 98.86%
+2020-12-22 17:50:40,824 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:  0 | train_loss:1.4660 | test_loss:1.4787 | test_acc:98.35%
+2020-12-22 17:50:42,816 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step: 50 | train_loss:1.4692 | test_loss:1.4783 | test_acc:98.35%
+2020-12-22 17:50:44,165 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:100 | train_loss:1.4617 | test_loss:1.4795 | test_acc:98.40%
+2020-12-22 17:50:45,503 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:150 | train_loss:1.4618 | test_loss:1.4798 | test_acc:98.35%
+2020-12-22 17:50:46,801 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:200 | train_loss:1.4642 | test_loss:1.4796 | test_acc:98.25%
+2020-12-22 17:50:48,154 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:250 | train_loss:1.4625 | test_loss:1.4789 | test_acc:98.35%
+2020-12-22 17:50:49,517 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:300 | train_loss:1.4617 | test_loss:1.4799 | test_acc:98.10%
+2020-12-22 17:50:50,891 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:350 | train_loss:1.4646 | test_loss:1.4805 | test_acc:98.10%
+2020-12-22 17:50:52,182 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:400 | train_loss:1.4624 | test_loss:1.4806 | test_acc:98.15%
+2020-12-22 17:50:53,447 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 57|100] | step:450 | train_loss:1.4620 | test_loss:1.4802 | test_acc:98.15%
+2020-12-22 17:51:08,336 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4645 | test loss: 1.4745 | train acc: 99.75% | test acc: 98.73%
+2020-12-22 17:51:09,392 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:  0 | train_loss:1.4612 | test_loss:1.4809 | test_acc:98.00%
+2020-12-22 17:51:11,135 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step: 50 | train_loss:1.4630 | test_loss:1.4796 | test_acc:98.30%
+2020-12-22 17:51:12,502 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:100 | train_loss:1.4614 | test_loss:1.4804 | test_acc:98.10%
+2020-12-22 17:51:13,797 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:150 | train_loss:1.4619 | test_loss:1.4799 | test_acc:98.15%
+2020-12-22 17:51:15,129 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:200 | train_loss:1.4618 | test_loss:1.4805 | test_acc:98.20%
+2020-12-22 17:51:16,468 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:250 | train_loss:1.4701 | test_loss:1.4801 | test_acc:98.35%
+2020-12-22 17:51:17,777 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:300 | train_loss:1.4631 | test_loss:1.4847 | test_acc:97.80%
+2020-12-22 17:51:19,094 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:350 | train_loss:1.4615 | test_loss:1.4812 | test_acc:98.10%
+2020-12-22 17:51:20,398 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:400 | train_loss:1.4643 | test_loss:1.4816 | test_acc:98.10%
+2020-12-22 17:51:21,665 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 58|100] | step:450 | train_loss:1.4700 | test_loss:1.4839 | test_acc:98.00%
+2020-12-22 17:51:33,549 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4642 | test loss: 1.4736 | train acc: 99.78% | test acc: 98.87%
+2020-12-22 17:51:34,453 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:  0 | train_loss:1.4620 | test_loss:1.4799 | test_acc:98.25%
+2020-12-22 17:51:36,472 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step: 50 | train_loss:1.4692 | test_loss:1.4784 | test_acc:98.30%
+2020-12-22 17:51:37,771 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:100 | train_loss:1.4613 | test_loss:1.4802 | test_acc:98.10%
+2020-12-22 17:51:39,025 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:150 | train_loss:1.4613 | test_loss:1.4798 | test_acc:98.20%
+2020-12-22 17:51:40,310 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:200 | train_loss:1.4714 | test_loss:1.4796 | test_acc:98.45%
+2020-12-22 17:51:41,656 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:250 | train_loss:1.4742 | test_loss:1.4778 | test_acc:98.60%
+2020-12-22 17:51:42,932 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:300 | train_loss:1.4648 | test_loss:1.4814 | test_acc:98.10%
+2020-12-22 17:51:44,254 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:350 | train_loss:1.4614 | test_loss:1.4793 | test_acc:98.40%
+2020-12-22 17:51:45,535 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:400 | train_loss:1.4639 | test_loss:1.4795 | test_acc:98.35%
+2020-12-22 17:51:46,863 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 59|100] | step:450 | train_loss:1.4628 | test_loss:1.4807 | test_acc:98.15%
+2020-12-22 17:52:01,719 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4652 | test loss: 1.4749 | train acc: 99.71% | test acc: 98.77%
+2020-12-22 17:52:02,734 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:  0 | train_loss:1.4639 | test_loss:1.4812 | test_acc:98.25%
+2020-12-22 17:52:05,236 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step: 50 | train_loss:1.4649 | test_loss:1.4794 | test_acc:98.40%
+2020-12-22 17:52:06,606 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:100 | train_loss:1.4613 | test_loss:1.4798 | test_acc:98.40%
+2020-12-22 17:52:07,925 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:150 | train_loss:1.4626 | test_loss:1.4793 | test_acc:98.35%
+2020-12-22 17:52:09,248 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:200 | train_loss:1.4625 | test_loss:1.4784 | test_acc:98.40%
+2020-12-22 17:52:10,569 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:250 | train_loss:1.4623 | test_loss:1.4795 | test_acc:98.40%
+2020-12-22 17:52:11,871 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:300 | train_loss:1.4616 | test_loss:1.4790 | test_acc:98.45%
+2020-12-22 17:52:13,234 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:350 | train_loss:1.4617 | test_loss:1.4823 | test_acc:97.95%
+2020-12-22 17:52:14,573 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:400 | train_loss:1.4783 | test_loss:1.4837 | test_acc:97.85%
+2020-12-22 17:52:15,932 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 60|100] | step:450 | train_loss:1.4624 | test_loss:1.4806 | test_acc:98.20%
+2020-12-22 17:52:27,021 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4651 | test loss: 1.4744 | train acc: 99.69% | test acc: 98.81%
+2020-12-22 17:52:28,670 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:  0 | train_loss:1.4615 | test_loss:1.4811 | test_acc:98.20%
+2020-12-22 17:52:30,552 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step: 50 | train_loss:1.4711 | test_loss:1.4790 | test_acc:98.45%
+2020-12-22 17:52:31,863 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:100 | train_loss:1.4700 | test_loss:1.4798 | test_acc:98.15%
+2020-12-22 17:52:33,162 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:150 | train_loss:1.4681 | test_loss:1.4795 | test_acc:98.30%
+2020-12-22 17:52:34,482 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:200 | train_loss:1.4632 | test_loss:1.4803 | test_acc:98.25%
+2020-12-22 17:52:35,778 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:250 | train_loss:1.4613 | test_loss:1.4775 | test_acc:98.55%
+2020-12-22 17:52:37,085 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:300 | train_loss:1.4616 | test_loss:1.4801 | test_acc:98.20%
+2020-12-22 17:52:38,447 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:350 | train_loss:1.4641 | test_loss:1.4830 | test_acc:97.85%
+2020-12-22 17:52:39,697 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:400 | train_loss:1.4685 | test_loss:1.4823 | test_acc:98.10%
+2020-12-22 17:52:40,980 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 61|100] | step:450 | train_loss:1.4676 | test_loss:1.4782 | test_acc:98.50%
+2020-12-22 17:52:52,829 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4643 | test loss: 1.4735 | train acc: 99.78% | test acc: 98.90%
+2020-12-22 17:52:53,810 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:  0 | train_loss:1.4621 | test_loss:1.4807 | test_acc:98.15%
+2020-12-22 17:52:55,626 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step: 50 | train_loss:1.4691 | test_loss:1.4798 | test_acc:98.20%
+2020-12-22 17:52:56,961 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:100 | train_loss:1.4725 | test_loss:1.4804 | test_acc:98.30%
+2020-12-22 17:52:58,335 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:150 | train_loss:1.4644 | test_loss:1.4797 | test_acc:98.40%
+2020-12-22 17:52:59,658 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:200 | train_loss:1.4618 | test_loss:1.4823 | test_acc:97.95%
+2020-12-22 17:53:01,025 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:250 | train_loss:1.4634 | test_loss:1.4799 | test_acc:98.10%
+2020-12-22 17:53:02,356 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:300 | train_loss:1.4618 | test_loss:1.4810 | test_acc:98.15%
+2020-12-22 17:53:03,692 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:350 | train_loss:1.4711 | test_loss:1.4802 | test_acc:98.25%
+2020-12-22 17:53:05,055 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:400 | train_loss:1.4629 | test_loss:1.4839 | test_acc:97.70%
+2020-12-22 17:53:06,381 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 62|100] | step:450 | train_loss:1.4668 | test_loss:1.4804 | test_acc:97.95%
+2020-12-22 17:53:24,259 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4641 | test loss: 1.4735 | train acc: 99.78% | test acc: 98.84%
+2020-12-22 17:53:25,642 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:  0 | train_loss:1.4616 | test_loss:1.4806 | test_acc:98.05%
+2020-12-22 17:53:28,709 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step: 50 | train_loss:1.4649 | test_loss:1.4822 | test_acc:97.80%
+2020-12-22 17:53:30,037 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:100 | train_loss:1.4684 | test_loss:1.4810 | test_acc:98.15%
+2020-12-22 17:53:31,378 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:150 | train_loss:1.4714 | test_loss:1.4808 | test_acc:98.05%
+2020-12-22 17:53:32,684 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:200 | train_loss:1.4691 | test_loss:1.4807 | test_acc:98.15%
+2020-12-22 17:53:34,018 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:250 | train_loss:1.4637 | test_loss:1.4807 | test_acc:98.20%
+2020-12-22 17:53:35,361 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:300 | train_loss:1.4792 | test_loss:1.4800 | test_acc:98.15%
+2020-12-22 17:53:36,716 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:350 | train_loss:1.4696 | test_loss:1.4785 | test_acc:98.35%
+2020-12-22 17:53:38,057 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:400 | train_loss:1.4645 | test_loss:1.4779 | test_acc:98.60%
+2020-12-22 17:53:39,404 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 63|100] | step:450 | train_loss:1.4655 | test_loss:1.4792 | test_acc:98.45%
+2020-12-22 17:53:47,078 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4645 | test loss: 1.4741 | train acc: 99.77% | test acc: 98.82%
+2020-12-22 17:53:48,356 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:  0 | train_loss:1.4670 | test_loss:1.4801 | test_acc:98.20%
+2020-12-22 17:53:50,278 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step: 50 | train_loss:1.4633 | test_loss:1.4814 | test_acc:98.15%
+2020-12-22 17:53:51,734 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:100 | train_loss:1.4645 | test_loss:1.4794 | test_acc:98.30%
+2020-12-22 17:53:53,156 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:150 | train_loss:1.4676 | test_loss:1.4804 | test_acc:98.15%
+2020-12-22 17:53:54,531 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:200 | train_loss:1.4652 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 17:53:55,880 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:250 | train_loss:1.4757 | test_loss:1.4817 | test_acc:98.10%
+2020-12-22 17:53:57,240 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:300 | train_loss:1.4702 | test_loss:1.4773 | test_acc:98.70%
+2020-12-22 17:53:58,598 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:350 | train_loss:1.4620 | test_loss:1.4796 | test_acc:98.35%
+2020-12-22 17:53:59,966 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:400 | train_loss:1.4640 | test_loss:1.4825 | test_acc:98.10%
+2020-12-22 17:54:01,327 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 64|100] | step:450 | train_loss:1.4706 | test_loss:1.4788 | test_acc:98.45%
+2020-12-22 17:54:17,380 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4655 | test loss: 1.4750 | train acc: 99.70% | test acc: 98.77%
+2020-12-22 17:54:18,416 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:  0 | train_loss:1.4736 | test_loss:1.4825 | test_acc:97.90%
+2020-12-22 17:54:20,350 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step: 50 | train_loss:1.4617 | test_loss:1.4782 | test_acc:98.50%
+2020-12-22 17:54:21,704 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:100 | train_loss:1.4744 | test_loss:1.4796 | test_acc:98.25%
+2020-12-22 17:54:23,034 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:150 | train_loss:1.4622 | test_loss:1.4782 | test_acc:98.40%
+2020-12-22 17:54:24,365 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:200 | train_loss:1.4633 | test_loss:1.4825 | test_acc:97.85%
+2020-12-22 17:54:25,670 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:250 | train_loss:1.4703 | test_loss:1.4804 | test_acc:98.15%
+2020-12-22 17:54:27,011 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:300 | train_loss:1.4613 | test_loss:1.4779 | test_acc:98.30%
+2020-12-22 17:54:28,369 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:350 | train_loss:1.4715 | test_loss:1.4834 | test_acc:97.90%
+2020-12-22 17:54:29,713 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:400 | train_loss:1.4803 | test_loss:1.4795 | test_acc:98.35%
+2020-12-22 17:54:31,100 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 65|100] | step:450 | train_loss:1.4645 | test_loss:1.4817 | test_acc:98.05%
+2020-12-22 17:54:40,356 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4646 | test loss: 1.4747 | train acc: 99.74% | test acc: 98.72%
+2020-12-22 17:54:41,219 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:  0 | train_loss:1.4622 | test_loss:1.4811 | test_acc:98.05%
+2020-12-22 17:54:43,042 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step: 50 | train_loss:1.4634 | test_loss:1.4788 | test_acc:98.25%
+2020-12-22 17:54:44,429 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:100 | train_loss:1.4658 | test_loss:1.4786 | test_acc:98.45%
+2020-12-22 17:54:45,773 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:150 | train_loss:1.4619 | test_loss:1.4785 | test_acc:98.50%
+2020-12-22 17:54:47,127 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:200 | train_loss:1.4627 | test_loss:1.4811 | test_acc:98.20%
+2020-12-22 17:54:48,466 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:250 | train_loss:1.4643 | test_loss:1.4790 | test_acc:98.40%
+2020-12-22 17:54:49,832 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:300 | train_loss:1.4614 | test_loss:1.4809 | test_acc:98.15%
+2020-12-22 17:54:51,176 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:350 | train_loss:1.4614 | test_loss:1.4784 | test_acc:98.30%
+2020-12-22 17:54:52,563 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:400 | train_loss:1.4621 | test_loss:1.4792 | test_acc:98.40%
+2020-12-22 17:54:53,905 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 66|100] | step:450 | train_loss:1.4714 | test_loss:1.4764 | test_acc:98.70%
+2020-12-22 17:55:08,437 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4636 | test loss: 1.4720 | train acc: 99.83% | test acc: 99.02%
+2020-12-22 17:55:09,788 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:  0 | train_loss:1.4655 | test_loss:1.4762 | test_acc:98.60%
+2020-12-22 17:55:11,851 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step: 50 | train_loss:1.4684 | test_loss:1.4771 | test_acc:98.65%
+2020-12-22 17:55:13,277 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:100 | train_loss:1.4640 | test_loss:1.4767 | test_acc:98.60%
+2020-12-22 17:55:14,669 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:150 | train_loss:1.4615 | test_loss:1.4777 | test_acc:98.50%
+2020-12-22 17:55:16,041 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:200 | train_loss:1.4636 | test_loss:1.4776 | test_acc:98.35%
+2020-12-22 17:55:17,418 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:250 | train_loss:1.4615 | test_loss:1.4769 | test_acc:98.55%
+2020-12-22 17:55:18,810 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:300 | train_loss:1.4696 | test_loss:1.4781 | test_acc:98.40%
+2020-12-22 17:55:20,202 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:350 | train_loss:1.4681 | test_loss:1.4792 | test_acc:98.25%
+2020-12-22 17:55:21,628 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:400 | train_loss:1.4621 | test_loss:1.4815 | test_acc:98.10%
+2020-12-22 17:55:23,034 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 67|100] | step:450 | train_loss:1.4620 | test_loss:1.4810 | test_acc:98.10%
+2020-12-22 17:55:35,268 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4642 | test loss: 1.4736 | train acc: 99.78% | test acc: 98.84%
+2020-12-22 17:55:36,009 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:  0 | train_loss:1.4621 | test_loss:1.4811 | test_acc:98.05%
+2020-12-22 17:55:38,168 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step: 50 | train_loss:1.4684 | test_loss:1.4816 | test_acc:98.25%
+2020-12-22 17:55:39,586 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:100 | train_loss:1.4640 | test_loss:1.4782 | test_acc:98.50%
+2020-12-22 17:55:41,013 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:150 | train_loss:1.4622 | test_loss:1.4814 | test_acc:98.25%
+2020-12-22 17:55:42,428 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:200 | train_loss:1.4757 | test_loss:1.4804 | test_acc:98.25%
+2020-12-22 17:55:43,839 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:250 | train_loss:1.4634 | test_loss:1.4788 | test_acc:98.30%
+2020-12-22 17:55:45,288 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:300 | train_loss:1.4637 | test_loss:1.4797 | test_acc:98.35%
+2020-12-22 17:55:46,691 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:350 | train_loss:1.4642 | test_loss:1.4807 | test_acc:98.00%
+2020-12-22 17:55:48,053 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:400 | train_loss:1.4661 | test_loss:1.4793 | test_acc:98.40%
+2020-12-22 17:55:49,405 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 68|100] | step:450 | train_loss:1.4658 | test_loss:1.4791 | test_acc:98.35%
+2020-12-22 17:56:08,527 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4643 | test loss: 1.4736 | train acc: 99.78% | test acc: 98.86%
+2020-12-22 17:56:09,692 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:  0 | train_loss:1.4709 | test_loss:1.4813 | test_acc:98.10%
+2020-12-22 17:56:11,467 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step: 50 | train_loss:1.4634 | test_loss:1.4820 | test_acc:98.05%
+2020-12-22 17:56:12,855 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:100 | train_loss:1.4616 | test_loss:1.4797 | test_acc:98.25%
+2020-12-22 17:56:14,243 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:150 | train_loss:1.4613 | test_loss:1.4788 | test_acc:98.30%
+2020-12-22 17:56:15,645 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:200 | train_loss:1.4625 | test_loss:1.4793 | test_acc:98.15%
+2020-12-22 17:56:17,054 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:250 | train_loss:1.4614 | test_loss:1.4820 | test_acc:97.95%
+2020-12-22 17:56:18,443 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:300 | train_loss:1.4709 | test_loss:1.4821 | test_acc:97.95%
+2020-12-22 17:56:19,855 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:350 | train_loss:1.4622 | test_loss:1.4808 | test_acc:98.20%
+2020-12-22 17:56:21,280 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:400 | train_loss:1.4624 | test_loss:1.4802 | test_acc:98.20%
+2020-12-22 17:56:22,714 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 69|100] | step:450 | train_loss:1.4629 | test_loss:1.4801 | test_acc:98.20%
+2020-12-22 17:56:31,058 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4659 | test loss: 1.4750 | train acc: 99.65% | test acc: 98.69%
+2020-12-22 17:56:32,212 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:  0 | train_loss:1.4774 | test_loss:1.4821 | test_acc:97.90%
+2020-12-22 17:56:33,935 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step: 50 | train_loss:1.4618 | test_loss:1.4788 | test_acc:98.35%
+2020-12-22 17:56:35,338 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:100 | train_loss:1.4656 | test_loss:1.4804 | test_acc:98.05%
+2020-12-22 17:56:36,758 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:150 | train_loss:1.4614 | test_loss:1.4809 | test_acc:98.15%
+2020-12-22 17:56:38,107 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:200 | train_loss:1.4670 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 17:56:39,494 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:250 | train_loss:1.4637 | test_loss:1.4813 | test_acc:98.15%
+2020-12-22 17:56:40,825 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:300 | train_loss:1.4631 | test_loss:1.4812 | test_acc:98.05%
+2020-12-22 17:56:42,158 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:350 | train_loss:1.4629 | test_loss:1.4788 | test_acc:98.35%
+2020-12-22 17:56:43,486 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:400 | train_loss:1.4667 | test_loss:1.4798 | test_acc:98.25%
+2020-12-22 17:56:44,787 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 70|100] | step:450 | train_loss:1.4623 | test_loss:1.4776 | test_acc:98.50%
+2020-12-22 17:57:02,011 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4648 | test loss: 1.4738 | train acc: 99.74% | test acc: 98.86%
+2020-12-22 17:57:02,811 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:  0 | train_loss:1.4624 | test_loss:1.4793 | test_acc:98.25%
+2020-12-22 17:57:04,695 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step: 50 | train_loss:1.4669 | test_loss:1.4787 | test_acc:98.70%
+2020-12-22 17:57:06,073 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:100 | train_loss:1.4623 | test_loss:1.4783 | test_acc:98.55%
+2020-12-22 17:57:07,450 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:150 | train_loss:1.4624 | test_loss:1.4805 | test_acc:98.30%
+2020-12-22 17:57:08,812 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:200 | train_loss:1.4617 | test_loss:1.4794 | test_acc:98.35%
+2020-12-22 17:57:10,173 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:250 | train_loss:1.4616 | test_loss:1.4787 | test_acc:98.45%
+2020-12-22 17:57:11,548 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:300 | train_loss:1.4683 | test_loss:1.4783 | test_acc:98.50%
+2020-12-22 17:57:12,900 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:350 | train_loss:1.4623 | test_loss:1.4794 | test_acc:98.25%
+2020-12-22 17:57:14,283 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:400 | train_loss:1.4664 | test_loss:1.4776 | test_acc:98.65%
+2020-12-22 17:57:15,661 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 71|100] | step:450 | train_loss:1.4687 | test_loss:1.4798 | test_acc:98.25%
+2020-12-22 17:57:23,460 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4646 | test loss: 1.4748 | train acc: 99.75% | test acc: 98.69%
+2020-12-22 17:57:24,550 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:  0 | train_loss:1.4651 | test_loss:1.4810 | test_acc:98.15%
+2020-12-22 17:57:26,269 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step: 50 | train_loss:1.4613 | test_loss:1.4798 | test_acc:98.25%
+2020-12-22 17:57:27,613 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:100 | train_loss:1.4622 | test_loss:1.4803 | test_acc:98.15%
+2020-12-22 17:57:28,952 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:150 | train_loss:1.4643 | test_loss:1.4807 | test_acc:97.95%
+2020-12-22 17:57:30,288 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:200 | train_loss:1.4709 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 17:57:31,644 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:250 | train_loss:1.4647 | test_loss:1.4797 | test_acc:98.45%
+2020-12-22 17:57:33,012 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:300 | train_loss:1.4615 | test_loss:1.4800 | test_acc:98.25%
+2020-12-22 17:57:34,417 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:350 | train_loss:1.4620 | test_loss:1.4806 | test_acc:98.15%
+2020-12-22 17:57:35,792 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:400 | train_loss:1.4667 | test_loss:1.4803 | test_acc:98.20%
+2020-12-22 17:57:37,165 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 72|100] | step:450 | train_loss:1.4677 | test_loss:1.4809 | test_acc:98.10%
+2020-12-22 17:57:46,552 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4654 | test loss: 1.4746 | train acc: 99.69% | test acc: 98.78%
+2020-12-22 17:57:47,486 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:  0 | train_loss:1.4795 | test_loss:1.4795 | test_acc:98.30%
+2020-12-22 17:57:49,538 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step: 50 | train_loss:1.4614 | test_loss:1.4798 | test_acc:98.20%
+2020-12-22 17:57:50,983 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:100 | train_loss:1.4623 | test_loss:1.4809 | test_acc:98.25%
+2020-12-22 17:57:52,435 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:150 | train_loss:1.4696 | test_loss:1.4799 | test_acc:98.05%
+2020-12-22 17:57:53,884 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:200 | train_loss:1.4616 | test_loss:1.4781 | test_acc:98.45%
+2020-12-22 17:57:55,326 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:250 | train_loss:1.4630 | test_loss:1.4794 | test_acc:98.30%
+2020-12-22 17:57:56,758 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:300 | train_loss:1.4617 | test_loss:1.4808 | test_acc:98.00%
+2020-12-22 17:57:58,169 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:350 | train_loss:1.4620 | test_loss:1.4798 | test_acc:98.20%
+2020-12-22 17:57:59,595 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:400 | train_loss:1.4619 | test_loss:1.4791 | test_acc:98.35%
+2020-12-22 17:58:00,956 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 73|100] | step:450 | train_loss:1.4632 | test_loss:1.4784 | test_acc:98.45%
+2020-12-22 17:58:15,464 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4636 | test loss: 1.4737 | train acc: 99.83% | test acc: 98.84%
+2020-12-22 17:58:16,746 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:  0 | train_loss:1.4644 | test_loss:1.4787 | test_acc:98.35%
+2020-12-22 17:58:18,670 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step: 50 | train_loss:1.4616 | test_loss:1.4794 | test_acc:98.35%
+2020-12-22 17:58:20,167 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:100 | train_loss:1.4664 | test_loss:1.4799 | test_acc:98.35%
+2020-12-22 17:58:21,672 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:150 | train_loss:1.4617 | test_loss:1.4780 | test_acc:98.45%
+2020-12-22 17:58:23,145 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:200 | train_loss:1.4637 | test_loss:1.4787 | test_acc:98.30%
+2020-12-22 17:58:24,621 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:250 | train_loss:1.4702 | test_loss:1.4762 | test_acc:98.70%
+2020-12-22 17:58:26,182 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:300 | train_loss:1.4647 | test_loss:1.4779 | test_acc:98.40%
+2020-12-22 17:58:27,970 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:350 | train_loss:1.4669 | test_loss:1.4814 | test_acc:98.25%
+2020-12-22 17:58:29,819 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:400 | train_loss:1.4691 | test_loss:1.4785 | test_acc:98.55%
+2020-12-22 17:58:31,325 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 74|100] | step:450 | train_loss:1.4669 | test_loss:1.4797 | test_acc:98.20%
+2020-12-22 17:58:44,310 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4642 | test loss: 1.4737 | train acc: 99.78% | test acc: 98.80%
+2020-12-22 17:58:46,021 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:  0 | train_loss:1.4691 | test_loss:1.4780 | test_acc:98.55%
+2020-12-22 17:58:48,071 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step: 50 | train_loss:1.4615 | test_loss:1.4796 | test_acc:98.15%
+2020-12-22 17:58:49,630 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:100 | train_loss:1.4612 | test_loss:1.4778 | test_acc:98.50%
+2020-12-22 17:58:51,139 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:150 | train_loss:1.4625 | test_loss:1.4775 | test_acc:98.50%
+2020-12-22 17:58:52,644 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:200 | train_loss:1.4793 | test_loss:1.4812 | test_acc:98.05%
+2020-12-22 17:58:54,128 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:250 | train_loss:1.4672 | test_loss:1.4796 | test_acc:98.10%
+2020-12-22 17:58:55,601 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:300 | train_loss:1.4678 | test_loss:1.4793 | test_acc:98.20%
+2020-12-22 17:58:57,065 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:350 | train_loss:1.4679 | test_loss:1.4789 | test_acc:98.60%
+2020-12-22 17:58:58,474 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:400 | train_loss:1.4773 | test_loss:1.4807 | test_acc:98.10%
+2020-12-22 17:58:59,882 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 75|100] | step:450 | train_loss:1.4701 | test_loss:1.4825 | test_acc:98.00%
+2020-12-22 17:59:18,643 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4646 | test loss: 1.4736 | train acc: 99.75% | test acc: 98.91%
+2020-12-22 17:59:19,646 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:  0 | train_loss:1.4707 | test_loss:1.4800 | test_acc:98.50%
+2020-12-22 17:59:21,839 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step: 50 | train_loss:1.4664 | test_loss:1.4806 | test_acc:98.15%
+2020-12-22 17:59:23,314 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:100 | train_loss:1.4638 | test_loss:1.4793 | test_acc:98.35%
+2020-12-22 17:59:24,767 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:150 | train_loss:1.4614 | test_loss:1.4788 | test_acc:98.50%
+2020-12-22 17:59:26,230 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:200 | train_loss:1.4624 | test_loss:1.4812 | test_acc:98.10%
+2020-12-22 17:59:27,707 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:250 | train_loss:1.4676 | test_loss:1.4814 | test_acc:98.05%
+2020-12-22 17:59:29,156 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:300 | train_loss:1.4709 | test_loss:1.4792 | test_acc:98.40%
+2020-12-22 17:59:30,647 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:350 | train_loss:1.4630 | test_loss:1.4799 | test_acc:98.20%
+2020-12-22 17:59:32,159 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:400 | train_loss:1.4621 | test_loss:1.4825 | test_acc:98.10%
+2020-12-22 17:59:33,621 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 76|100] | step:450 | train_loss:1.4629 | test_loss:1.4808 | test_acc:98.25%
+2020-12-22 17:59:42,797 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4644 | test loss: 1.4735 | train acc: 99.78% | test acc: 98.89%
+2020-12-22 17:59:43,540 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:  0 | train_loss:1.4612 | test_loss:1.4818 | test_acc:98.15%
+2020-12-22 17:59:45,381 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step: 50 | train_loss:1.4629 | test_loss:1.4797 | test_acc:98.30%
+2020-12-22 17:59:46,821 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:100 | train_loss:1.4614 | test_loss:1.4779 | test_acc:98.40%
+2020-12-22 17:59:48,264 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:150 | train_loss:1.4725 | test_loss:1.4803 | test_acc:98.25%
+2020-12-22 17:59:49,671 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:200 | train_loss:1.4693 | test_loss:1.4810 | test_acc:98.00%
+2020-12-22 17:59:51,059 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:250 | train_loss:1.4635 | test_loss:1.4814 | test_acc:98.10%
+2020-12-22 17:59:52,464 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:300 | train_loss:1.4626 | test_loss:1.4799 | test_acc:98.35%
+2020-12-22 17:59:53,886 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:350 | train_loss:1.4622 | test_loss:1.4783 | test_acc:98.40%
+2020-12-22 17:59:55,289 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:400 | train_loss:1.4613 | test_loss:1.4793 | test_acc:98.30%
+2020-12-22 17:59:56,704 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 77|100] | step:450 | train_loss:1.4624 | test_loss:1.4781 | test_acc:98.45%
+2020-12-22 18:00:14,784 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4640 | test loss: 1.4735 | train acc: 99.80% | test acc: 98.83%
+2020-12-22 18:00:15,657 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:  0 | train_loss:1.4613 | test_loss:1.4789 | test_acc:98.30%
+2020-12-22 18:00:17,677 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step: 50 | train_loss:1.4646 | test_loss:1.4787 | test_acc:98.25%
+2020-12-22 18:00:19,145 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:100 | train_loss:1.4640 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 18:00:20,562 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:150 | train_loss:1.4618 | test_loss:1.4771 | test_acc:98.45%
+2020-12-22 18:00:22,000 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:200 | train_loss:1.4622 | test_loss:1.4784 | test_acc:98.50%
+2020-12-22 18:00:23,442 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:250 | train_loss:1.4688 | test_loss:1.4785 | test_acc:98.45%
+2020-12-22 18:00:24,899 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:300 | train_loss:1.4619 | test_loss:1.4794 | test_acc:98.35%
+2020-12-22 18:00:26,296 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:350 | train_loss:1.4623 | test_loss:1.4780 | test_acc:98.55%
+2020-12-22 18:00:27,749 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:400 | train_loss:1.4623 | test_loss:1.4828 | test_acc:97.95%
+2020-12-22 18:00:29,187 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 78|100] | step:450 | train_loss:1.4704 | test_loss:1.4795 | test_acc:98.25%
+2020-12-22 18:00:36,925 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4648 | test loss: 1.4750 | train acc: 99.73% | test acc: 98.65%
+2020-12-22 18:00:37,643 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:  0 | train_loss:1.4634 | test_loss:1.4825 | test_acc:97.90%
+2020-12-22 18:00:39,757 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step: 50 | train_loss:1.4623 | test_loss:1.4778 | test_acc:98.50%
+2020-12-22 18:00:41,220 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:100 | train_loss:1.4639 | test_loss:1.4791 | test_acc:98.40%
+2020-12-22 18:00:42,649 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:150 | train_loss:1.4612 | test_loss:1.4781 | test_acc:98.45%
+2020-12-22 18:00:44,095 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:200 | train_loss:1.4637 | test_loss:1.4782 | test_acc:98.60%
+2020-12-22 18:00:45,506 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:250 | train_loss:1.4649 | test_loss:1.4784 | test_acc:98.25%
+2020-12-22 18:00:46,918 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:300 | train_loss:1.4682 | test_loss:1.4781 | test_acc:98.45%
+2020-12-22 18:00:48,331 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:350 | train_loss:1.4688 | test_loss:1.4792 | test_acc:98.40%
+2020-12-22 18:00:49,704 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:400 | train_loss:1.4616 | test_loss:1.4796 | test_acc:98.40%
+2020-12-22 18:00:51,115 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 79|100] | step:450 | train_loss:1.4620 | test_loss:1.4784 | test_acc:98.35%
+2020-12-22 18:01:04,527 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4641 | test loss: 1.4731 | train acc: 99.77% | test acc: 98.88%
+2020-12-22 18:01:05,363 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:  0 | train_loss:1.4614 | test_loss:1.4781 | test_acc:98.35%
+2020-12-22 18:01:07,393 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step: 50 | train_loss:1.4654 | test_loss:1.4795 | test_acc:98.45%
+2020-12-22 18:01:08,918 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:100 | train_loss:1.4652 | test_loss:1.4793 | test_acc:98.30%
+2020-12-22 18:01:10,429 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:150 | train_loss:1.4687 | test_loss:1.4785 | test_acc:98.50%
+2020-12-22 18:01:11,977 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:200 | train_loss:1.4629 | test_loss:1.4781 | test_acc:98.40%
+2020-12-22 18:01:13,432 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:250 | train_loss:1.4649 | test_loss:1.4795 | test_acc:98.30%
+2020-12-22 18:01:14,923 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:300 | train_loss:1.4764 | test_loss:1.4781 | test_acc:98.50%
+2020-12-22 18:01:16,360 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:350 | train_loss:1.4721 | test_loss:1.4778 | test_acc:98.35%
+2020-12-22 18:01:17,793 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:400 | train_loss:1.4646 | test_loss:1.4791 | test_acc:98.40%
+2020-12-22 18:01:19,203 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 80|100] | step:450 | train_loss:1.4698 | test_loss:1.4790 | test_acc:98.40%
+2020-12-22 18:01:29,784 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4639 | test loss: 1.4732 | train acc: 99.81% | test acc: 98.94%
+2020-12-22 18:01:31,624 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:  0 | train_loss:1.4616 | test_loss:1.4794 | test_acc:98.30%
+2020-12-22 18:01:33,484 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step: 50 | train_loss:1.4624 | test_loss:1.4786 | test_acc:98.40%
+2020-12-22 18:01:34,969 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:100 | train_loss:1.4697 | test_loss:1.4804 | test_acc:98.30%
+2020-12-22 18:01:36,417 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:150 | train_loss:1.4613 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 18:01:37,868 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:200 | train_loss:1.4638 | test_loss:1.4811 | test_acc:98.25%
+2020-12-22 18:01:39,275 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:250 | train_loss:1.4618 | test_loss:1.4824 | test_acc:98.05%
+2020-12-22 18:01:40,693 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:300 | train_loss:1.4710 | test_loss:1.4830 | test_acc:97.80%
+2020-12-22 18:01:42,124 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:350 | train_loss:1.4623 | test_loss:1.4804 | test_acc:98.30%
+2020-12-22 18:01:43,491 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:400 | train_loss:1.4629 | test_loss:1.4821 | test_acc:97.95%
+2020-12-22 18:01:44,916 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 81|100] | step:450 | train_loss:1.4708 | test_loss:1.4829 | test_acc:97.80%
+2020-12-22 18:02:01,671 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4657 | test loss: 1.4756 | train acc: 99.69% | test acc: 98.65%
+2020-12-22 18:02:02,819 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:  0 | train_loss:1.4615 | test_loss:1.4810 | test_acc:98.10%
+2020-12-22 18:02:04,967 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step: 50 | train_loss:1.4615 | test_loss:1.4789 | test_acc:98.25%
+2020-12-22 18:02:06,633 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:100 | train_loss:1.4633 | test_loss:1.4777 | test_acc:98.45%
+2020-12-22 18:02:08,083 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:150 | train_loss:1.4612 | test_loss:1.4782 | test_acc:98.55%
+2020-12-22 18:02:09,538 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:200 | train_loss:1.4702 | test_loss:1.4780 | test_acc:98.45%
+2020-12-22 18:02:11,015 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:250 | train_loss:1.4710 | test_loss:1.4803 | test_acc:98.20%
+2020-12-22 18:02:12,477 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:300 | train_loss:1.4665 | test_loss:1.4815 | test_acc:97.90%
+2020-12-22 18:02:13,943 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:350 | train_loss:1.4628 | test_loss:1.4801 | test_acc:98.30%
+2020-12-22 18:02:15,404 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:400 | train_loss:1.4627 | test_loss:1.4788 | test_acc:98.25%
+2020-12-22 18:02:16,828 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 82|100] | step:450 | train_loss:1.4623 | test_loss:1.4796 | test_acc:98.45%
+2020-12-22 18:02:25,077 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4641 | test loss: 1.4737 | train acc: 99.81% | test acc: 98.88%
+2020-12-22 18:02:26,828 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:  0 | train_loss:1.4626 | test_loss:1.4800 | test_acc:98.35%
+2020-12-22 18:02:28,681 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step: 50 | train_loss:1.4617 | test_loss:1.4798 | test_acc:98.40%
+2020-12-22 18:02:30,134 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:100 | train_loss:1.4614 | test_loss:1.4793 | test_acc:98.30%
+2020-12-22 18:02:31,566 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:150 | train_loss:1.4646 | test_loss:1.4781 | test_acc:98.55%
+2020-12-22 18:02:33,001 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:200 | train_loss:1.4615 | test_loss:1.4788 | test_acc:98.30%
+2020-12-22 18:02:34,425 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:250 | train_loss:1.4617 | test_loss:1.4785 | test_acc:98.30%
+2020-12-22 18:02:35,793 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:300 | train_loss:1.4620 | test_loss:1.4790 | test_acc:98.30%
+2020-12-22 18:02:37,165 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:350 | train_loss:1.4641 | test_loss:1.4813 | test_acc:98.05%
+2020-12-22 18:02:38,527 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:400 | train_loss:1.4687 | test_loss:1.4820 | test_acc:98.20%
+2020-12-22 18:02:39,920 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 83|100] | step:450 | train_loss:1.4614 | test_loss:1.4802 | test_acc:98.10%
+2020-12-22 18:03:00,550 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4640 | test loss: 1.4739 | train acc: 99.81% | test acc: 98.84%
+2020-12-22 18:03:01,832 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:  0 | train_loss:1.4622 | test_loss:1.4785 | test_acc:98.45%
+2020-12-22 18:03:04,060 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step: 50 | train_loss:1.4619 | test_loss:1.4767 | test_acc:98.60%
+2020-12-22 18:03:05,832 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:100 | train_loss:1.4627 | test_loss:1.4786 | test_acc:98.45%
+2020-12-22 18:03:07,312 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:150 | train_loss:1.4683 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 18:03:08,793 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:200 | train_loss:1.4615 | test_loss:1.4780 | test_acc:98.35%
+2020-12-22 18:03:10,321 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:250 | train_loss:1.4683 | test_loss:1.4810 | test_acc:98.05%
+2020-12-22 18:03:11,802 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:300 | train_loss:1.4646 | test_loss:1.4793 | test_acc:98.35%
+2020-12-22 18:03:13,303 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:350 | train_loss:1.4705 | test_loss:1.4789 | test_acc:98.45%
+2020-12-22 18:03:14,841 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:400 | train_loss:1.4621 | test_loss:1.4792 | test_acc:98.40%
+2020-12-22 18:03:16,367 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 84|100] | step:450 | train_loss:1.4646 | test_loss:1.4802 | test_acc:98.35%
+2020-12-22 18:03:28,944 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4645 | test loss: 1.4748 | train acc: 99.77% | test acc: 98.73%
+2020-12-22 18:03:29,813 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:  0 | train_loss:1.4627 | test_loss:1.4816 | test_acc:98.05%
+2020-12-22 18:03:31,693 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step: 50 | train_loss:1.4646 | test_loss:1.4811 | test_acc:98.10%
+2020-12-22 18:03:33,179 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:100 | train_loss:1.4615 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 18:03:34,661 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:150 | train_loss:1.4681 | test_loss:1.4792 | test_acc:98.30%
+2020-12-22 18:03:36,122 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:200 | train_loss:1.4614 | test_loss:1.4785 | test_acc:98.45%
+2020-12-22 18:03:37,601 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:250 | train_loss:1.4684 | test_loss:1.4807 | test_acc:98.20%
+2020-12-22 18:03:39,118 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:300 | train_loss:1.4616 | test_loss:1.4814 | test_acc:98.25%
+2020-12-22 18:03:40,600 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:350 | train_loss:1.4666 | test_loss:1.4815 | test_acc:98.10%
+2020-12-22 18:03:42,041 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:400 | train_loss:1.4620 | test_loss:1.4798 | test_acc:98.15%
+2020-12-22 18:03:43,498 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 85|100] | step:450 | train_loss:1.4619 | test_loss:1.4808 | test_acc:98.00%
+2020-12-22 18:04:02,108 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4639 | test loss: 1.4737 | train acc: 99.81% | test acc: 98.80%
+2020-12-22 18:04:03,043 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:  0 | train_loss:1.4632 | test_loss:1.4795 | test_acc:98.20%
+2020-12-22 18:04:05,291 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step: 50 | train_loss:1.4667 | test_loss:1.4792 | test_acc:98.10%
+2020-12-22 18:04:06,785 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:100 | train_loss:1.4619 | test_loss:1.4798 | test_acc:98.20%
+2020-12-22 18:04:08,286 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:150 | train_loss:1.4615 | test_loss:1.4800 | test_acc:98.30%
+2020-12-22 18:04:09,792 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:200 | train_loss:1.4621 | test_loss:1.4798 | test_acc:98.25%
+2020-12-22 18:04:11,282 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:250 | train_loss:1.4634 | test_loss:1.4811 | test_acc:98.05%
+2020-12-22 18:04:12,790 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:300 | train_loss:1.4623 | test_loss:1.4808 | test_acc:98.20%
+2020-12-22 18:04:14,320 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:350 | train_loss:1.4630 | test_loss:1.4803 | test_acc:98.25%
+2020-12-22 18:04:15,894 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:400 | train_loss:1.4640 | test_loss:1.4830 | test_acc:98.00%
+2020-12-22 18:04:17,432 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 86|100] | step:450 | train_loss:1.4625 | test_loss:1.4802 | test_acc:98.20%
+2020-12-22 18:04:26,719 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4647 | test loss: 1.4756 | train acc: 99.74% | test acc: 98.70%
+2020-12-22 18:04:27,294 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:  0 | train_loss:1.4634 | test_loss:1.4814 | test_acc:98.35%
+2020-12-22 18:04:29,147 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step: 50 | train_loss:1.4612 | test_loss:1.4792 | test_acc:98.35%
+2020-12-22 18:04:30,634 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:100 | train_loss:1.4619 | test_loss:1.4817 | test_acc:98.35%
+2020-12-22 18:04:32,173 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:150 | train_loss:1.4658 | test_loss:1.4807 | test_acc:98.10%
+2020-12-22 18:04:33,691 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:200 | train_loss:1.4626 | test_loss:1.4774 | test_acc:98.80%
+2020-12-22 18:04:35,173 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:250 | train_loss:1.4665 | test_loss:1.4794 | test_acc:98.40%
+2020-12-22 18:04:36,684 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:300 | train_loss:1.4663 | test_loss:1.4787 | test_acc:98.50%
+2020-12-22 18:04:38,183 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:350 | train_loss:1.4702 | test_loss:1.4770 | test_acc:98.70%
+2020-12-22 18:04:39,649 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:400 | train_loss:1.4705 | test_loss:1.4803 | test_acc:98.10%
+2020-12-22 18:04:41,169 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 87|100] | step:450 | train_loss:1.4614 | test_loss:1.4831 | test_acc:97.95%
+2020-12-22 18:05:02,678 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4643 | test loss: 1.4740 | train acc: 99.78% | test acc: 98.83%
+2020-12-22 18:05:03,422 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:  0 | train_loss:1.4616 | test_loss:1.4823 | test_acc:97.90%
+2020-12-22 18:05:05,317 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step: 50 | train_loss:1.4629 | test_loss:1.4800 | test_acc:98.50%
+2020-12-22 18:05:06,905 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:100 | train_loss:1.4617 | test_loss:1.4786 | test_acc:98.35%
+2020-12-22 18:05:08,384 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:150 | train_loss:1.4628 | test_loss:1.4789 | test_acc:98.15%
+2020-12-22 18:05:09,928 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:200 | train_loss:1.4621 | test_loss:1.4776 | test_acc:98.50%
+2020-12-22 18:05:11,440 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:250 | train_loss:1.4658 | test_loss:1.4795 | test_acc:98.20%
+2020-12-22 18:05:12,997 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:300 | train_loss:1.4618 | test_loss:1.4787 | test_acc:98.40%
+2020-12-22 18:05:14,521 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:350 | train_loss:1.4613 | test_loss:1.4783 | test_acc:98.55%
+2020-12-22 18:05:16,104 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:400 | train_loss:1.4618 | test_loss:1.4833 | test_acc:97.95%
+2020-12-22 18:05:17,686 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 88|100] | step:450 | train_loss:1.4650 | test_loss:1.4773 | test_acc:98.65%
+2020-12-22 18:05:26,769 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4646 | test loss: 1.4740 | train acc: 99.75% | test acc: 98.82%
+2020-12-22 18:05:27,896 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:  0 | train_loss:1.4693 | test_loss:1.4794 | test_acc:98.40%
+2020-12-22 18:05:29,756 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step: 50 | train_loss:1.4616 | test_loss:1.4787 | test_acc:98.40%
+2020-12-22 18:05:31,305 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:100 | train_loss:1.4667 | test_loss:1.4802 | test_acc:98.40%
+2020-12-22 18:05:32,866 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:150 | train_loss:1.4692 | test_loss:1.4808 | test_acc:98.20%
+2020-12-22 18:05:34,400 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:200 | train_loss:1.4637 | test_loss:1.4813 | test_acc:98.30%
+2020-12-22 18:05:35,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:250 | train_loss:1.4660 | test_loss:1.4814 | test_acc:98.15%
+2020-12-22 18:05:37,411 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:300 | train_loss:1.4614 | test_loss:1.4840 | test_acc:98.00%
+2020-12-22 18:05:38,949 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:350 | train_loss:1.4635 | test_loss:1.4796 | test_acc:98.25%
+2020-12-22 18:05:40,458 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:400 | train_loss:1.4613 | test_loss:1.4788 | test_acc:98.35%
+2020-12-22 18:05:41,982 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 89|100] | step:450 | train_loss:1.4640 | test_loss:1.4798 | test_acc:98.30%
+2020-12-22 18:05:57,527 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4641 | test loss: 1.4731 | train acc: 99.80% | test acc: 98.86%
+2020-12-22 18:05:58,287 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:  0 | train_loss:1.4621 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 18:06:00,291 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step: 50 | train_loss:1.4626 | test_loss:1.4804 | test_acc:98.30%
+2020-12-22 18:06:01,935 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:100 | train_loss:1.4693 | test_loss:1.4773 | test_acc:98.55%
+2020-12-22 18:06:03,560 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:150 | train_loss:1.4623 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 18:06:05,242 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:200 | train_loss:1.4686 | test_loss:1.4771 | test_acc:98.60%
+2020-12-22 18:06:06,926 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:250 | train_loss:1.4631 | test_loss:1.4794 | test_acc:98.30%
+2020-12-22 18:06:08,586 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:300 | train_loss:1.4693 | test_loss:1.4797 | test_acc:98.25%
+2020-12-22 18:06:10,238 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:350 | train_loss:1.4615 | test_loss:1.4804 | test_acc:98.35%
+2020-12-22 18:06:11,926 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:400 | train_loss:1.4616 | test_loss:1.4820 | test_acc:98.10%
+2020-12-22 18:06:13,564 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 90|100] | step:450 | train_loss:1.4633 | test_loss:1.4842 | test_acc:97.85%
+2020-12-22 18:06:26,512 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4648 | test loss: 1.4758 | train acc: 99.74% | test acc: 98.56%
+2020-12-22 18:06:27,287 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:  0 | train_loss:1.4707 | test_loss:1.4829 | test_acc:97.85%
+2020-12-22 18:06:29,515 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step: 50 | train_loss:1.4658 | test_loss:1.4775 | test_acc:98.55%
+2020-12-22 18:06:31,274 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:100 | train_loss:1.4628 | test_loss:1.4782 | test_acc:98.15%
+2020-12-22 18:06:33,112 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:150 | train_loss:1.4628 | test_loss:1.4796 | test_acc:98.35%
+2020-12-22 18:06:34,873 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:200 | train_loss:1.4623 | test_loss:1.4813 | test_acc:98.15%
+2020-12-22 18:06:36,617 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:250 | train_loss:1.4632 | test_loss:1.4806 | test_acc:98.20%
+2020-12-22 18:06:38,446 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:300 | train_loss:1.4646 | test_loss:1.4790 | test_acc:98.35%
+2020-12-22 18:06:40,359 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:350 | train_loss:1.4684 | test_loss:1.4783 | test_acc:98.55%
+2020-12-22 18:06:42,106 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:400 | train_loss:1.4622 | test_loss:1.4772 | test_acc:98.50%
+2020-12-22 18:06:43,867 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 91|100] | step:450 | train_loss:1.4647 | test_loss:1.4779 | test_acc:98.55%
+2020-12-22 18:07:01,823 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4642 | test loss: 1.4735 | train acc: 99.80% | test acc: 98.87%
+2020-12-22 18:07:03,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:  0 | train_loss:1.4625 | test_loss:1.4795 | test_acc:98.30%
+2020-12-22 18:07:06,382 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step: 50 | train_loss:1.4637 | test_loss:1.4795 | test_acc:98.25%
+2020-12-22 18:07:08,225 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:100 | train_loss:1.4614 | test_loss:1.4808 | test_acc:98.00%
+2020-12-22 18:07:10,074 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:150 | train_loss:1.4614 | test_loss:1.4795 | test_acc:98.40%
+2020-12-22 18:07:11,941 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:200 | train_loss:1.4629 | test_loss:1.4805 | test_acc:98.20%
+2020-12-22 18:07:13,797 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:250 | train_loss:1.4619 | test_loss:1.4824 | test_acc:98.00%
+2020-12-22 18:07:15,685 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:300 | train_loss:1.4622 | test_loss:1.4793 | test_acc:98.35%
+2020-12-22 18:07:17,573 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:350 | train_loss:1.4616 | test_loss:1.4781 | test_acc:98.35%
+2020-12-22 18:07:19,462 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:400 | train_loss:1.4614 | test_loss:1.4797 | test_acc:98.20%
+2020-12-22 18:07:21,341 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 92|100] | step:450 | train_loss:1.4713 | test_loss:1.4781 | test_acc:98.40%
+2020-12-22 18:07:28,712 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4639 | test loss: 1.4734 | train acc: 99.81% | test acc: 98.86%
+2020-12-22 18:07:29,539 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:  0 | train_loss:1.4614 | test_loss:1.4791 | test_acc:98.40%
+2020-12-22 18:07:32,082 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step: 50 | train_loss:1.4618 | test_loss:1.4783 | test_acc:98.50%
+2020-12-22 18:07:33,953 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:100 | train_loss:1.4625 | test_loss:1.4768 | test_acc:98.50%
+2020-12-22 18:07:35,766 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:150 | train_loss:1.4646 | test_loss:1.4788 | test_acc:98.45%
+2020-12-22 18:07:37,629 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:200 | train_loss:1.4693 | test_loss:1.4788 | test_acc:98.40%
+2020-12-22 18:07:39,503 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:250 | train_loss:1.4620 | test_loss:1.4823 | test_acc:98.10%
+2020-12-22 18:07:41,293 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:300 | train_loss:1.4630 | test_loss:1.4787 | test_acc:98.35%
+2020-12-22 18:07:43,099 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:350 | train_loss:1.4615 | test_loss:1.4801 | test_acc:98.35%
+2020-12-22 18:07:44,914 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:400 | train_loss:1.4694 | test_loss:1.4803 | test_acc:98.30%
+2020-12-22 18:07:46,710 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 93|100] | step:450 | train_loss:1.4698 | test_loss:1.4783 | test_acc:98.45%
+2020-12-22 18:07:58,230 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4645 | test loss: 1.4746 | train acc: 99.76% | test acc: 98.78%
+2020-12-22 18:07:59,488 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:  0 | train_loss:1.4623 | test_loss:1.4799 | test_acc:98.40%
+2020-12-22 18:08:02,192 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step: 50 | train_loss:1.4653 | test_loss:1.4806 | test_acc:98.20%
+2020-12-22 18:08:04,145 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:100 | train_loss:1.4615 | test_loss:1.4803 | test_acc:98.15%
+2020-12-22 18:08:06,054 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:150 | train_loss:1.4661 | test_loss:1.4806 | test_acc:98.25%
+2020-12-22 18:08:07,948 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:200 | train_loss:1.4617 | test_loss:1.4805 | test_acc:98.15%
+2020-12-22 18:08:09,826 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:250 | train_loss:1.4615 | test_loss:1.4794 | test_acc:98.25%
+2020-12-22 18:08:11,638 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:300 | train_loss:1.4628 | test_loss:1.4793 | test_acc:98.25%
+2020-12-22 18:08:13,517 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:350 | train_loss:1.4650 | test_loss:1.4825 | test_acc:98.00%
+2020-12-22 18:08:15,383 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:400 | train_loss:1.4627 | test_loss:1.4805 | test_acc:98.15%
+2020-12-22 18:08:17,175 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 94|100] | step:450 | train_loss:1.4700 | test_loss:1.4814 | test_acc:98.25%
+2020-12-22 18:08:36,276 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4639 | test loss: 1.4742 | train acc: 99.82% | test acc: 98.79%
+2020-12-22 18:08:37,330 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:  0 | train_loss:1.4627 | test_loss:1.4786 | test_acc:98.45%
+2020-12-22 18:08:39,551 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step: 50 | train_loss:1.4707 | test_loss:1.4785 | test_acc:98.45%
+2020-12-22 18:08:41,408 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:100 | train_loss:1.4641 | test_loss:1.4796 | test_acc:98.30%
+2020-12-22 18:08:43,275 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:150 | train_loss:1.4617 | test_loss:1.4807 | test_acc:98.15%
+2020-12-22 18:08:45,114 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:200 | train_loss:1.4678 | test_loss:1.4785 | test_acc:98.35%
+2020-12-22 18:08:46,955 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:250 | train_loss:1.4740 | test_loss:1.4789 | test_acc:98.20%
+2020-12-22 18:08:48,765 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:300 | train_loss:1.4698 | test_loss:1.4789 | test_acc:98.45%
+2020-12-22 18:08:50,583 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:350 | train_loss:1.4675 | test_loss:1.4799 | test_acc:98.35%
+2020-12-22 18:08:52,422 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:400 | train_loss:1.4629 | test_loss:1.4794 | test_acc:98.15%
+2020-12-22 18:08:54,216 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 95|100] | step:450 | train_loss:1.4683 | test_loss:1.4789 | test_acc:98.45%
+2020-12-22 18:09:07,406 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4637 | test loss: 1.4741 | train acc: 99.83% | test acc: 98.78%
+2020-12-22 18:09:08,078 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:  0 | train_loss:1.4695 | test_loss:1.4809 | test_acc:98.15%
+2020-12-22 18:09:10,431 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step: 50 | train_loss:1.4620 | test_loss:1.4797 | test_acc:98.30%
+2020-12-22 18:09:12,363 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:100 | train_loss:1.4627 | test_loss:1.4799 | test_acc:98.30%
+2020-12-22 18:09:14,290 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:150 | train_loss:1.4660 | test_loss:1.4786 | test_acc:98.55%
+2020-12-22 18:09:16,212 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:200 | train_loss:1.4715 | test_loss:1.4799 | test_acc:98.35%
+2020-12-22 18:09:18,157 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:250 | train_loss:1.4646 | test_loss:1.4801 | test_acc:98.35%
+2020-12-22 18:09:20,044 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:300 | train_loss:1.4634 | test_loss:1.4816 | test_acc:98.15%
+2020-12-22 18:09:21,856 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:350 | train_loss:1.4614 | test_loss:1.4816 | test_acc:98.10%
+2020-12-22 18:09:23,624 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:400 | train_loss:1.4621 | test_loss:1.4827 | test_acc:98.05%
+2020-12-22 18:09:25,383 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 96|100] | step:450 | train_loss:1.4616 | test_loss:1.4819 | test_acc:98.10%
+2020-12-22 18:09:38,541 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4636 | test loss: 1.4739 | train acc: 99.84% | test acc: 98.82%
+2020-12-22 18:09:39,485 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:  0 | train_loss:1.4615 | test_loss:1.4810 | test_acc:98.10%
+2020-12-22 18:09:41,705 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step: 50 | train_loss:1.4627 | test_loss:1.4821 | test_acc:98.20%
+2020-12-22 18:09:43,561 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:100 | train_loss:1.4625 | test_loss:1.4787 | test_acc:98.50%
+2020-12-22 18:09:45,400 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:150 | train_loss:1.4626 | test_loss:1.4797 | test_acc:98.30%
+2020-12-22 18:09:47,258 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:200 | train_loss:1.4619 | test_loss:1.4793 | test_acc:98.45%
+2020-12-22 18:09:49,100 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:250 | train_loss:1.4634 | test_loss:1.4816 | test_acc:98.15%
+2020-12-22 18:09:50,963 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:300 | train_loss:1.4624 | test_loss:1.4816 | test_acc:98.15%
+2020-12-22 18:09:52,798 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:350 | train_loss:1.4697 | test_loss:1.4811 | test_acc:98.25%
+2020-12-22 18:09:54,615 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:400 | train_loss:1.4650 | test_loss:1.4807 | test_acc:98.05%
+2020-12-22 18:09:56,430 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 97|100] | step:450 | train_loss:1.4636 | test_loss:1.4802 | test_acc:98.25%
+2020-12-22 18:10:07,872 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4644 | test loss: 1.4752 | train acc: 99.77% | test acc: 98.70%
+2020-12-22 18:10:08,648 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:  0 | train_loss:1.4634 | test_loss:1.4842 | test_acc:97.65%
+2020-12-22 18:10:10,961 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step: 50 | train_loss:1.4640 | test_loss:1.4817 | test_acc:98.00%
+2020-12-22 18:10:12,860 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:100 | train_loss:1.4626 | test_loss:1.4811 | test_acc:98.20%
+2020-12-22 18:10:14,756 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:150 | train_loss:1.4645 | test_loss:1.4814 | test_acc:98.05%
+2020-12-22 18:10:16,724 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:200 | train_loss:1.4622 | test_loss:1.4803 | test_acc:98.35%
+2020-12-22 18:10:18,576 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:250 | train_loss:1.4696 | test_loss:1.4795 | test_acc:98.50%
+2020-12-22 18:10:20,412 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:300 | train_loss:1.4619 | test_loss:1.4778 | test_acc:98.65%
+2020-12-22 18:10:22,246 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:350 | train_loss:1.4696 | test_loss:1.4809 | test_acc:98.05%
+2020-12-22 18:10:24,109 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:400 | train_loss:1.4721 | test_loss:1.4815 | test_acc:98.15%
+2020-12-22 18:10:25,957 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 98|100] | step:450 | train_loss:1.4615 | test_loss:1.4797 | test_acc:98.20%
+2020-12-22 18:10:44,136 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4638 | test loss: 1.4739 | train acc: 99.82% | test acc: 98.83%
+2020-12-22 18:10:44,963 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:  0 | train_loss:1.4675 | test_loss:1.4781 | test_acc:98.25%
+2020-12-22 18:10:47,350 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step: 50 | train_loss:1.4618 | test_loss:1.4789 | test_acc:98.40%
+2020-12-22 18:10:49,325 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:100 | train_loss:1.4669 | test_loss:1.4804 | test_acc:98.15%
+2020-12-22 18:10:51,272 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:150 | train_loss:1.4638 | test_loss:1.4792 | test_acc:98.25%
+2020-12-22 18:10:53,232 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:200 | train_loss:1.4614 | test_loss:1.4790 | test_acc:98.25%
+2020-12-22 18:10:55,223 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:250 | train_loss:1.4683 | test_loss:1.4803 | test_acc:98.20%
+2020-12-22 18:10:57,193 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:300 | train_loss:1.4679 | test_loss:1.4806 | test_acc:98.25%
+2020-12-22 18:10:59,168 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:350 | train_loss:1.4615 | test_loss:1.4800 | test_acc:98.25%
+2020-12-22 18:11:01,129 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:400 | train_loss:1.4614 | test_loss:1.4792 | test_acc:98.35%
+2020-12-22 18:11:03,019 - D:/Codes/pycharm/PR_HW/CNN.py[line:129] - INFO: Epoch:[ 99|100] | step:450 | train_loss:1.4638 | test_loss:1.4782 | test_acc:98.45%
+2020-12-22 18:11:14,104 - D:/Codes/pycharm/PR_HW/CNN.py[line:173] - INFO: train loss: 1.4639 | test loss: 1.4739 | train acc: 99.80% | test acc: 98.82%
+2020-12-22 18:40:51,600 - D:/Codes/pycharm/PR_HW/CNN.py[line:199] - INFO: the accuracy of our own handwriting data is 19.0%
+2020-12-22 18:46:43,977 - D:/Codes/pycharm/PR_HW/CNN.py[line:199] - INFO: the accuracy of our own handwriting data is 14.5%
+2020-12-22 19:05:39,643 - D:/Codes/pycharm/PR_HW/CNN.py[line:204] - INFO: the accuracy of our own handwriting data is 11.0%
+2020-12-22 19:06:32,857 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 11.0%
+2020-12-22 19:06:56,952 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 3.5%
+2020-12-22 19:07:29,756 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 11.0%
+2020-12-22 19:07:47,418 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 11.0%
+2020-12-22 19:07:51,944 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 11.0%
+2020-12-22 19:08:59,109 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 13.5%
+2020-12-22 19:09:27,938 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 13.5%
+2020-12-22 19:09:53,621 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 17.0%
+2020-12-22 19:11:55,327 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 17.0%
+2020-12-22 19:12:37,954 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 17.0%
+2020-12-22 19:12:47,505 - D:/Codes/pycharm/PR_HW/CNN.py[line:205] - INFO: the accuracy of our own handwriting data is 17.0%
+2020-12-22 19:17:17,348 - D:/Codes/pycharm/PR_HW/CNN.py[line:212] - INFO: the accuracy of our own handwriting data is 86.0%
+2020-12-22 19:20:19,221 - D:/Codes/pycharm/PR_HW/CNN.py[line:212] - INFO: the accuracy of our own handwriting data is 88.0%

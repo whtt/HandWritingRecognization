@@ -1,0 +1,119 @@
+\documentclass[UTF8, a4paper, 12pt]{report}
+	\title{模式识别作业\\Pattern Recognition Homework}
+	\author{汪皓 202020116491}
+	\date{2020/12/15}
+
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec} % set Chapter1 to chinese 第一章
+\usepackage{zhnumber}
+\titleformat{\chapter}{\raggedright\Huge\bfseries}{第\,\zhnum{chapter}\,章}{1em}{}
+
+\usepackage{fancyhdr} % use this package to set page
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+\chead{\leftmark} % set all the headings in the center of the page
+\lfoot{}
+\rfoot{}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt} % set off the line over the heading
+
+% \usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry} % page distance
+\usepackage[top=2.50cm, bottom=2.50cm]{geometry}
+
+
+\begin{document}
+\maketitle % generate the document title
+\thispagestyle{empty} % this page with no page number
+\clearpage % create a new page
+
+\pagestyle{plain} % set the content with no heading, but a page number
+\setcounter{page}{1} % set the content page as Page I
+\pagenumbering{Roman} % set the I(Roman)
+\tableofcontents % generate the content
+\clearpage
+
+\pagestyle{fancy} % the main body use fancy
+\setcounter{page}{1} % set the main body page as Page 1
+\pagenumbering{arabic} % set the 1(arabic)
+
+\chapter{介绍}
+设计一个
+\chapter{GUI界面}
+1
+\chapter{数据集}
+	\section{mnist}
+
+	\section{手写数字}
+
+	\section{数据获取}
+
+	\section{特征处理}
+
+\chapter{贝叶斯Bayesian}
+1
+	\section{贝叶斯决策论Bayesian Decision Theory}
+1
+	\section{朴素贝叶斯NaiveBayesian}
+1
+		\subsection{引言}
+1
+		\subsection{理论}
+1
+		\subsection{设计}
+1
+		\subsection{实现}
+1
+		\subsection{小结}
+1
+\chapter{Fisher}
+1
+	\section{引言}
+1
+	\section{二分类Fisher}
+1
+		\subsection{引言}
+1
+		\subsection{理论}
+1
+		\subsection{设计}
+1
+		\subsection{实现}
+1
+		\subsection{小结}
+1
+	\section{加权Fisher}
+1
+		\subsection{引言}
+1
+		\subsection{理论}
+1
+		\subsection{设计}
+1
+		\subsection{实现}
+1
+		\subsection{小结}
+1
+	\section{多分类Fisher}
+1
+		\subsection{引言}
+1
+		\subsection{理论}
+1
+		\subsection{设计}
+1
+		\subsection{实现}
+1
+		\subsection{小结}
+1		
+\chapter{SVM}
+1
+\chapter{BP}
+1
+\chapter{CNN}
+1
+\chapter{Summary}
+1
+\end{document}
