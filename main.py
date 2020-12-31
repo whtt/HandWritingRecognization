@@ -45,11 +45,11 @@ class MyWidget(QWidget):
         self.label_school.setStyleSheet("font-size:12px")
         self.label_school.setGeometry(460, 40, 140, 35)
 
-        self.label_name = QLabel("姓名：\t汪皓", self)
+        self.label_name = QLabel("姓名：\t***", self)
         self.label_name.setStyleSheet("font-size:12px")
         self.label_name.setGeometry(460, 70, 100, 35)
 
-        self.label_number = QLabel("学号：\t202020116491", self)
+        self.label_number = QLabel("学号：\t***", self)
         self.label_number.setStyleSheet("font-size:12px")
         self.label_number.setGeometry(460, 100, 120, 35)
 
